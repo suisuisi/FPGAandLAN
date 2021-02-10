@@ -1,0 +1,143 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Mar 31 21:54:46 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : report_methodology -file udp_transmit_test_methodology_drc_routed.rpt -pb udp_transmit_test_methodology_drc_routed.pb -rpx udp_transmit_test_methodology_drc_routed.rpx
+| Design       : udp_transmit_test
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 4          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 14         |
+| TIMING-9  | Warning  | Unknown CDC Logic                               | 1          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only              | 2          |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell example_resets/gtx_reset_gen_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_resets/gtx_reset_gen/reset_sync0/PRE, example_resets/gtx_reset_gen/reset_sync1/PRE, example_resets/gtx_reset_gen/reset_sync2/PRE, example_resets/gtx_reset_gen/reset_sync3/PRE, example_resets/gtx_reset_gen/reset_sync4/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/MGT_RESET.RESET_INT_PIPE_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_PIPE_reg/PRE, gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, udp_ip_protocol_stack/ip_layer/icmp_echo_data_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X156Y198 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X155Y200 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X161Y202 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X155Y189 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X157Y200 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X159Y205 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X117Y188 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X119Y188 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X133Y192 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X132Y190 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X131Y194 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X129Y189 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X127Y190 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X130Y194 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 21 in the Timing Constraints window in Vivado IDE) between clocks clkout0 and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 31). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 21 in the Timing Constraints window in Vivado IDE) between clocks clkout0 and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 33). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+

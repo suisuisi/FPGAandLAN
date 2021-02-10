@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Nov 18 12:22:09 2017
+# Process ID: 4848
+# Current directory: D:/vivado_project/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1
+# Command line: vivado.exe -log example_ibert_7series_gtx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source example_ibert_7series_gtx_0.tcl
+# Log file: D:/vivado_project/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1/example_ibert_7series_gtx_0.vds
+# Journal file: D:/vivado_project/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source example_ibert_7series_gtx_0.tcl -notrace

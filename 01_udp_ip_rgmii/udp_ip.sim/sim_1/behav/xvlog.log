@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/mac_send_flow_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_send_flow_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/mac_control_frame_process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_control_frame_process
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/ip_header_checksum_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_header_checksum_check
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/icmp_packet_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module icmp_packet_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/icmp_packet_process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module icmp_packet_process
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/CRC32_generation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC32_generation
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/CRC32_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRC32_check
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/MAC_Send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_Send
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/mac_receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/mac_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/IP_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IP_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/ip_receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/arp_send.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_send
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/arp_receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/send_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module send_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/receive_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receive_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/mac_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/ip_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/arp_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/common/tri_mode_ethernet_mac_0_reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tri_mode_ethernet_mac_0_reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_ip_protocol_stack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_ip_protocol_stack
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_transmit_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_transmit_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_top
+INFO: [VRFC 10-2458] undeclared symbol udp_tx_ready, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:136]
+INFO: [VRFC 10-2458] undeclared symbol app_tx_ack, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:137]
+INFO: [VRFC 10-2458] undeclared symbol app_rx_data_valid, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:144]
+INFO: [VRFC 10-2458] undeclared symbol app_rx_data, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:145]
+INFO: [VRFC 10-2458] undeclared symbol app_rx_data_length, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:146]
+INFO: [VRFC 10-2458] undeclared symbol app_rx_port_num, assumed default net type wire [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:147]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/sim_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

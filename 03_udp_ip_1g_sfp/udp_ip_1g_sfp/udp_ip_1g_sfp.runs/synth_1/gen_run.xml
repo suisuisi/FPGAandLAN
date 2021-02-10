@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1585662514">
+  <File Type="PA-TCL" Name="udp_transmit_test.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="udp_transmit_test_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="udp_transmit_test_reports.tcl"/>
+  <File Type="RDS-RDS" Name="udp_transmit_test.vds"/>
+  <File Type="RDS-UTIL" Name="udp_transmit_test_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="udp_transmit_test_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="udp_transmit_test.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="udp_transmit_test_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="udp_transmit_test_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci"/>
+        <Attr Name="ImportTime" Val="1509334213"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci"/>
+        <Attr Name="ImportTime" Val="1509334214"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci"/>
+        <Attr Name="ImportTime" Val="1509334185"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_data_fifo_1/axis_data_fifo_1.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/axis_data_fifo_1/axis_data_fifo_1.xci"/>
+        <Attr Name="ImportTime" Val="1509334185"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_dwidth_converter_1/axis_dwidth_converter_1.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/axis_dwidth_converter_1/axis_dwidth_converter_1.xci"/>
+        <Attr Name="ImportTime" Val="1509334186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axis_dwidth_converter_0/axis_dwidth_converter_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/axis_dwidth_converter_0/axis_dwidth_converter_0.xci"/>
+        <Attr Name="ImportTime" Val="1509334186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/udp_ip_stack/udp_ip_protocol_stack.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/udp_packet_fifo/udp_packet_fifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/udp_packet_fifo/udp_packet_fifo.xci"/>
+        <Attr Name="ImportTime" Val="1509334215"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../kc705/2016_4/udp_ip_v3_1_sfp/udp_ip.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci"/>
+        <Attr Name="ImportTime" Val="1509340745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example/tri_mode_ethernet_mac_0_axi_lite_sm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/example/tri_mode_ethernet_mac_0_axi_lite_sm.v"/>
+        <Attr Name="ImportTime" Val="1504684659"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example/tri_mode_ethernet_mac_0_example_design_resets.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/example/tri_mode_ethernet_mac_0_example_design_resets.v"/>
+        <Attr Name="ImportTime" Val="1504773933"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example/tri_mode_ethernet_mac_0_reset_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/example/tri_mode_ethernet_mac_0_reset_sync.v"/>
+        <Attr Name="ImportTime" Val="1504770973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example/tri_mode_ethernet_mac_0_sync_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/example/tri_mode_ethernet_mac_0_sync_block.v"/>
+        <Attr Name="ImportTime" Val="1504684660"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/udp_ip_1g_sfp/udp_transmit_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="udp_transmit_test"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/udp_ip_1g.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

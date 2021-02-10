@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jul 25 14:24:27 2017
+# Process ID: 11676
+# Current directory: F:/A7_Demo/S01_CH12_udp_ip_rgmii
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3136 F:\A7_Demo\S01_CH12_udp_ip_rgmii\udp_ip.xpr
+# Log file: F:/A7_Demo/S01_CH12_udp_ip_rgmii/vivado.log
+# Journal file: F:/A7_Demo/S01_CH12_udp_ip_rgmii\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/A7_Demo/S01_CH12_udp_ip_rgmii/udp_ip.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FPGA_project/vivado/mia701/udp_ip_rgmii' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 25 14:26:01 2017...

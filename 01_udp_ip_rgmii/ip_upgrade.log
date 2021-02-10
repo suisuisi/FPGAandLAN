@@ -1,0 +1,682 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:53 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'udp_packet_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of udp_packet_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:51 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_mac'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of shift_mac (xilinx.com:ip:c_shift_ram:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:51 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_ip'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of shift_ip (xilinx.com:ip:c_shift_ram:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:50 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of shift (xilinx.com:ip:c_shift_ram:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:49 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_tx_frame_info_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mac_tx_frame_info_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:47 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_receive_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mac_receive_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:46 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_frame_length_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mac_frame_length_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:44 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'echo_data_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of echo_data_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:41 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 20:25:12 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 7600)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MAC_send_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of MAC_send_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:32:01 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'udp_packet_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of udp_packet_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:32:00 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_mac'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_mac (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 10) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:32:00 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_ip'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_ip (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 10) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:32:00 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 10) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:31:59 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_tx_frame_info_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_tx_frame_info_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:31:59 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_receive_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_receive_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:31:57 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_frame_length_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_frame_length_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:31:57 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'echo_data_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of echo_data_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 23 20:31:57 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MAC_send_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MAC_send_fifo from xilinx.com:ip:fifo_generator:13.1 (Rev. 3) to xilinx.com:ip:fifo_generator:13.2 (Rev. 5)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+WARNING: there are only case-insensitive matches Reset_Pin for parameter RESET_PIN
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:37:14 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'echo_data_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the update of echo_data_fifo (xilinx.com:ip:fifo_generator:13.1 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:10 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'udp_packet_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of udp_packet_fifo from xilinx.com:ip:fifo_generator:13.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.1 (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:09 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_mac'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_mac (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:09 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift_ip'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift_ip (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:08 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'shift'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of shift (xilinx.com:ip:c_shift_ram:12.0) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:07 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_tx_frame_info_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_tx_frame_info_fifo from xilinx.com:ip:fifo_generator:13.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.1 (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:06 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_receive_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_receive_fifo from xilinx.com:ip:fifo_generator:13.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.1 (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:05 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_frame_length_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_frame_length_fifo from xilinx.com:ip:fifo_generator:13.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.1 (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:06:04 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of clk_wiz_0 from xilinx.com:ip:clk_wiz:5.2 (Rev. 1) to xilinx.com:ip:clk_wiz:5.3 (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'clk_wiz_0'. These changes may impact your design.
+
+
+-Upgraded port order differs after port 'reset'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Apr 29 14:05:56 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MAC_send_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MAC_send_fifo from xilinx.com:ip:fifo_generator:13.0 (Rev. 1) to xilinx.com:ip:fifo_generator:13.1 (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot get value of option ARCHITECTURE : there is no project option called ARCHITECTURE
+

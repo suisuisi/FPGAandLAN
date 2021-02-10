@@ -1,0 +1,2 @@
+shift_mac.vhd,vhdl,xil_defaultlib,../../../../udp_ip.srcs/sources_1/ip/shift_mac/sim/shift_mac.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Apr  1 09:00:21 2020
+# Process ID: 6688
+# Current directory: E:/FILE/FPGA/08_LAN/01_udp_ip_rgmii
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8044 E:\FILE\FPGA\08_LAN\01_udp_ip_rgmii\udp_ip.xpr
+# Log file: E:/FILE/FPGA/08_LAN/01_udp_ip_rgmii/vivado.log
+# Journal file: E:/FILE/FPGA/08_LAN/01_udp_ip_rgmii\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FILE/FPGA/08_LAN/01_udp_ip_rgmii/udp_ip.xpr
+update_compile_order -fileset sources_1

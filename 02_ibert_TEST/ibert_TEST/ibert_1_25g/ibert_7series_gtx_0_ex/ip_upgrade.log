@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sun Jan 24 01:49:00 2021
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ibert_7series_gtx_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ibert_7series_gtx_0 (xilinx.com:ip:ibert_7series_gtx:3.0) from (Rev. 15) to (Rev. 17)
+

@@ -1,0 +1,190 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Tue Mar 31 21:54:49 2020
+| Host             : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command          : report_power -file udp_transmit_test_power_routed.rpt -pb udp_transmit_test_power_summary_routed.pb -rpx udp_transmit_test_power_routed.rpx
+| Design           : udp_transmit_test
+| Device           : xc7z035ffg676-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.710        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.496        |
+| Device Static (W)        | 0.214        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.029 |       12 |       --- |             --- |
+| Slice Logic              |     0.006 |    12039 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     4162 |    171900 |            2.42 |
+|   CARRY4                 |    <0.001 |      351 |     54650 |            0.64 |
+|   Register               |    <0.001 |     6026 |    343800 |            1.75 |
+|   LUT as Distributed RAM |    <0.001 |       16 |     70400 |            0.02 |
+|   F7/F8 Muxes            |    <0.001 |      141 |    218600 |            0.06 |
+|   Others                 |     0.000 |      389 |       --- |             --- |
+|   LUT as Shift Register  |     0.000 |       21 |     70400 |            0.03 |
+| Signals                  |     0.006 |     9067 |       --- |             --- |
+| Block RAM                |     0.007 |     13.5 |       500 |            2.70 |
+| MMCM                     |     0.212 |        2 |         8 |           25.00 |
+| I/O                      |    <0.001 |        7 |       250 |            2.80 |
+| GTX                      |     0.237 |        1 |         8 |           12.50 |
+| Static Power             |     0.214 |          |           |                 |
+| Total                    |     0.710 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.111 |       0.058 |      0.053 |
+| Vccaux    |       1.800 |     0.156 |       0.117 |      0.039 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.002 |
+| MGTAVcc   |       1.000 |     0.113 |       0.109 |      0.004 |
+| MGTAVtt   |       1.200 |     0.103 |       0.098 |      0.005 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                      | Domain                                                                                                             | Constraint (ns) |
++----------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_100                                                                                                                    | clk_100                                                                                                            |            10.0 |
+| clk_out1_clk_wiz_0                                                                                                         | clk_wiz_0/inst/clk_out1_clk_wiz_0                                                                                  |            64.0 |
+| clk_out2_clk_wiz_0                                                                                                         | clk_wiz_0/inst/clk_out2_clk_wiz_0                                                                                  |             5.0 |
+| clkfbout                                                                                                                   | gig_ethernet_pcs_pma_i/inst/core_clocking_i/clkfbout                                                               |            16.0 |
+| clkfbout_clk_wiz_0                                                                                                         | clk_wiz_0/inst/clkfbout_clk_wiz_0                                                                                  |            10.0 |
+| clkout0                                                                                                                    | gig_ethernet_pcs_pma_i/inst/core_clocking_i/clkout0                                                                |             8.0 |
+| clkout1                                                                                                                    | gig_ethernet_pcs_pma_i/inst/core_clocking_i/clkout1                                                                |            16.0 |
+| gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtxe2_i/TXOUTCLK | gig_ethernet_pcs_pma_i/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/txoutclk |            16.0 |
+| gtrefclk                                                                                                                   | gtrefclk1_p                                                                                                        |             8.0 |
++----------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------+-----------+
+| Name                                             | Power (W) |
++--------------------------------------------------+-----------+
+| udp_transmit_test                                |     0.496 |
+|   clk_wiz_0                                      |     0.108 |
+|     inst                                         |     0.108 |
+|   gig_ethernet_pcs_pma_i                         |     0.358 |
+|     inst                                         |     0.358 |
+|       core_clocking_i                            |     0.106 |
+|       pcs_pma_block_i                            |     0.252 |
+|   rx_async_fifo0                                 |     0.002 |
+|     inst                                         |     0.002 |
+|       gen_fifo.xpm_fifo_axis_inst                |     0.002 |
+|   tri_mode_ethernet_mac_i                        |     0.011 |
+|     inst                                         |     0.011 |
+|       tri_mode_ethernet_mac_0_core               |     0.011 |
+|   tx_async_fifo0                                 |     0.004 |
+|     inst                                         |     0.004 |
+|       gen_fifo.xpm_fifo_axis_inst                |     0.004 |
+|   tx_axis_dwidth_converter0                      |     0.002 |
+|     inst                                         |     0.002 |
+|       gen_downsizer_conversion.axisc_downsizer_0 |     0.002 |
+|   tx_packet_fifo0                                |     0.005 |
+|     inst                                         |     0.005 |
+|       gen_fifo.xpm_fifo_axis_inst                |     0.005 |
+|   udp_ip_protocol_stack                          |     0.004 |
+|     ip_layer                                     |     0.002 |
++--------------------------------------------------+-----------+
+
+

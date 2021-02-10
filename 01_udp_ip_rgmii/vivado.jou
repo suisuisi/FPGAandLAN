@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Jan 28 21:55:57 2021
+# Process ID: 24188
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23396 F:\FILE\FPGA\ZYNQ\08_LAN\01_udp_ip_rgmii\udp_ip.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii/udp_ip.xpr
+update_compile_order -fileset sources_1

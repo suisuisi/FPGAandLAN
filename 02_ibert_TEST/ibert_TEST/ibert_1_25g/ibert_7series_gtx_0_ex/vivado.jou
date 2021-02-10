@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Jan 24 01:46:37 2021
+# Process ID: 28496
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23108 F:\FILE\FPGA\ZYNQ\08_LAN\02_ibert_TEST\S08_CH01_ibert_TEST\S08_CH01_ibert_1_25g\ibert_7series_gtx_0_ex\ibert_7series_gtx_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:ip:ibert_7series_gtx:3.0 [get_ips  ibert_7series_gtx_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ibert_7series_gtx_0] -no_script -sync -force -quiet

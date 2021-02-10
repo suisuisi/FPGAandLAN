@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 31 21:48:39 2020
+# Process ID: 18268
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/udp_ip_1g_sfp.runs/synth_1
+# Command line: vivado.exe -log udp_transmit_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_transmit_test.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/udp_ip_1g_sfp.runs/synth_1/udp_transmit_test.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/udp_ip_1g_sfp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source udp_transmit_test.tcl -notrace

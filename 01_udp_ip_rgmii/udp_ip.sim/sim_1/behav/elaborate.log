@@ -1,0 +1,110 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3a51d336a1e54702a6f9ff71ffacd0c5 --debug typical --relax --mt 2 -L xbip_utils_v3_0_5 -L c_reg_fd_v12_0_1 -L c_mux_bit_v12_0_1 -L c_shift_ram_v12_0_8 -L xil_defaultlib -L fifo_generator_v13_0_1 -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_top_behav xil_defaultlib.sim_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port app_rx_data [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:145]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port app_rx_data_length [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:146]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 16 for port app_rx_port_num [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:147]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port phy_gmii_rx_er [F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sim_1/imports/UDP_IP/test_top.v:197]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_send.v" Line 18. Module udp_send(LOCAL_PORT_NUM=16'b1111000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/IP_send.v" Line 9. Module IP_send(VERSION=4'b0100,IHL=4'b0101,TOS=8'b0,ID_BASE=16'b0,FLAG=3'b010,FRAGMENT_OFFSET=13'b0,LOCAL_IP_ADDRESS=32'b11000000101010000000101000000001) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_send.v" Line 18. Module udp_send(LOCAL_PORT_NUM=16'b1111000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/IP_send.v" Line 9. Module IP_send(VERSION=4'b0100,IHL=4'b0101,TOS=8'b0,ID_BASE=16'b0,FLAG=3'b010,FRAGMENT_OFFSET=13'b0,LOCAL_IP_ADDRESS=32'b11000000101010000000101000000001) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_send.v" Line 18. Module udp_send(LOCAL_PORT_NUM=16'b1111000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/IP_send.v" Line 9. Module IP_send(VERSION=4'b0100,IHL=4'b0101,TOS=8'b0,ID_BASE=16'b0,FLAG=3'b010,FRAGMENT_OFFSET=13'b0,LOCAL_IP_ADDRESS=32'b11000000101010000000101000000001) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/udp_send.v" Line 18. Module udp_send(LOCAL_PORT_NUM=16'b1111000000000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.srcs/sources_1/imports/UDP_IP/IP_send.v" Line 9. Module IP_send(VERSION=4'b0100,IHL=4'b0101,TOS=8'b0,ID_BASE=16'b0,FLAG=3'b010,FRAGMENT_OFFSET=13'b0,LOCAL_IP_ADDRESS=32'b11000000101010000000101000000001) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv_comp
+Compiling package c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_pkg
+Compiling package c_mux_bit_v12_0_1.c_mux_bit_v12_0_1_viv_comp
+Compiling package c_reg_fd_v12_0_1.c_reg_fd_v12_0_1_viv_comp
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture struct of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_legacy [\c_shift_ram_v12_0_8_legacy("kin...]
+Compiling architecture synth of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv [\c_shift_ram_v12_0_8_viv("kintex...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8 [\c_shift_ram_v12_0_8("kintex7",0...]
+Compiling architecture shift_arch of entity xil_defaultlib.shift [shift_default]
+Compiling module xil_defaultlib.udp_send(LOCAL_PORT_NUM=16'b1111...
+Compiling module xil_defaultlib.udp_receive
+Compiling module xil_defaultlib.udp_layer(LOCAL_PORT_NUM=16'b111...
+Compiling architecture struct of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_legacy [\c_shift_ram_v12_0_8_legacy("kin...]
+Compiling architecture synth of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv [\c_shift_ram_v12_0_8_viv("kintex...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8 [\c_shift_ram_v12_0_8("kintex7",0...]
+Compiling architecture shift_ip_arch of entity xil_defaultlib.shift_ip [shift_ip_default]
+Compiling module xil_defaultlib.icmp_packet_send
+Compiling module xil_defaultlib.IP_send(VERSION=4'b0100,IHL=4'b0...
+Compiling module xil_defaultlib.ip_header_checksum_check
+Compiling module xil_defaultlib.icmp_packet_process
+Compiling module xil_defaultlib.ip_receive(LOCAL_IP_ADDRESS=32'b...
+Compiling module xil_defaultlib.ip_layer(LOCAL_IP_ADDRESS=32'b11...
+Compiling module xil_defaultlib.arp_send(LOCAL_IP_ADDRESS=32'b11...
+Compiling module xil_defaultlib.arp_receive(LOCAL_IP_ADDRESS=32'...
+Compiling module xil_defaultlib.mac_cache
+Compiling module xil_defaultlib.arp_layer(LOCAL_IP_ADDRESS=32'b1...
+Compiling module xil_defaultlib.send_buffer
+Compiling module xil_defaultlib.receive_buffer
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_as [\fifo_generator_v13_0_1_bhv_as("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(0,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(0,0,12,...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(0,0,12,"...]
+Compiling architecture mac_send_fifo_arch of entity xil_defaultlib.MAC_send_fifo [mac_send_fifo_default]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_as [\fifo_generator_v13_0_1_bhv_as("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(0,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(0,0,7,"...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(0,0,7,"B...]
+Compiling architecture mac_tx_frame_info_fifo_arch of entity xil_defaultlib.mac_tx_frame_info_fifo [mac_tx_frame_info_fifo_default]
+Compiling architecture struct of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_legacy [\c_shift_ram_v12_0_8_legacy("kin...]
+Compiling architecture synth of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8_viv [\c_shift_ram_v12_0_8_viv("kintex...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_8.c_shift_ram_v12_0_8 [\c_shift_ram_v12_0_8("kintex7",0...]
+Compiling architecture shift_mac_arch of entity xil_defaultlib.shift_mac [shift_mac_default]
+Compiling module xil_defaultlib.CRC32_generation
+Compiling module xil_defaultlib.mac_send_flow_control
+Compiling module xil_defaultlib.MAC_Send(LOCAL_MAC_ADDRESS=48'b0...
+Compiling architecture mac_rcv_fifo_arch of entity xil_defaultlib.MAC_RCV_FIFO [mac_rcv_fifo_default]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_as [\fifo_generator_v13_0_1_bhv_as("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_preload0 [\fifo_generator_v13_0_1_bhv_prel...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(0,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(0,0,7,"...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(0,0,7,"B...]
+Compiling architecture mac_frame_length_fifo_arch of entity xil_defaultlib.mac_frame_length_fifo [mac_frame_length_fifo_default]
+Compiling module xil_defaultlib.CRC32_check
+Compiling module xil_defaultlib.mac_control_frame_process
+Compiling module xil_defaultlib.mac_receive(LOCAL_MAC_ADDRESS=48...
+Compiling module xil_defaultlib.mac_layer(LOCAL_MAC_ADDRESS=48'b...
+Compiling module xil_defaultlib.udp_ip_protocol_stack
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.BUFGCE_default
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module unisims_ver.ffsrce_fdpe
+Compiling module unisims_ver.FDPE(INIT=1'b1)
+Compiling module xil_defaultlib.tri_mode_ethernet_mac_0_reset_sy...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFIO
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module unisims_ver.IDELAYE2(IDELAY_VALUE=5)
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_bhv_as [\fifo_generator_v13_0_1_bhv_as("...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1_conv [\fifo_generator_v13_0_1_conv(0,0...]
+Compiling architecture behavioral of entity fifo_generator_v13_0_1.fifo_generator_vhdl_beh [\fifo_generator_vhdl_beh(0,0,12,...]
+Compiling architecture xilinx of entity fifo_generator_v13_0_1.fifo_generator_v13_0_1 [\fifo_generator_v13_0_1(0,0,12,"...]
+Compiling architecture udp_packet_fifo_arch of entity xil_defaultlib.udp_packet_fifo [udp_packet_fifo_default]
+Compiling module xil_defaultlib.udp_transmit_test_default
+Compiling module xil_defaultlib.test_top
+Compiling module xil_defaultlib.sim_top
+Compiling module xil_defaultlib.glbl
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot sim_top_behav

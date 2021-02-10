@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Jan 28 21:55:57 2021
+# Process ID: 24188
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23396 F:\FILE\FPGA\ZYNQ\08_LAN\01_udp_ip_rgmii\udp_ip.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'F:/Xilinx/Vivado/2018.3/scripts/Vivado_init.tcl'
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/01_udp_ip_rgmii/udp_ip.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'mac_frame_length_fifo' is locked:
+* Project containing IP 'mac_frame_length_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'mac_frame_length_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mac_receive_fifo' is locked:
+* Project containing IP 'mac_receive_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'mac_receive_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'shift_mac' is locked:
+* Project containing IP 'shift_mac' is read-only.
+* IP definition 'RAM-based Shift Register (12.0)' for IP 'shift_mac' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mac_tx_frame_info_fifo' is locked:
+* Project containing IP 'mac_tx_frame_info_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'mac_tx_frame_info_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'MAC_send_fifo' is locked:
+* Project containing IP 'MAC_send_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'MAC_send_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'shift_ip' is locked:
+* Project containing IP 'shift_ip' is read-only.
+* IP definition 'RAM-based Shift Register (12.0)' for IP 'shift_ip' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'echo_data_fifo' is locked:
+* Project containing IP 'echo_data_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'echo_data_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'shift' is locked:
+* Project containing IP 'shift' is read-only.
+* IP definition 'RAM-based Shift Register (12.0)' for IP 'shift' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_packet_fifo' is locked:
+* Project containing IP 'udp_packet_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_packet_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only.
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-231] Project 'udp_ip.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 799.074 ; gain = 178.734
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 28 21:58:45 2021...

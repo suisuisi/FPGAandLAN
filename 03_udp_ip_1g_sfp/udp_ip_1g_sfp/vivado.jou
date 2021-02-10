@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun May 24 02:17:09 2020
+# Process ID: 38052
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34876 F:\FILE\FPGA\ZYNQ\08_LAN\03_udp_ip_1g_sfp\udp_ip_1g_sfp\udp_ip_1g_sfp.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/udp_ip_1g_sfp.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 F:/FILE/FPGA/ZYNQ/08_LAN/TEST/1G/project_1 -force
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {axis_data_fifo_0 axis_data_fifo_1 axis_dwidth_converter_0 axis_dwidth_converter_1 clk_wiz_0 gig_ethernet_pcs_pma_0 tri_mode_ethernet_mac_0 udp_packet_fifo}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {axis_data_fifo_0 axis_data_fifo_1 axis_dwidth_converter_0 axis_dwidth_converter_1 clk_wiz_0 gig_ethernet_pcs_pma_0 tri_mode_ethernet_mac_0 udp_packet_fifo}] -no_script -sync -force -quiet

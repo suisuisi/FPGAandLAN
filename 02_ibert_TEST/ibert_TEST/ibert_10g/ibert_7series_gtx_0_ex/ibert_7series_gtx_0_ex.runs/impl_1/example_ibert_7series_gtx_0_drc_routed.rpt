@@ -1,0 +1,47 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Nov 18 12:27:55 2017
+| Host         : DESKTOP-E6H7MJN running 64-bit major release  (build 9200)
+| Command      : report_drc -file example_ibert_7series_gtx_0_drc_routed.rpt -pb example_ibert_7series_gtx_0_drc_routed.pb -rpx example_ibert_7series_gtx_0_drc_routed.rpx
+| Design       : example_ibert_7series_gtx_0
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+--------------------+------------+
+| Rule      | Severity | Description        | Violations |
++-----------+----------+--------------------+------------+
+| RTSTAT-10 | Warning  | No routable loads  | 1          |
+| ZPS7-1    | Warning  | PS7 block required | 1          |
++-----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-10#1 Warning
+No routable loads  
+358 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_ibert_core/inst/bscan_inst/RESET, u_ibert_core/inst/control0[35:0], u_ibert_core/inst/bscan_inst/in0, u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/U_PATTERN_HANDLER/rxdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/U_PATTERN_HANDLER/rxdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/U_PATTERN_HANDLER/rxdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/U_PATTERN_HANDLER/rxdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/U_PATTERN_HANDLER/txdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/U_PATTERN_HANDLER/txdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/U_PATTERN_HANDLER/txdata40_i[39:0], u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/U_PATTERN_HANDLER/txdata40_i[39:0].
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

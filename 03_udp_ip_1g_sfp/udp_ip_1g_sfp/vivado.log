@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun May 24 02:17:09 2020
+# Process ID: 38052
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34876 F:\FILE\FPGA\ZYNQ\08_LAN\03_udp_ip_1g_sfp\udp_ip_1g_sfp\udp_ip_1g_sfp.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/03_udp_ip_1g_sfp/udp_ip_1g_sfp/udp_ip_1g_sfp.xpr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0' is locked:
+* Project containing IP 'gig_ethernet_pcs_pma_0' is read-only.
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'gig_ethernet_pcs_pma_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'tri_mode_ethernet_mac_0' is locked:
+* Project containing IP 'tri_mode_ethernet_mac_0' is read-only.
+* IP definition 'Tri Mode Ethernet MAC (9.0)' for IP 'tri_mode_ethernet_mac_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-5177] IP tri_mode_ethernet_mac_0 will be generated with higher license level.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_0' is locked:
+* Project containing IP 'axis_data_fifo_0' is read-only.
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_1' is locked:
+* Project containing IP 'axis_data_fifo_1' is read-only.
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_1' is locked:
+* Project containing IP 'axis_dwidth_converter_1' is read-only.
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_0' is locked:
+* Project containing IP 'axis_dwidth_converter_0' is read-only.
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_packet_fifo' is locked:
+* Project containing IP 'udp_packet_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_packet_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only.
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-231] Project 'udp_ip_1g_sfp.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 800.492 ; gain = 185.152
+update_compile_order -fileset sources_1
+save_project_as project_1 F:/FILE/FPGA/ZYNQ/08_LAN/TEST/1G/project_1 -force
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'gig_ethernet_pcs_pma_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'tri_mode_ethernet_mac_0' is locked:
+* IP definition 'Tri Mode Ethernet MAC (9.0)' for IP 'tri_mode_ethernet_mac_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_0' is locked:
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_1' is locked:
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_1' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_packet_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_packet_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'gig_ethernet_pcs_pma_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'tri_mode_ethernet_mac_0' is locked:
+* IP definition 'Tri Mode Ethernet MAC (9.0)' for IP 'tri_mode_ethernet_mac_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-5177] IP tri_mode_ethernet_mac_0 will be generated with higher license level.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_0' is locked:
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_data_fifo_1' is locked:
+* IP definition 'AXI4-Stream Data FIFO (2.0)' for IP 'axis_data_fifo_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_1' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_packet_fifo' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_packet_fifo' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+save_project_as: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 997.578 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {axis_data_fifo_0 axis_data_fifo_1 axis_dwidth_converter_0 axis_dwidth_converter_1 clk_wiz_0 gig_ethernet_pcs_pma_0 tri_mode_ethernet_mac_0 udp_packet_fifo}] -log ip_upgrade.log
+Upgrading 'axis_data_fifo_0'
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [IP_Flow 19-3422] Upgraded axis_data_fifo_0 (AXI4-Stream Data FIFO 2.0) from revision 2 to revision 0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_data_fifo_0'...
+Upgrading 'axis_data_fifo_1'
+INFO: [IP_Flow 19-3422] Upgraded axis_data_fifo_1 (AXI4-Stream Data FIFO 2.0) from revision 2 to revision 0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_data_fifo_1'...
+Upgrading 'axis_dwidth_converter_0'
+INFO: [IP_Flow 19-3422] Upgraded axis_dwidth_converter_0 (AXI4-Stream Data Width Converter 1.1) from revision 19 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_dwidth_converter_0'...
+Upgrading 'axis_dwidth_converter_1'
+INFO: [IP_Flow 19-3422] Upgraded axis_dwidth_converter_1 (AXI4-Stream Data Width Converter 1.1) from revision 19 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_dwidth_converter_1'...
+Upgrading 'clk_wiz_0'
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 4 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'gig_ethernet_pcs_pma_0'
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : zynq
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xc7z035ffg676-2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [IP_Flow 19-3422] Upgraded gig_ethernet_pcs_pma_0 (1G/2.5G Ethernet PCS/PMA or SGMII 16.1) from revision 7 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gig_ethernet_pcs_pma_0'...
+Upgrading 'tri_mode_ethernet_mac_0'
+INFO: [IP_Flow 19-3422] Upgraded tri_mode_ethernet_mac_0 (Tri Mode Ethernet MAC 9.0) from revision 15 to revision 13
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'tri_mode_ethernet_mac_0'...
+Upgrading 'udp_packet_fifo'
+INFO: [IP_Flow 19-3422] Upgraded udp_packet_fifo (FIFO Generator 13.2) from revision 5 to revision 3
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'udp_packet_fifo'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/08_LAN/TEST/1G/project_1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 1225.152 ; gain = 227.574
+export_ip_user_files -of_objects [get_ips {axis_data_fifo_0 axis_data_fifo_1 axis_dwidth_converter_0 axis_dwidth_converter_1 clk_wiz_0 gig_ethernet_pcs_pma_0 tri_mode_ethernet_mac_0 udp_packet_fifo}] -no_script -sync -force -quiet
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : zynq
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: PART : xc7z035ffg676-2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.1-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 24 03:38:33 2020...

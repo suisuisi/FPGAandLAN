@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mac_frame_length_fifo_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/mac_frame_length_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MAC_RCV_FIFO_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/MAC_RCV_FIFO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MAC_send_fifo_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/MAC_send_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_tx_frame_info_fifo_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/mac_tx_frame_info_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="shift_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/shift_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="shift_ip_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/shift_ip_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="shift_mac_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/shift_mac_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="udp_packet_fifo_synth_1" LaunchDir="F:/FPGA_project/vivado/kc705/udp_ip/udp_ip.runs/udp_packet_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

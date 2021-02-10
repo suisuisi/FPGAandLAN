@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Jan 24 01:46:37 2021
+# Process ID: 28496
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23108 F:\FILE\FPGA\ZYNQ\08_LAN\02_ibert_TEST\S08_CH01_ibert_TEST\S08_CH01_ibert_1_25g\ibert_7series_gtx_0_ex\ibert_7series_gtx_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'F:/Xilinx/Vivado/2018.3/scripts/Vivado_init.tcl'
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex'
+INFO: [Project 1-313] Project file moved from 'D:/vivado_project/miz7035/ibert_1_25g/ibert_7series_gtx_0_ex' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'ibert_7series_gtx_0' is locked:
+* IP definition 'IBERT 7 Series GTX (3.0)' for IP 'ibert_7series_gtx_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'ibert_7series_gtx_0_ex.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 793.734 ; gain = 155.164
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:ip:ibert_7series_gtx:3.0 [get_ips  ibert_7series_gtx_0] -log ip_upgrade.log
+Upgrading 'ibert_7series_gtx_0'
+INFO: [IP_Flow 19-3422] Upgraded ibert_7series_gtx_0 (IBERT 7 Series GTX 3.0) from revision 15 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ibert_7series_gtx_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/08_LAN/02_ibert_TEST/S08_CH01_ibert_TEST/S08_CH01_ibert_1_25g/ibert_7series_gtx_0_ex/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 992.977 ; gain = 165.910
+export_ip_user_files -of_objects [get_ips ibert_7series_gtx_0] -no_script -sync -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 24 13:31:50 2021...

@@ -1,0 +1,2 @@
+udp_packet_fifo.v,verilog,xil_defaultlib,../../../../udp_ip_1g_sfp.srcs/sources_1/ip/udp_packet_fifo/sim/udp_packet_fifo.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

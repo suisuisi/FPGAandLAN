@@ -1,0 +1,5 @@
+verilog xil_defaultlib "../../../../udp_ip_1g_sfp.srcs/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" --include "../../../ipstatic/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

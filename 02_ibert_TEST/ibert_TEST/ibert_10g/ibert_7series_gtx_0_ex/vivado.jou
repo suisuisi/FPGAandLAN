@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 15 21:32:22 2017
+# Process ID: 5900
+# Current directory: f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex
+# Command line: vivado.exe -source f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_10g.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl
+# Log file: f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex/vivado.log
+# Journal file: f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_10g.srcs/sources_1/ip/ibert_7series_gtx_0/ibert_7series_gtx_0_ex.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+detect_hw_sio_links
+set_property TX_PATTERN {PRBS 31-bit} [get_hw_sio_links {localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX}]
+commit_hw_sio [get_hw_sio_links {localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX}]
+set_property RX_PATTERN {PRBS 31-bit} [get_hw_sio_links {localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX}]
+commit_hw_sio [get_hw_sio_links {localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX}]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_0}]]
+set xil_newScan [create_hw_sio_scan -description {Scan 0} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {f:/FPGA_project/vivado/miz7035/ibert_10g/ibert_7series_gtx_0_ex/ibert_7series_gtx_0_ex.runs/impl_1/example_ibert_7series_gtx_0.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+detect_hw_sio_links
+remove_hw_sio_link [get_hw_sio_links {localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y15/RX}]
+set_property TX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+set_property RX_PATTERN {PRBS 31-bit} [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 1 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+set_property LOGIC.MGT_ERRCNT_RESET_CTRL 0 [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+commit_hw_sio [get_hw_sio_links -of_objects [get_hw_sio_linkgroups {LINKGROUP_1}]]
+set xil_newScan [create_hw_sio_scan -description {Scan 1} 2d_full_eye  [lindex [get_hw_sio_links localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y12/TX->localhost:3121/xilinx_tcf/Digilent/210249854643/1_1_0/IBERT/Quad_112/MGT_X0Y12/RX] 0 ]]
+run_hw_sio_scan [get_hw_sio_scans $xil_newScan]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854643}
+disconnect_hw_server localhost:3121

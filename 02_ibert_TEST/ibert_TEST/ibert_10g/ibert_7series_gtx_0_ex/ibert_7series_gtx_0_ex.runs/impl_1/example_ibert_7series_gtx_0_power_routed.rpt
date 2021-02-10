@@ -1,0 +1,948 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date             : Sat Nov 18 12:28:04 2017
+| Host             : DESKTOP-E6H7MJN running 64-bit major release  (build 9200)
+| Command          : report_power -file example_ibert_7series_gtx_0_power_routed.rpt -pb example_ibert_7series_gtx_0_power_summary_routed.pb -rpx example_ibert_7series_gtx_0_power_routed.rpx
+| Design           : example_ibert_7series_gtx_0
+| Device           : xc7z035ffg676-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 2.161  |
+| Dynamic (W)              | 1.912  |
+| Device Static (W)        | 0.249  |
+| Effective TJA (C/W)      | 1.9    |
+| Max Ambient (C)          | 80.9   |
+| Junction Temperature (C) | 29.1   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.091 |       12 |       --- |             --- |
+| Slice Logic              |     0.025 |    19569 |       --- |             --- |
+|   LUT as Logic           |     0.020 |     6101 |    171900 |            3.55 |
+|   Register               |     0.003 |    11787 |    343800 |            3.43 |
+|   CARRY4                 |     0.001 |      322 |     54650 |            0.59 |
+|   LUT as Shift Register  |    <0.001 |       64 |     70400 |            0.09 |
+|   F7/F8 Muxes            |    <0.001 |      401 |    218600 |            0.18 |
+|   LUT as Distributed RAM |    <0.001 |       24 |     70400 |            0.03 |
+|   Others                 |     0.000 |      444 |       --- |             --- |
+| Signals                  |     0.037 |    16026 |       --- |             --- |
+| MMCM                     |     0.105 |        1 |         8 |           12.50 |
+| I/O                      |     0.000 |        4 |       250 |            1.60 |
+| GTX                      |     1.654 |        4 |         8 |           50.00 |
+| Static Power             |     0.249 |          |           |                 |
+| Total                    |     2.161 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.398 |       0.338 |      0.060 |
+| Vccaux    |       1.800 |     0.112 |       0.058 |      0.054 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.986 |       0.982 |      0.004 |
+| MGTAVtt   |       1.200 |     0.396 |       0.391 |      0.005 |
+| MGTVccaux |       1.800 |     0.010 |       0.010 |      0.000 |
+| Vccpint   |       1.000 |     0.018 |       0.000 |      0.018 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------+-----------------------------------------------------+-----------------+
+| Clock     | Domain                                              | Constraint (ns) |
++-----------+-----------------------------------------------------+-----------------+
+| J_CLK     | u_ibert_core/inst/bscan_inst/DRCK                   |            30.0 |
+| Q3_RXCLK0 | u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/RXOUTCLK_O |             3.1 |
+| Q3_RXCLK1 | u_ibert_core/inst/QUAD[0].u_q/CH[1].u_ch/RXOUTCLK_O |             3.1 |
+| Q3_RXCLK2 | u_ibert_core/inst/QUAD[0].u_q/CH[2].u_ch/RXOUTCLK_O |             3.1 |
+| Q3_RXCLK3 | u_ibert_core/inst/QUAD[0].u_q/CH[3].u_ch/RXOUTCLK_O |             3.1 |
+| Q3_TX0    | u_ibert_core/inst/QUAD[0].u_q/CH[0].u_ch/TXOUTCLK_O |             3.1 |
+| REFCLK0_0 | GTREFCLK0P_I[0]                                     |             6.4 |
+| REFCLK0_1 | GTREFCLK1P_I[0]                                     |             6.4 |
+| clkfbout  | u_ibert_core/inst/clkfbout                          |            32.0 |
+| dclk_mmcm | u_ibert_core/inst/dclk_mmcm                         |            10.0 |
++-----------+-----------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------------------+-----------+
+| Name                                               | Power (W) |
++----------------------------------------------------+-----------+
+| example_ibert_7series_gtx_0                        |     1.912 |
+|   u_ibert_core                                     |     1.912 |
+|     inst                                           |     1.912 |
+|       QUAD[0].u_q                                  |     1.802 |
+|         CH[0].u_ch                                 |     0.450 |
+|           U_CHANNEL_REGS                           |     0.004 |
+|             U_XSDB_SLAVE                           |     0.001 |
+|             reg_20A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20E                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_210                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_211                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_212                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_213                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_214                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_215                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_216                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_217                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_218                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_219                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_21F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_220                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_221                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_222                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_223                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_224                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_225                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_226                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_227                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_300                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_301                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_302                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_303                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_304                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_305                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_306                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_307                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_308                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_310                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_311                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_312                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_313                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_314                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_315                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_316                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_317                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_318                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_319                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31A                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31C                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31D                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_321                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_333                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_334                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_335                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_336                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_344                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_345                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_346                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|           U_PATTERN_HANDLER                        |     0.027 |
+|             bit_err_counter                        |     0.002 |
+|             gen32.patchk20                         |     0.016 |
+|               i_ones_counter                       |     0.003 |
+|               patgen_rx                            |     0.007 |
+|                 pattern_15bit                      |     0.001 |
+|                   bit32.p15_32                     |     0.001 |
+|                 pattern_23bit                      |     0.001 |
+|                   bit32.p23_32                     |     0.001 |
+|                 pattern_31bit                      |     0.002 |
+|                   bit32.p31_32                     |     0.002 |
+|                 pattern_7bit                       |    <0.001 |
+|                   bit32.p7_32                      |    <0.001 |
+|                 pattern_clk2                       |    <0.001 |
+|                 pattern_clk20                      |    <0.001 |
+|             gen32.patgen32                         |     0.007 |
+|               pattern_15bit                        |     0.001 |
+|                 bit32.p15_32                       |     0.001 |
+|               pattern_23bit                        |     0.002 |
+|                 bit32.p23_32                       |     0.002 |
+|               pattern_31bit                        |     0.002 |
+|                 bit32.p31_32                       |     0.002 |
+|               pattern_7bit                         |     0.001 |
+|                 bit32.p7_32                        |     0.001 |
+|             rx_word_counter                        |     0.002 |
+|             u_lev                                  |    <0.001 |
+|           U_RESET_CONTROLLER                       |    <0.001 |
+|           U_RXCDR_RESET                            |    <0.001 |
+|           U_RXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_RXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|           U_TXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_TXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|         CH[1].u_ch                                 |     0.450 |
+|           U_CHANNEL_REGS                           |     0.004 |
+|             U_XSDB_SLAVE                           |     0.001 |
+|             reg_20A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20E                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_210                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_211                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_212                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_213                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_214                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_215                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_216                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_217                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_218                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_219                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_21F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_220                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_221                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_222                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_223                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_224                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_225                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_226                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_227                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_300                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_301                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_302                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_303                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_304                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_305                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_306                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_307                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_308                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_310                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_311                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_312                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_313                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_314                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_315                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_316                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_317                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_318                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_319                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31A                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31C                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31D                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_321                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_333                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_334                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_335                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_336                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_344                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_345                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_346                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|           U_PATTERN_HANDLER                        |     0.027 |
+|             bit_err_counter                        |     0.002 |
+|             gen32.patchk20                         |     0.016 |
+|               i_ones_counter                       |     0.003 |
+|               patgen_rx                            |     0.007 |
+|                 pattern_15bit                      |     0.001 |
+|                   bit32.p15_32                     |     0.001 |
+|                 pattern_23bit                      |     0.001 |
+|                   bit32.p23_32                     |     0.001 |
+|                 pattern_31bit                      |     0.002 |
+|                   bit32.p31_32                     |     0.002 |
+|                 pattern_7bit                       |    <0.001 |
+|                   bit32.p7_32                      |    <0.001 |
+|                 pattern_clk2                       |    <0.001 |
+|                 pattern_clk20                      |    <0.001 |
+|             gen32.patgen32                         |     0.007 |
+|               pattern_15bit                        |     0.001 |
+|                 bit32.p15_32                       |     0.001 |
+|               pattern_23bit                        |     0.002 |
+|                 bit32.p23_32                       |     0.002 |
+|               pattern_31bit                        |     0.002 |
+|                 bit32.p31_32                       |     0.002 |
+|               pattern_7bit                         |     0.001 |
+|                 bit32.p7_32                        |     0.001 |
+|             rx_word_counter                        |     0.002 |
+|             u_lev                                  |    <0.001 |
+|           U_RESET_CONTROLLER                       |    <0.001 |
+|           U_RXCDR_RESET                            |    <0.001 |
+|           U_RXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_RXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|           U_TXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_TXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|         CH[2].u_ch                                 |     0.450 |
+|           U_CHANNEL_REGS                           |     0.004 |
+|             U_XSDB_SLAVE                           |    <0.001 |
+|             reg_20A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20E                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_210                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_211                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_212                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_213                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_214                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_215                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_216                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_217                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_218                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_219                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_21F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_220                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_221                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_222                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_223                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_224                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_225                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_226                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_227                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_300                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_301                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_302                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_303                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_304                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_305                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_306                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_307                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_308                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_310                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_311                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_312                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_313                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_314                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_315                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_316                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_317                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_318                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_319                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31A                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31C                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31D                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_321                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_333                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_334                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_335                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_336                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_344                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_345                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_346                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|           U_PATTERN_HANDLER                        |     0.027 |
+|             bit_err_counter                        |     0.002 |
+|             gen32.patchk20                         |     0.016 |
+|               i_ones_counter                       |     0.003 |
+|               patgen_rx                            |     0.007 |
+|                 pattern_15bit                      |     0.001 |
+|                   bit32.p15_32                     |     0.001 |
+|                 pattern_23bit                      |     0.001 |
+|                   bit32.p23_32                     |     0.001 |
+|                 pattern_31bit                      |     0.002 |
+|                   bit32.p31_32                     |     0.002 |
+|                 pattern_7bit                       |    <0.001 |
+|                   bit32.p7_32                      |    <0.001 |
+|                 pattern_clk2                       |    <0.001 |
+|                 pattern_clk20                      |    <0.001 |
+|             gen32.patgen32                         |     0.007 |
+|               pattern_15bit                        |     0.001 |
+|                 bit32.p15_32                       |     0.001 |
+|               pattern_23bit                        |     0.002 |
+|                 bit32.p23_32                       |     0.002 |
+|               pattern_31bit                        |     0.002 |
+|                 bit32.p31_32                       |     0.002 |
+|               pattern_7bit                         |     0.001 |
+|                 bit32.p7_32                        |     0.001 |
+|             rx_word_counter                        |     0.002 |
+|             u_lev                                  |    <0.001 |
+|           U_RESET_CONTROLLER                       |    <0.001 |
+|           U_RXCDR_RESET                            |    <0.001 |
+|           U_RXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_RXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|           U_TXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_TXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|         CH[3].u_ch                                 |     0.449 |
+|           U_CHANNEL_REGS                           |     0.004 |
+|             U_XSDB_SLAVE                           |    <0.001 |
+|             reg_20A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20E                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_20F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_210                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_211                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_212                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_213                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_214                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_215                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_216                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_217                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_218                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_219                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21B                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21D                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_21E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_21F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_220                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_221                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_222                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_223                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_224                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_225                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_226                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_227                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_300                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_301                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_302                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_303                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_304                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_305                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_306                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_307                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_308                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30A                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30C                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_30E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_30F                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_310                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_311                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_312                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_313                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_314                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_315                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_316                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_317                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_318                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_319                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31A                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31B                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31C                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31D                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31E                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_31F                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_321                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_333                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_334                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_335                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_336                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_344                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_345                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_346                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|           U_PATTERN_HANDLER                        |     0.026 |
+|             bit_err_counter                        |     0.002 |
+|             gen32.patchk20                         |     0.015 |
+|               i_ones_counter                       |     0.003 |
+|               patgen_rx                            |     0.007 |
+|                 pattern_15bit                      |     0.001 |
+|                   bit32.p15_32                     |     0.001 |
+|                 pattern_23bit                      |     0.001 |
+|                   bit32.p23_32                     |     0.001 |
+|                 pattern_31bit                      |     0.002 |
+|                   bit32.p31_32                     |     0.002 |
+|                 pattern_7bit                       |    <0.001 |
+|                   bit32.p7_32                      |    <0.001 |
+|                 pattern_clk2                       |    <0.001 |
+|                 pattern_clk20                      |    <0.001 |
+|             gen32.patgen32                         |     0.007 |
+|               pattern_15bit                        |     0.001 |
+|                 bit32.p15_32                       |     0.001 |
+|               pattern_23bit                        |     0.002 |
+|                 bit32.p23_32                       |     0.002 |
+|               pattern_31bit                        |     0.002 |
+|                 bit32.p31_32                       |     0.002 |
+|               pattern_7bit                         |     0.001 |
+|                 bit32.p7_32                        |     0.001 |
+|             rx_word_counter                        |     0.002 |
+|             u_lev                                  |    <0.001 |
+|           U_RESET_CONTROLLER                       |    <0.001 |
+|           U_RXCDR_RESET                            |    <0.001 |
+|           U_RXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_RXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|           U_TXUSRCLK2_FREQ_COUNTER                 |    <0.001 |
+|           U_TXUSRCLK_FREQ_COUNTER                  |    <0.001 |
+|         u_common                                   |     0.002 |
+|           U_COMPLEX_REGS                           |    <0.001 |
+|             U_XSDB_SLAVE                           |    <0.001 |
+|             reg_200                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_201                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_202                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_203                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_204                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_300                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_301                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_302                                |    <0.001 |
+|               I_EN_CTL_EQ1.U_CTL                   |    <0.001 |
+|             reg_344                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_345                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|             reg_346                                |    <0.001 |
+|               I_EN_STAT_EQ1.U_STAT                 |    <0.001 |
+|           u_clocking                               |     0.001 |
+|       UUT_MASTER                                   |     0.003 |
+|         U_ICON_INTERFACE                           |     0.002 |
+|           U_CMD1                                   |    <0.001 |
+|           U_CMD2                                   |    <0.001 |
+|           U_CMD3                                   |    <0.001 |
+|           U_CMD4                                   |    <0.001 |
+|           U_CMD5                                   |    <0.001 |
+|           U_CMD6_RD                                |    <0.001 |
+|             U_RD_FIFO                              |    <0.001 |
+|               SUBCORE_FIFO.xsdb_rdfifo_inst        |    <0.001 |
+|                 inst_fifo_gen                      |    <0.001 |
+|                   gconvfifo.rf                     |    <0.001 |
+|                     grf.rf                         |    <0.001 |
+|                       gntv_or_sync_fifo.gcx.clkx   |    <0.001 |
+|                         gsync_stage[1].rd_stg_inst |    <0.001 |
+|                         gsync_stage[1].wr_stg_inst |    <0.001 |
+|                         gsync_stage[2].rd_stg_inst |    <0.001 |
+|                         gsync_stage[2].wr_stg_inst |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.rd     |    <0.001 |
+|                         gr1.rfwft                  |    <0.001 |
+|                         gras.rsts                  |    <0.001 |
+|                         rpntr                      |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.wr     |    <0.001 |
+|                         gwas.wsts                  |    <0.001 |
+|                         wpntr                      |    <0.001 |
+|                       gntv_or_sync_fifo.mem        |    <0.001 |
+|                         gdm.dm                     |    <0.001 |
+|                           RAM_reg_0_15_0_5         |    <0.001 |
+|                           RAM_reg_0_15_12_15       |    <0.001 |
+|                           RAM_reg_0_15_6_11        |    <0.001 |
+|                       rstblk                       |    <0.001 |
+|           U_CMD6_WR                                |    <0.001 |
+|             U_WR_FIFO                              |    <0.001 |
+|               SUBCORE_FIFO.xsdb_wrfifo_inst        |    <0.001 |
+|                 inst_fifo_gen                      |    <0.001 |
+|                   gconvfifo.rf                     |    <0.001 |
+|                     grf.rf                         |    <0.001 |
+|                       gntv_or_sync_fifo.gcx.clkx   |    <0.001 |
+|                         gsync_stage[1].rd_stg_inst |    <0.001 |
+|                         gsync_stage[1].wr_stg_inst |    <0.001 |
+|                         gsync_stage[2].rd_stg_inst |    <0.001 |
+|                         gsync_stage[2].wr_stg_inst |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.rd     |    <0.001 |
+|                         gras.rsts                  |    <0.001 |
+|                         rpntr                      |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.wr     |    <0.001 |
+|                         gwas.wsts                  |    <0.001 |
+|                         wpntr                      |    <0.001 |
+|                       gntv_or_sync_fifo.mem        |    <0.001 |
+|                         gdm.dm                     |    <0.001 |
+|                           RAM_reg_0_15_0_5         |    <0.001 |
+|                           RAM_reg_0_15_12_15       |    <0.001 |
+|                           RAM_reg_0_15_6_11        |    <0.001 |
+|                       rstblk                       |    <0.001 |
+|           U_CMD7_CTL                               |    <0.001 |
+|           U_CMD7_STAT                              |    <0.001 |
+|           U_STATIC_STATUS                          |    <0.001 |
+|         U_XSDB_ADDRESS_CONTROLLER                  |    <0.001 |
+|         U_XSDB_BURST_WD_LEN_CONTROLLER             |    <0.001 |
+|         U_XSDB_BUS_CONTROLLER                      |    <0.001 |
+|           U_RD_ABORT_FLAG                          |    <0.001 |
+|           U_RD_REQ_FLAG                            |    <0.001 |
+|           U_TIMER                                  |    <0.001 |
+|         U_XSDB_BUS_MSTR2SL_PORT_IFACE              |    <0.001 |
+|           U_RD_DIN_BUS_MUX                         |    <0.001 |
+|       U_ICON                                       |    <0.001 |
+|         U_CMD                                      |    <0.001 |
+|         U_STAT                                     |    <0.001 |
+|         U_SYNC                                     |    <0.001 |
+|       bscan_inst                                   |    <0.001 |
+|       u_bufr                                       |    <0.001 |
++----------------------------------------------------+-----------+
+
+

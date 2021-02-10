@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Tue Mar 28 09:42:53 2017
+| Host         : 201607062058-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_frame_length_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the update of mac_frame_length_fifo (xilinx.com:ip:fifo_generator:13.0 (Rev. 1)) to current project options.
+

@@ -1,0 +1,103 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Mar 30 21:00:23 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : report_methodology -file udp_transmit_test_methodology_drc_routed.rpt -pb udp_transmit_test_methodology_drc_routed.pb -rpx udp_transmit_test_methodology_drc_routed.rpx
+| Design       : udp_transmit_test
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 12
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| TIMING-9  | Warning  | Unknown CDC Logic                                                 | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                                     | 1          |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                                | 4          |
+| TIMING-47 | Warning  | False path or asynchronous clock group between synchronous clocks | 4          |
+| XDCH-1    | Warning  | Hold option missing in multicycle path constraint                 | 2          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on key1 relative to clock(s) phy1_rx_clk
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 8 in the Timing Constraints window in Vivado IDE) between clocks clk_out2_clk_wiz_0 and phy1_rx_clk overrides a set_max_delay -datapath_only (position 34). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 8 in the Timing Constraints window in Vivado IDE) between clocks clk_out2_clk_wiz_0 and phy1_rx_clk overrides a set_max_delay -datapath_only (position 38). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 8 in the Timing Constraints window in Vivado IDE) between clocks phy1_rx_clk and clk_out2_clk_wiz_0 overrides a set_max_delay -datapath_only (position 32). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 8 in the Timing Constraints window in Vivado IDE) between clocks phy1_rx_clk and clk_out2_clk_wiz_0 overrides a set_max_delay -datapath_only (position 36). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path or asynchronous clock group between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and phy_tx_clk (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#2 Warning
+False path or asynchronous clock group between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and phy_tx_clk (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#3 Warning
+False path or asynchronous clock group between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and phy_tx_clk (see constraint position 16 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+TIMING-47#4 Warning
+False path or asynchronous clock group between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks clk_out2_clk_wiz_0 and phy_tx_clk (see constraint position 17 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+Related violations: <none>
+
+XDCH-1#1 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -end -fall_from [get_clocks -include_generated_clocks -of [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1]] -fall_to [get_clocks phy_tx_clk] 0
+F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch/udp_ip.srcs/constrs_1/new/udp_ip.xdc (Line: 94)
+Related violations: <none>
+
+XDCH-1#2 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -end -rise_from [get_clocks -include_generated_clocks -of [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1]] -rise_to [get_clocks phy_tx_clk] 0
+F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch/udp_ip.srcs/constrs_1/new/udp_ip.xdc (Line: 93)
+Related violations: <none>
+
+

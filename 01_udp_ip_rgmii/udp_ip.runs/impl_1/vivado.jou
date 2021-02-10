@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Mar 30 20:57:41 2020
+# Process ID: 3100
+# Current directory: F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch/udp_ip.runs/impl_1
+# Command line: vivado.exe -log udp_transmit_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source udp_transmit_test.tcl -notrace
+# Log file: F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch/udp_ip.runs/impl_1/udp_transmit_test.vdi
+# Journal file: F:/FILE/FPGA/test/CH01_udp_ip_rgmii/udp_ip_rgmii_1ch/udp_ip.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source udp_transmit_test.tcl -notrace

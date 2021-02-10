@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Oct 09 08:44:56 2016
+# Process ID: 3884
+# Current directory: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3828 D:\vivado_project\kc705\udp_ip_rgmii\udp_ip\udp_ip.xpr
+# Log file: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/vivado.log
+# Journal file: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FPGA_project/vivado/kc705/udp_ip_rgmii/udp_ip' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 815.793 ; gain = 176.375
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Oct 09 08:58:17 2016] Launched synth_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/synth_1/runme.log
+[Sun Oct 09 08:58:17 2016] Launched impl_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Oct 09 09:06:56 2016] Launched synth_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/synth_1/runme.log
+[Sun Oct 09 09:06:56 2016] Launched impl_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_early.xdc]
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_early.xdc]
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test.xdc]
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test.xdc]
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_late.xdc]
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 1093.426 ; gain = 1.891
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 1093.426 ; gain = 1.891
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1214.352 ; gain = 358.605
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+set_clock_groups -name async_clock -asynchronous -group [get_clocks phy_rx_clk] -group [get_clocks [list  [get_clocks -of_objects [get_pins mmcm_adv_inst/CLKOUT0]]]]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Oct 09 09:22:25 2016] Launched synth_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/synth_1/runme.log
+[Sun Oct 09 09:22:25 2016] Launched impl_1...
+Run output will be captured here: D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.runs/impl_1/runme.log
+close_design
+ERROR: [Common 17-190] Invalid Tcl eval of 'get_clocks -of_objects [get_pins mmcm_adv_inst/CLKOUT0]' during processing of event '43'.
+ERROR: [Common 17-190] Invalid Tcl eval of 'get_clocks -of_objects [get_pins mmcm_adv_inst/CLKOUT0]' during processing of event '43'.
+ERROR: [Common 17-39] 'close_design' failed due to earlier errors.
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_early.xdc]
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_early.xdc]
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.srcs/constrs_1/new/udp_ip.xdc:103]
+INFO: [Timing 38-2] Deriving generated clocks [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/udp_ip.srcs/constrs_1/new/udp_ip.xdc:103]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1841.469 ; gain = 0.000
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test.xdc]
+Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_late.xdc]
+Finished Parsing XDC File [D:/vivado_project/kc705/udp_ip_rgmii/udp_ip/.Xil/Vivado-3884-201607062058-PC/dcp/udp_transmit_test_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 1841.469 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 1841.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.469 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 09 17:25:18 2016...
