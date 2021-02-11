@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 01 08:52:39 2017
+# Process ID: 6632
+# Current directory: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4392 F:\Miz702N\free\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Miz_sys.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_gpio_0_0
+system_axis_data_fifo_0_1
+system_processing_system7_0_0
+system_SSD1306_OLED_ML_0_0
+system_axi_dma_0_0
+system_rst_processing_system7_0_50M_0
+system_auto_pc_0
+system_xbar_0
+system_ila_0_0
+system_auto_pc_1
+system_auto_us_0
+
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 966.863 ; gain = 252.832
+launch_sdk -workspace F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 01 09:12:28 2017...

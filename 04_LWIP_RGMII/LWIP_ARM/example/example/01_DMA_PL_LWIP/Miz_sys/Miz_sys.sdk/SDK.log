@@ -1,0 +1,170 @@
+09:00:29 INFO  : Registering command handlers for SDK TCF services
+09:00:29 INFO  : Launching XSCT server: xsct.bat -interactive F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+09:00:30 INFO  : XSCT server has started successfully.
+09:00:30 INFO  : Successfully done setting XSCT server connection channel  
+09:00:30 INFO  : Successfully done setting SDK workspace  
+09:00:30 INFO  : Processing command line option -hwspec F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf.
+09:08:22 INFO  : Refreshed build settings on project AXI_DMA_PL_PS_Test
+09:08:58 ERROR : Failed to regenerate sources for BSP project AXI_DMA_PL_PS_Test_bsp
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:794)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:749)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:170)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete '/AXI_DMA_PL_PS_Test_bsp/ps7_cortexa9_0'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:354)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:358)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:810)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1831)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:781)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:749)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:170)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xcoresightpsdcc.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xdevcfg_hw.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xenv_standalone.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xil_cache.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xil_hal.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include\xil_mmu.h.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0\include.
+Contains: Could not delete: F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\AXI_DMA_PL_PS_Test_bsp\ps7_cortexa9_0.
+09:09:40 INFO  : No changes in MSS file content so not generating sources.
+09:11:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:11:48 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855396' is selected.
+09:11:48 INFO  : 'jtag frequency' command is executed.
+09:11:48 INFO  : Sourcing of 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:11:48 INFO  : Context for 'APU' is selected.
+09:11:49 INFO  : System reset is completed.
+09:11:52 INFO  : 'after 3000' command is executed.
+09:11:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1' command is executed.
+09:12:03 INFO  : FPGA configured successfully with bitstream "F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit"
+09:12:03 INFO  : Context for 'APU' is selected.
+09:12:03 INFO  : Hardware design information is loaded from 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf'.
+09:12:03 INFO  : Context for 'APU' is selected.
+09:12:03 INFO  : 'ps7_init' command is executed.
+09:12:03 INFO  : 'ps7_post_config' command is executed.
+09:12:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:12:04 INFO  : The application 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:12:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1
+fpga -file F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+loadhw F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+dow F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf
+----------------End of Script----------------
+
+09:12:04 INFO  : Memory regions updated for context APU
+09:12:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:12:04 INFO  : 'con' command is executed.
+09:12:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+con
+----------------End of Script----------------
+
+09:12:04 INFO  : Launch script is exported to file 'F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_dma_pl_ps_test.elf_on_local.tcl'
+09:14:59 INFO  : Disconnected from the channel tcfchan#1.
+09:15:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:15:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855396' is selected.
+09:15:00 INFO  : 'jtag frequency' command is executed.
+09:15:00 INFO  : Sourcing of 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:15:00 INFO  : Context for 'APU' is selected.
+09:15:01 INFO  : System reset is completed.
+09:15:04 INFO  : 'after 3000' command is executed.
+09:15:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1' command is executed.
+09:15:15 INFO  : FPGA configured successfully with bitstream "F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit"
+09:15:15 INFO  : Context for 'APU' is selected.
+09:15:16 INFO  : Hardware design information is loaded from 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf'.
+09:15:16 INFO  : Context for 'APU' is selected.
+09:15:17 INFO  : 'ps7_init' command is executed.
+09:15:17 INFO  : 'ps7_post_config' command is executed.
+09:15:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:17 INFO  : The application 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:15:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1
+fpga -file F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+loadhw F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+dow F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf
+----------------End of Script----------------
+
+09:15:17 INFO  : Memory regions updated for context APU
+09:15:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:17 INFO  : 'con' command is executed.
+09:15:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+con
+----------------End of Script----------------
+
+09:15:17 INFO  : Launch script is exported to file 'F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_dma_pl_ps_test.elf_on_local.tcl'
+09:28:58 INFO  : Disconnected from the channel tcfchan#2.
+09:28:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:59 INFO  : Jtag cable 'Digilent JTAG-HS1 210249855396' is selected.
+09:28:59 INFO  : 'jtag frequency' command is executed.
+09:28:59 INFO  : Sourcing of 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:28:59 INFO  : Context for 'APU' is selected.
+09:28:59 INFO  : System reset is completed.
+09:29:02 INFO  : 'after 3000' command is executed.
+09:29:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1' command is executed.
+09:29:14 INFO  : FPGA configured successfully with bitstream "F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit"
+09:29:14 INFO  : Context for 'APU' is selected.
+09:29:15 INFO  : Hardware design information is loaded from 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf'.
+09:29:15 INFO  : Context for 'APU' is selected.
+09:29:16 INFO  : 'ps7_init' command is executed.
+09:29:16 INFO  : 'ps7_post_config' command is executed.
+09:29:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:29:16 INFO  : The application 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:29:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855396" && level==0} -index 1
+fpga -file F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/dma_system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+loadhw F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+dow F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/AXI_DMA_PL_PS_Test/Debug/AXI_DMA_PL_PS_Test.elf
+----------------End of Script----------------
+
+09:29:16 INFO  : Memory regions updated for context APU
+09:29:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:29:16 INFO  : 'con' command is executed.
+09:29:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855396"} -index 0
+con
+----------------End of Script----------------
+
+09:29:16 INFO  : Launch script is exported to file 'F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_axi_dma_pl_ps_test.elf_on_local.tcl'
+09:30:11 INFO  : Disconnected from the channel tcfchan#3.

@@ -1,0 +1,8 @@
+21:46:21 **** Incremental Build of configuration Debug for project tcp_echo_server ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+21:46:22 Build Finished (took 503ms)
+

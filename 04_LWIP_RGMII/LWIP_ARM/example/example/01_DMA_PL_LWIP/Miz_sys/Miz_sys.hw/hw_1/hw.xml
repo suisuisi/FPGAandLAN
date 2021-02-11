@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="1">
+  <device name="xc7z020_1" gui_info="dashboard1=hw_ila_1[xc7z020_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_1/Status=ILA_STATUS_1;xc7z020_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_1/Settings=ILA_SETTINGS_1;],dashboard2=hw_ila_2[xc7z020_1/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7z020_1/hw_ila_2/Settings=ILA_SETTINGS_1;xc7z020_1/hw_ila_2/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_2/Status=ILA_STATUS_1;xc7z020_1/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;],dashboard3=hw_ila_3[xc7z020_1/hw_ila_3/Trigger Setup=ILA_TRIGGER_1;xc7z020_1/hw_ila_3/Waveform=ILA_WAVE_1;xc7z020_1/hw_ila_3/Status=ILA_STATUS_1;xc7z020_1/hw_ila_3/Settings=ILA_SETTINGS_1;xc7z020_1/hw_ila_3/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/dma_system_wrapper.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="system_i/ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="500"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="system_i/S_AXIS_1_TLAST" gui_info="Trigger Setup=0"/>
+    <Object name="system_i/axi_dma_0_s2mm_introut" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/S_AXIS_1_TDATA[15]"/>
+        <net name="system_i/S_AXIS_1_TDATA[14]"/>
+        <net name="system_i/S_AXIS_1_TDATA[13]"/>
+        <net name="system_i/S_AXIS_1_TDATA[12]"/>
+        <net name="system_i/S_AXIS_1_TDATA[11]"/>
+        <net name="system_i/S_AXIS_1_TDATA[10]"/>
+        <net name="system_i/S_AXIS_1_TDATA[9]"/>
+        <net name="system_i/S_AXIS_1_TDATA[8]"/>
+        <net name="system_i/S_AXIS_1_TDATA[7]"/>
+        <net name="system_i/S_AXIS_1_TDATA[6]"/>
+        <net name="system_i/S_AXIS_1_TDATA[5]"/>
+        <net name="system_i/S_AXIS_1_TDATA[4]"/>
+        <net name="system_i/S_AXIS_1_TDATA[3]"/>
+        <net name="system_i/S_AXIS_1_TDATA[2]"/>
+        <net name="system_i/S_AXIS_1_TDATA[1]"/>
+        <net name="system_i/S_AXIS_1_TDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/S_AXIS_1_TLAST"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/S_AXIS_1_TREADY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/S_AXIS_1_TVALID"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[31]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[30]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[29]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[28]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[27]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[26]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[25]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[24]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[23]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[22]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[21]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[20]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[19]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[18]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[17]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[16]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[15]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[14]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[13]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[12]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[11]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[10]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[9]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[8]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[7]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[6]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[5]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[4]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[3]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[2]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[1]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[3]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[2]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[1]"/>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TLAST"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TREADY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_M_AXIS_MM2S_TVALID"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_mm2s_introut"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_s2mm_introut"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axi_dma_0_s2mm_introut_1"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[15]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[14]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[13]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[12]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[11]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[10]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[9]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[8]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[7]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[6]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[5]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[4]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[3]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[2]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[1]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[31]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[30]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[29]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[28]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[27]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[26]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[25]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[24]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[23]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[22]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[21]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[20]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[19]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[18]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[17]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[16]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[15]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[14]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[13]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[12]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[11]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[10]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[9]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[8]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[7]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[6]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[5]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[4]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[3]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[2]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[1]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TKEEP[3]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TKEEP[2]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TKEEP[1]"/>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TKEEP[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TLAST"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TREADY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_0_M_AXIS_TVALID"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[15]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[14]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[13]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[12]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[11]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[10]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[9]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[8]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[7]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[6]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[5]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[4]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[3]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[2]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[1]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TKEEP[1]"/>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TKEEP[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TLAST"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+      </probeOptions>
+      <nets>
+        <net name="system_i/axis_data_fifo_1_M_AXIS_TVALID"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

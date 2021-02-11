@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 14 14:36:43 2019
+# Process ID: 6068
+# Current directory: D:/demo_AX7204/19 ethernet_test_1g_100m/rgmii_ethernet/eth_test.runs/udp_rx_ram_8_2048_synth_1
+# Command line: vivado.exe -log udp_rx_ram_8_2048.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_rx_ram_8_2048.tcl
+# Log file: D:/demo_AX7204/19 ethernet_test_1g_100m/rgmii_ethernet/eth_test.runs/udp_rx_ram_8_2048_synth_1/udp_rx_ram_8_2048.vds
+# Journal file: D:/demo_AX7204/19 ethernet_test_1g_100m/rgmii_ethernet/eth_test.runs/udp_rx_ram_8_2048_synth_1\vivado.jou
+#-----------------------------------------------------------
+source udp_rx_ram_8_2048.tcl -notrace

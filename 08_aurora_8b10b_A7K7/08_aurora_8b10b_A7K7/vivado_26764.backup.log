@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Sep 21 15:06:22 2017
+# Process ID: 26764
+# Current directory: E:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17580 E:\DS_SRC\MIA701\aurora_test\aurora_8b10b_ex\aurora_8b10b_ex.xpr
+# Log file: E:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/vivado.log
+# Journal file: E:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 882.148 ; gain = 177.371
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+ERROR: [Ipptcl 7-32] Invalid text 'rx_eq_mode_text'.
+ERROR: [Common 17-39] 'get_textspec' failed due to earlier errors.
+ERROR: [IP_Flow 19-3554] GUI update of parameter PARAM_VALUE.RX_EQ_MODE failed.ERROR: [Common 17-39] 'get_textspec' failed due to earlier errors.
+

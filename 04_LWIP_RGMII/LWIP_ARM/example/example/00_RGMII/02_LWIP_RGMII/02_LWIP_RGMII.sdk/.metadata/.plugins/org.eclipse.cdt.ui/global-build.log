@@ -1,0 +1,10 @@
+20:20:22 **** Incremental Build of configuration Debug for project echo_server_lwip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:20:32 **** Incremental Build of configuration Debug for project echo_server_lwip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

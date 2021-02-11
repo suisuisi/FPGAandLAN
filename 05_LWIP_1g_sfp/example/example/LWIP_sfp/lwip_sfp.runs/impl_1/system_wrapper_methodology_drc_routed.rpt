@@ -1,0 +1,91 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue Nov 07 21:08:01 2017
+| Host         : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -rpx system_wrapper_methodology_drc_routed.rpx
+| Design       : system_wrapper
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 11
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 7          |
+| TIMING-18 | Warning  | Missing input or output delay                   | 4          |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.RESET_INT_reg in site SLICE_X159Y202 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X159Y200 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X169Y201 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X159Y197 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X163Y192 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X159Y203 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/system_gig_ethernet_pcs_pma_0_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X158Y200 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) VIRTUAL_clkout0 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) VIRTUAL_clkout0 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) VIRTUAL_clkout0 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) VIRTUAL_clkout0 
+Related violations: <none>
+
+

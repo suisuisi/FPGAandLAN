@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 23 21:48:18 2020
+# Process ID: 9952
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32956 F:\FILE\FPGA\ZYNQ\08_LAN\09_GMII2RGMII_test\00_rgmii_ethernet\rgmii_ethernet\eth_test.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet/eth_test.xpr
+INFO: [Project 1-313] Project file moved from 'D:/demo_AX7204/19 ethernet_test_1g_100m/rgmii_ethernet' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_ref' is locked:
+* Project containing IP 'clk_ref' is read-only.
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_ref' (customized with software release 2017.4) has a newer major version in the IP Catalog.
+* The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'len_fifo' is locked:
+* Project containing IP 'len_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'len_fifo' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_rx_ram_8_2048' is locked:
+* Project containing IP 'udp_rx_ram_8_2048' is read-only.
+* IP definition 'Block Memory Generator (8.4)' for IP 'udp_rx_ram_8_2048' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_checksum_fifo' is locked:
+* Project containing IP 'udp_checksum_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_checksum_fifo' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'udp_tx_data_fifo' is locked:
+* Project containing IP 'udp_tx_data_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'udp_tx_data_fifo' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'eth_data_fifo' is locked:
+* Project containing IP 'eth_data_fifo' is read-only.
+* IP definition 'FIFO Generator (13.2)' for IP 'eth_data_fifo' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'icmp_rx_ram_8_256' is locked:
+* Project containing IP 'icmp_rx_ram_8_256' is read-only.
+* IP definition 'Block Memory Generator (8.4)' for IP 'icmp_rx_ram_8_256' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-229] Project 'eth_test.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 851.039 ; gain = 208.508
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 21:49:49 2020...

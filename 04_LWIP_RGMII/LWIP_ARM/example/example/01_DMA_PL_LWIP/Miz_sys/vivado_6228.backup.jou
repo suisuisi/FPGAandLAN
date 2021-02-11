@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 01 09:17:01 2017
+# Process ID: 6228
+# Current directory: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2176 F:\Miz702N\free\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_axis_data_fifo_0_1 system_processing_system7_0_0 system_ila_0_0 system_SSD1306_OLED_ML_0_0 system_axi_dma_0_0 system_axi_gpio_0_0 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_processing_system7_0_axi_periph_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {system_axis_data_fifo_0_1 system_processing_system7_0_0 system_ila_0_0 system_SSD1306_OLED_ML_0_0 system_axi_dma_0_0 system_axi_gpio_0_0 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_processing_system7_0_axi_periph_0}] -no_script -sync -force -quiet
+generate_target all [get_files  F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

@@ -1,0 +1,174 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Jul 19 15:07:51 2018
+| Host         : LB-201803132255 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+| Design       : system_wrapper
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 24
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| CKBF-1    | Warning  | connects_I_driver_BUFR                            | 1          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain   | 5          |
+| TIMING-6  | Warning  | No common primary clock between related clocks    | 1          |
+| TIMING-7  | Warning  | No common node between related clocks             | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                 | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                     | 5          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects       | 8          |
+| XDCH-1    | Warning  | Hold option missing in multicycle path constraint | 2          |
++-----------+----------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKBF-1#1 Warning
+connects_I_driver_BUFR  
+The BUFGCTRL cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk_25m_2_5m I0 pin is driven by a BUFR cell system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clk10_div_buf. For 7-Series devices, this is not a recommended clock topology. Please analyze your clock network and remove the BUFR to BUFGCTRL cascade.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_reset/reset_sync5 in site SLICE_X1Y185 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_reset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_mgmt_reset/reset_sync5 in site SLICE_X5Y190 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_mgmt_reset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_rx_reset/reset_sync5 in site SLICE_X4Y189 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_rx_reset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_tx_reset/reset_sync5 in site SLICE_X7Y190 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_tx_reset/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_resets/idelayctrl_reset_gen/reset_sync5 in site SLICE_X6Y189 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_resets/idelayctrl_reset_gen/reset_sync6 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks rgmii_rx_clk and gmii_clk_125m_out are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rx_clk] -to [get_clocks gmii_clk_125m_out]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks rgmii_rx_clk and gmii_clk_125m_out are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rx_clk] -to [get_clocks gmii_clk_125m_out]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[0] relative to clock(s) system_gmii_to_rgmii_0_0_rgmii_tx_clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[1] relative to clock(s) system_gmii_to_rgmii_0_0_rgmii_tx_clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[2] relative to clock(s) system_gmii_to_rgmii_0_0_rgmii_tx_clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[3] relative to clock(s) system_gmii_to_rgmii_0_0_rgmii_tx_clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_tx_ctl relative to clock(s) system_gmii_to_rgmii_0_0_rgmii_tx_clk
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *i_MANAGEMENT/DUPLEX_MODE_REG*/C }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 14)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *i_MANAGEMENT/SPEED_SELECTION_REG*/C }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 15)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *idelayctrl_reset_gen/*reset_sync*/PRE }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 11)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *reset_sync*/PRE }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 10)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option 'objects : [get_pins -hier -filter {name =~ *i_bufgmux_gmii_clk/CE0}]' of constraint 'set_case_analysis' uses inefficient query to find pin objects (see constraint position '3' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 3)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option 'objects : [get_pins -hier -filter {name =~ *i_bufgmux_gmii_clk/CE1}]' of constraint 'set_case_analysis' uses inefficient query to find pin objects (see constraint position '5' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 5)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option 'objects : [get_pins -hier -filter {name =~ *i_bufgmux_gmii_clk/S0}]' of constraint 'set_case_analysis' uses inefficient query to find pin objects (see constraint position '4' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 4)
+Related violations: <none>
+
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option 'objects : [get_pins -hier -filter {name =~ *i_bufgmux_gmii_clk/S1}]' of constraint 'set_case_analysis' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.xdc (Line: 6)
+Related violations: <none>
+
+XDCH-1#1 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -end -fall_from [get_clocks -include_generated_clocks -of_objects [get_pins -of [get_cells -hier -filter {name =~ *i_bufgmux_gmii_clk}] -filter {name =~ *O}]] -fall_to [get_clocks system_gmii_to_rgmii_0_0_rgmii_tx_clk] 0
+j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc (Line: 41)
+Related violations: <none>
+
+XDCH-1#2 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -end -rise_from [get_clocks -include_generated_clocks -of_objects [get_pins -of [get_cells -hier -filter {name =~ *i_bufgmux_gmii_clk}] -filter {name =~ *O}]] -rise_to [get_clocks system_gmii_to_rgmii_0_0_rgmii_tx_clk] 0
+j:/FEP/ETH1512/MZ7035/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc (Line: 40)
+Related violations: <none>
+
+

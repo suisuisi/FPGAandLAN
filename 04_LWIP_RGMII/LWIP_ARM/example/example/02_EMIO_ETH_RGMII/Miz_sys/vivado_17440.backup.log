@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jul 16 15:48:38 2018
+# Process ID: 17440
+# Current directory: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14308 J:\FEP\ESFP1512\MZ702AB\CH01_EMIO_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+set_property part xc7z020clg400-2 [current_project]
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:gmii_to_rgmii:4.0 - gmii_to_rgmii_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <system> from BD file <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_processing_system7_0_0 system_gmii_to_rgmii_0_0 system_util_vector_logic_0_0}] -log ip_upgrade.log
+Upgrading 'J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3420] Updated system_gmii_to_rgmii_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_processing_system7_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_util_vector_logic_0_0 to use current project options
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 987.266 ; gain = 6.883
+export_ip_user_files -of_objects [get_ips {system_processing_system7_0_0 system_gmii_to_rgmii_0_0 system_util_vector_logic_0_0}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode Hierarchical [get_files  J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+generate_target all [get_files  J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gmii_to_rgmii_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+Exporting to file J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.hwdef
+WARNING: [Vivado 12-4154] User modified property 'UsedInSynthesis' (with value '0') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4154] User modified property 'UsedInImplementation' (with value '1') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4154] User modified property 'ProcessingOrder' (with value 'LATE') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4152] One or more user modified properties were detected. The reset_target command can be used to reset the targets data which will also reset all target properties.
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1062.809 ; gain = 75.543
+export_ip_user_files -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 {system_processing_system7_0_0_synth_1 system_gmii_to_rgmii_0_0_synth_1 system_util_vector_logic_0_0_synth_1}
+[Mon Jul 16 15:52:05 2018] Launched system_processing_system7_0_0_synth_1, system_gmii_to_rgmii_0_0_synth_1, system_util_vector_logic_0_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_gmii_to_rgmii_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_gmii_to_rgmii_0_0_synth_1/runme.log
+system_util_vector_logic_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_util_vector_logic_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'system' - hence not re-generating.
+WARNING: [Vivado 12-4154] User modified property 'UsedInSynthesis' (with value '0') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4154] User modified property 'UsedInImplementation' (with value '1') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4154] User modified property 'ProcessingOrder' (with value 'LATE') was detected on 'j:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocks.xdc'.
+WARNING: [Vivado 12-4152] One or more user modified properties were detected. The reset_target command can be used to reset the targets data which will also reset all target properties.
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all system_gmii_to_rgmii_0_0] }
+catch { config_ip_cache -export [get_ips -all system_util_vector_logic_0_0] }
+export_ip_user_files -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 {system_processing_system7_0_0_synth_1 system_gmii_to_rgmii_0_0_synth_1 system_util_vector_logic_0_0_synth_1}
+[Mon Jul 16 15:52:21 2018] Launched system_processing_system7_0_0_synth_1, system_gmii_to_rgmii_0_0_synth_1, system_util_vector_logic_0_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_gmii_to_rgmii_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_gmii_to_rgmii_0_0_synth_1/runme.log
+system_util_vector_logic_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_util_vector_logic_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jul 16 15:53:48 2018] Launched synth_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Mon Jul 16 15:53:48 2018] Launched impl_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/runme.log
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855041
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {33.3333}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1
+
+reset_run system_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gmii_to_rgmii_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+Exporting to file J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_gmii_to_rgmii_0_0, cache-ID = cabb426f4fb1c8cc; cache size = 1.024 MB.
+[Mon Jul 16 16:11:07 2018] Launched system_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+synth_1: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Mon Jul 16 16:11:07 2018] Launched impl_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1259.324 ; gain = 54.223
+file copy -force J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jul 16 16:18:57 2018] Launched synth_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Mon Jul 16 16:18:57 2018] Launched impl_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/runme.log
+file copy -force J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 16 16:40:06 2018...

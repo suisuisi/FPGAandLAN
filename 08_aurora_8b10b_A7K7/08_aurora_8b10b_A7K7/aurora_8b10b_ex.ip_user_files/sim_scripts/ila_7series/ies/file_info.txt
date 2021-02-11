@@ -1,0 +1,4 @@
+xpm_memory.sv,systemverilog,xil_defaultlib,D:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../aurora_8b10b_ex.srcs/sources_1/ip/ila_7series/hdl/verilog"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../aurora_8b10b_ex.srcs/sources_1/ip/ila_7series/hdl/verilog"
+ila_7series.v,verilog,xil_defaultlib,../../../../aurora_8b10b_ex.srcs/sources_1/ip/ila_7series/sim/ila_7series.v,incdir="../../../../aurora_8b10b_ex.srcs/sources_1/ip/ila_7series/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

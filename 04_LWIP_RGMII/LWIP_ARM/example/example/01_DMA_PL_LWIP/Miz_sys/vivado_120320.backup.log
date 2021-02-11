@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Feb 19 17:53:13 2017
+# Process ID: 120320
+# Current directory: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent119572 D:\MIZ_SOC\SEASON_03\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 945.918 ; gain = 274.141
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:SSD1306_OLED_ML:1.0 - SSD1306_OLED_ML_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1048.160 ; gain = 102.242
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 19 19:56:50 2017...

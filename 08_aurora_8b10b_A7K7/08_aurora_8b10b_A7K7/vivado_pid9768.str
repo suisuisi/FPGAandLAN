@@ -1,0 +1,973 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 9768
+
+Current time: 	9/21/17 7:54:20 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	D:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	27068
+User home directory: C:/Users/27068
+User working directory: E:/MIA701SRC/aurora_8b10b_ex
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: D:/Xilinx/Vivado
+RDI data directory: D:/Xilinx/Vivado/2016.4/data
+RDI bin directory: D:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/27068/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/27068/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	235 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 485 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: E:\MIA701SRC\aurora_8b10b_ex\aurora_8b10b_ex.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 37 MB (+36611kb) [00:00:03]
+// [Engine Memory]: 429 MB (+298797kb) [00:00:03]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 40 MB (+491kb) [00:00:07]
+// [Engine Memory]: 565 MB (+119402kb) [00:00:07]
+// [GUI Memory]: 59 MB (+18199kb) [00:00:08]
+// Tcl Message: open_project E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 588 MB. GUI used memory: 39 MB. Current time: 9/21/17 7:54:24 PM CST
+// Project name: aurora_8b10b_ex; location: E:/MIA701SRC/aurora_8b10b_ex; part: xc7a100tfgg484-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 860.941 ; gain = 173.664 
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 594 MB (+652kb) [00:00:11]
+// [Engine Memory]: 634 MB (+11655kb) [00:03:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 39 MB. Current time: 9/21/17 7:58:02 PM CST
+// [GUI Memory]: 63 MB (+937kb) [00:07:52]
+// [GUI Memory]: 68 MB (+1860kb) [00:09:48]
+// [GUI Memory]: 72 MB (+1329kb) [00:12:18]
+// [GUI Memory]: 77 MB (+471kb) [00:12:28]
+// [GUI Memory]: 81 MB (+603kb) [00:18:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 50 MB. Current time: 9/21/17 8:28:02 PM CST
+// [GUI Memory]: 85 MB (+52kb) [00:41:19]
+// [GUI Memory]: 90 MB (+638kb) [00:45:29]
+// [GUI Memory]: 95 MB (+807kb) [00:51:34]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 3724 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), channel_up_vio_cdc_sync_exdes - aurora_8b10b_cdc_sync_exdes (aurora_8b10b_cdc_sync_exdes.v)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_check_i - aurora_8b10b_FRAME_CHECK (aurora_8b10b_frame_check.v)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_check_i - aurora_8b10b_FRAME_CHECK (aurora_8b10b_frame_check.v)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_check_i - aurora_8b10b_FRAME_CHECK (aurora_8b10b_frame_check.v)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 103, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 103, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 176, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 98, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 98, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 129, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 129, 220, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 141, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 159, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 63 MB. Current time: 9/21/17 8:58:03 PM CST
+selectCodeEditor("aurora_8b10b_frame_check.v", 143, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 157, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 164, 221); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 340, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 266, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 265, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 233, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 336, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 332, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 395, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 358, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 348, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 263, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 124 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 208, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 340, 399); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 308, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 289, 389); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 272, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 108, 268); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 108, 268, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 322); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 322, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 241, 109); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 241, 137); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 58, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 58, 116, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 173, 376); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 60, 118); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 60, 118, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 98, 425); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 98, 425, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 233, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 233, 229, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 401); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 401, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 502, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 502, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 127, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 127, 327, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 251, 333); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 251, 333, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 411, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 411, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 411, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 411, 329, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 492, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 358, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 358, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 497, 299); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 497, 299, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 221, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 221, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 321, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 147, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 147, 430, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [GUI Memory]: 102 MB (+1484kb) [01:11:08]
+// Elapsed time: 16 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 377, 530); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 377, 530, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 265, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 265, 522, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 357, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 357, 522, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 480, 530); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 480, 530); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 485, 529); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 485, 529, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 279, 541); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 357, 523); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 357, 523, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 284, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 284, 521, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 521, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 272, 532); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 395, 563); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 395, 563, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 317, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 317, 505, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 367, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 423, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 424, 505, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 109, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 109, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 149, 123); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 149, 123, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 363, 121); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 363, 121, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 123, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 123, 126, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 45 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 141, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 141, 183, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 236, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 236, 236, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [GUI Memory]: 108 MB (+1102kb) [01:14:03]
+// Elapsed time: 25 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 249, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 353, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 353, 178, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 92, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 92, 173, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [GUI Memory]: 116 MB (+2555kb) [01:16:08]
+// Elapsed time: 156 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 235, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 235, 412, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 130, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 130, 522, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 223, 463); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 223, 463, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 491, 172); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 491, 172, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 135, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 135, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 100, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 100, 236, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 205, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 205, 236, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 155, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 240, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 238, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 206, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 206, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 206, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 206, 316); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 206, 316, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 314, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 388, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 388, 241, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 490, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 490, 238, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 434, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 434, 238, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 499, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 499, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 401, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 401, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 473, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 473, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 268, 226); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 254, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 254, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 259, 470); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 259, 470, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 413, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 484, 406); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 484, 406, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 400, 405); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 400, 405, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 119, 177, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 157, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 157, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 97, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 97, 262, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 312, 450); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 312, 450, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 420, 449); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 422, 448, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 280, 451); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 280, 451, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 280, 460); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 280, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 280, 505, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 109, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 109, 249, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 197, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 88 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 141, 252); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 141, 252, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 192, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 237, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 237, 314, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 289, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 285, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 204, 290, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("aurora_8b10b_frame_check.v", 261, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_frame_check.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 173, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 175, 334); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 175, 334, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 185, 358); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 299, 150); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 334); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 334, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 258, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 261, 276); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 261, 276, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 274, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 274, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 274, 177, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 351, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 351, 177, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 58 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 380, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 356, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 356, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 404, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 404, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 353, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 353, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 260, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 260, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 472, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 472, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 354, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 354, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 264, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 264, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 352, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 352, 301, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 443, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 443, 297, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 298, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 273, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 273, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 373, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 373, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 358, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 358, 289, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 472, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 443, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 443, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 356, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 356, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 230, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 147, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 147, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 433, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 433, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 279, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 279, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 366, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 366, 297, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 445, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 445, 297, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 378, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 352, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 352, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 430, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 430, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 405, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 405, 301, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 354, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 354, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 419, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 419, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 257, 299); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 257, 299, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 363, 299); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 363, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 363, 297, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 416, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 416, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 366, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 366, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 433, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 433, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 340, 296); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 340, 296, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 414, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 414, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 350, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 412, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 412, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 440, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 440, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 492, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 467, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 467, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 344, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 344, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 287, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 287, 289, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 292, 288); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 291, 287, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 458, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 422, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 422, 297, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 266, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 266, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 89, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 312, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 215, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 259, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 259, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 381, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 381, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 255, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 255, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 114, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 114, 301, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 353, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 364, 347); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 364, 347, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 282, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 282, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 128, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 128, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 234, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 404, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 404, 176, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 256, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 256, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 214, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 214, 240, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 403, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 403, 234, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 233, 172); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 233, 172, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 121, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 121, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 263, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 263, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 336, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 336, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 248, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 248, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 418, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 418, 241, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 500, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 500, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 393, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 393, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 218, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 218, 236, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 364, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 364, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 493, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 493, 248, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 519, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 519, 240, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 419, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 418, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 257, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 257, 240, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 252, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 351, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 351, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 271, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 271, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 387, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 387, 233, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 555, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 555, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 365, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 365, 240, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 256, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 256, 242, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 242, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 239, 170); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 111, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 111, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 190, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 239, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 239, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 342, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 268, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 268, 183, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 372, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 373, 183, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 200, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 200, 183, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 130, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 130, 183, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 232, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 232, 178, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 108, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 108, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 217, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 217, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 349, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 255, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 255, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 102, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 102, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 320, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 176, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 230, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 230, 179, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 372, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 372, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 365, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 147, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 146, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 123, 317); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 129, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 236, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 131, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 131, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 139, 316); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 153, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 140, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 104, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 134, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 121, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 132, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 205, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 205, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 351, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 419, 243); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 261, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 261, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 78, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 90, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 90, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 252, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 252, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 238, 242); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 210, 243); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 360, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 360, 354, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 86, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 86, 236, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 355, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 355, 350, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 69 MB. Current time: 9/21/17 9:28:03 PM CST
+// Elapsed time: 183 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 238, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 162, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 162, 294, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 118, 180, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 269, 177, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 111, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 111, 235, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 139, 414); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 139, 414, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 122, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 122, 349, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 150, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 150, 354, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 252, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 252, 352, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 162, 358); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 162, 358, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 126, 355, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 72 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 246, 378); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 246, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 246, 352, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 124, 232, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 266, 403); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 266, 403, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 165, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 165, 411, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 253, 409, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 115, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 115, 459, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 231, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 231, 348, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 348, 347); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 348, 347, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 289, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 289, 349, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 151, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 151, 352, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 246, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 246, 353, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 290, 450); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 284, 406); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 284, 406, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [GUI Memory]: 124 MB (+3223kb) [01:39:52]
+// Elapsed time: 204 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 117, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 117, 160, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_frame_check.v", 303, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_frame_check.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_frame_check.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 314, 378); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 189, 498); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_frame_check.v", 189, 498, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 253 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 0, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("aurora_8b10b_frame_check.v", 107, 538, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+selectCodeEditor("aurora_8b10b_frame_check.v", 265, 448); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_gen_ll_to_axi_pdu_i - aurora_8b10b_LL_TO_AXI_EXDES (aurora_8b10b_ll_to_axi_exdes.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_gen_ll_to_axi_pdu_i - aurora_8b10b_LL_TO_AXI_EXDES (aurora_8b10b_ll_to_axi_exdes.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 134, 445); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 134, 445, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 220, 442); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 220, 442, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 114, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 114, 459, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 226, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 226, 461, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 117, 481); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 117, 481, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 205, 481); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 205, 481, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 324, 484); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 380, 485); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 105, 499); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 105, 499, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 215, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 215, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 215, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 215, 503, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 351, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 342, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 90 seconds
+selectCodeEditor("aurora_8b10b_ll_to_axi_exdes.v", 69, 539); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_ll_to_axi_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aurora_8b10b_frame_check.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 162 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_chk_axi_to_ll_pdu_i - aurora_8b10b_AXI_TO_LL_EXDES (aurora_8b10b_axi_to_ll_exdes.v)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v), frame_chk_axi_to_ll_pdu_i - aurora_8b10b_AXI_TO_LL_EXDES (aurora_8b10b_axi_to_ll_exdes.v)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 0, 86); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 90, 357); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 90, 357); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 90, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 90, 356, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 47, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 47, 413, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 66, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 66, 241, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 192, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 192, 348, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 316, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 316, 355, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 423, 402); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 424, 402, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 356, 416); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 356, 416); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 354, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 354, 412, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 203, 402); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 203, 402, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 248, 407); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 248, 407, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 333, 406); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 333, 406, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 510, 406); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 510, 406, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 556, 408); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 138, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 584, 405); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 587, 405); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 619, 405); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 619, 405, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 212, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 32, 498); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 71, 541); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_axi_to_ll_exdes.v", 188, 201, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 71 MB. Current time: 9/21/17 9:58:03 PM CST
+// Elapsed time: 1811 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 18); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aurora_8b10b_TB (aurora_8b10b_tb.v)]", 20, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, aurora_8b10b_TB (aurora_8b10b_tb.v), example_design_2_i - aurora_8b10b_exdes (aurora_8b10b_exdes.v)]", 22, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("aurora_8b10b_tb.v", 0, 89); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "aurora_8b10b_tb.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 62 MB. Current time: 9/21/17 10:28:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 61 MB. Current time: 9/21/17 10:58:03 PM CST
+// Elapsed time: 2796 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 105 seconds
+selectCodeEditor("aurora_8b10b_exdes.v", 537, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 159, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 43, 499); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 145, 453); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 132, 471); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 163, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 48, 498); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 238, 347); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 20, 498); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("aurora_8b10b_exdes.v", 163, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 182, 286); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 188, 408); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "aurora_8b10b_exdes.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 100 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 22); // u:K (t:D, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 540, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, aurora_8b10b_exdes (aurora_8b10b_exdes.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("aurora_8b10b_exdes.v", 398, 191); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 274 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 23, false); // u:K (t:D, cd:JFrame)
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// ar:r (cd:JFrame): Implementation is Out-of-date: addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ar:r)
+// bt:g (cd:JFrame):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // ar:r (cd:JFrame)
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 745 MB (+82829kb) [03:22:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 797 MB. GUI used memory: 67 MB. Current time: 9/21/17 11:16:24 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 873 MB (+95152kb) [03:22:12]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,277 MB. GUI used memory: 64 MB. Current time: 9/21/17 11:16:36 PM CST
+// [Engine Memory]: 1,278 MB (+378264kb) [03:22:21]
+// [Engine Memory]: 1,368 MB (+28135kb) [03:22:22]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.4 INFO: [Device 21-403] Loading part xc7a100tfgg484-2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_early.xdc] Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_early.xdc] Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.runs/impl_1/.Xil/Vivado-24204-LB-201708231104/dbg_hub_CV.0/out/xsdbm.xdc:11] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1669.391 ; gain = 513.723 
+// Tcl Message: Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes.xdc] Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_late.xdc] Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_late.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.330 . Memory (MB): peak = 1674.758 ; gain = 5.270 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.330 . Memory (MB): peak = 1674.758 ; gain = 5.270 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 66 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1770.398 ; gain = 845.621 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 131 MB (+774kb) [03:22:27]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 141 MB (+3598kb) [03:22:29]
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// cA:g (cd:JFrame): Timing Constraints Wizard: addNotify
+// Elapsed time: 26 seconds
+dismissDialog("Open Implemented Design"); // bt:g (cd:JFrame)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// [Engine Memory]: 1,440 MB (+2861kb) [03:22:42]
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+// [GUI Memory]: 149 MB (+398kb) [03:22:43]
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// HOptionPane Error: "There are 2 checked, recommended constraint rows which have undefined values.<br>Please correct the delay parameters or uncheck the rows. (Input Constraints)"
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+selectButton("PAResourceItoN.InputConstraintsTablePanel_INPUT_CONSTRAINTS_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; sys_rst_n ; INIT_CLK_IN ; System ; Edge ; Single Rise", 0, "true", 0); // bt:T (JViewport:JComponent, cA:g)
+selectTable(PAResourceItoN.InputOutputTablePanel_TABLE, "true ; sys_rst_n ; aurora_module_i/inst/aurora_8b10b_core_i/gt_wrapper_i/aurora_8b10b_multi_gt_i/gt0_aurora_8b10b_i/gtpe2_i/TXOUTCLK ; System ; Edge ; Single Rise", 1, "true", 0); // bt:T (JViewport:JComponent, cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 120 MB. Current time: 9/21/17 11:17:24 PM CST
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, cA:g)
+// bt:g (cA:g):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bt:g (cA:g)
+selectTableHeader(PAResourceAtoD.ClockDomainCrossingsTablePanel_TABLE, "Destination Clock", 2); // q:T (JViewport:JComponent, cA:g)

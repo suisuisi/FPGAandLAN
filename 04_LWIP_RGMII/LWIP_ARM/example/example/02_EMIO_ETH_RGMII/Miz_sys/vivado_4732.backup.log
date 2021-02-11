@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 27 12:40:00 2017
+# Process ID: 4732
+# Current directory: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4608 D:\vivado_project\miz701n\7010\2016_4\PS_EMIO_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FPGA_project/vivado/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_bd_design {D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:gmii_to_rgmii:4.0 - gmii_to_rgmii_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <system> from BD file <D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+remove_files  D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/imports/hdl/system_wrapper.v
+file delete -force D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/imports/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -top
+import_files -force -norecurse D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr 27 16:24:52 2017] Launched synth_1...
+Run output will be captured here: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Thu Apr 27 16:24:52 2017] Launched impl_1...
+Run output will be captured here: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/runme.log
+file copy -force D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 17:20:26 2017...

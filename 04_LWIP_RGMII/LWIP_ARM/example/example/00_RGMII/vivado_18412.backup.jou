@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Apr 11 13:54:21 2020
+# Process ID: 18412
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6252 F:\FILE\FPGA\ZYNQ\08_LAN\02_LWIP_RGMII\02_LWIP_RGMII.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.xpr
+update_compile_order -fileset sources_1
+open_bd_design {F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.PHY_TYPE {1000BaseX} CONFIG.PHYADDR {3}] [get_bd_cells axi_ethernet_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1] [get_bd_nets axi_ethernet_0_phy_rst_n] [get_bd_intf_nets axi_ethernet_0_mdio] [get_bd_intf_nets axi_ethernet_0_rgmii]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_ethernet_0/sfp]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_ethernet_0/mgt_clk]
+endgroup
+delete_bd_objs [get_bd_intf_ports mdio]
+delete_bd_objs [get_bd_intf_ports rgmii]
+delete_bd_objs [get_bd_ports phy_reset_n]
+set_property name sfp [get_bd_intf_ports sfp_rtl_0]
+set_property name mgt_clk [get_bd_intf_ports diff_clock_rtl_0]
+save_bd_design
+reset_run synth_1
+reset_run system_axi_ethernet_0_0_synth_1
+reset_run bd_4bad_mac_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+make_wrapper -files [get_files F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/hdl/system_wrapper.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/hdl/system_wrapper.v
+file delete -force F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/hdl/system_wrapper.v
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/imports/hdl/system_wrapper.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/imports/hdl/system_wrapper.v
+file delete -force F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/imports/hdl/system_wrapper.v
+make_wrapper -files [get_files F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/hdl/system_wrapper.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+add_files -fileset utils_1 -norecurse {{F:/FILE/FPGA/ZYNQ/zynq_7035/USB TCL/NOUSB.tcl}}
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files {{F:/FILE/FPGA/ZYNQ/zynq_7035/USB TCL/NOUSB.tcl}} -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+file copy -force F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/impl_1/system_wrapper.sysdef F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+
+launch_sdk -workspace F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+reset_run synth_1

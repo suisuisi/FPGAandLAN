@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_clocking.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_resets.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_support.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_reset_sync.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0_block.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/system_gmii_to_rgmii_0_0/simulation/demo_tb.vhd" \
+"../../../bd/system/ip/system_gmii_to_rgmii_0_0/synth/system_gmii_to_rgmii_0_0.vhd" \
+
+nosort

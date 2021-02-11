@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jul 17 15:12:39 2018
+# Process ID: 9028
+# Current directory: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8252 J:\FEP\ETH1512\MZ702AB\CH01_EMIO_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 861.453 ; gain = 150.656
+launch_sdk -workspace J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close_project
+open_project J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 942.727 ; gain = 81.273
+launch_sdk -workspace J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 17 15:53:15 2018...

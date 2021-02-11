@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" --include "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/hdl/system.v" \
+"../../../bd/system/ip/system_util_vector_logic_0_0/sim/system_util_vector_logic_0_0.v" \
+"../../../bd/system/sim/system.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

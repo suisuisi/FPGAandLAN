@@ -1,0 +1,4 @@
+01 将 PS 的 ENET0/ENET1 通过 MIO 以 RGMII 接口连接外部 PHY 芯片。
+02 将 PS 的 ENET0/ENET1 通过 EMIO 的方式扩展至 PL，在 PL 中再通过 RGMII 接口连接外部
+PHY 芯片。
+03 在 PL 中分别通过 AXI 1G/2.5G Ethernet Subsystem 和 AXI Direct Memory Access 这两个 IP 核来实现 PS 中以太网外设 GEMAC 和 DMA 的功能， PS 通过 AXI总线控制这两个 IP 核便可由子卡实现 LWIP 网络通信。

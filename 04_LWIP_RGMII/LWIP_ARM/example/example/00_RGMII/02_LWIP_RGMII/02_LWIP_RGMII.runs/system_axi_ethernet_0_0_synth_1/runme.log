@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log system_axi_ethernet_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_ethernet_0_0.tcl
+
+
+****** Vivado v2018.3.1 (64-bit)
+  **** SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+  **** IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system_axi_ethernet_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP system_axi_ethernet_0_0, cache-ID = 1127a23890387bdf.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 13:38:14 2020...

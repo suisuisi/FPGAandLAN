@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Sep 19 13:39:24 2017
+# Process ID: 18092
+# Current directory: e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.runs/vio_7series_synth_1
+# Command line: vivado.exe -log vio_7series.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_7series.tcl
+# Log file: e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.runs/vio_7series_synth_1/vio_7series.vds
+# Journal file: e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.runs/vio_7series_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_7series.tcl -notrace

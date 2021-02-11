@@ -1,0 +1,168 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_4bad": {
+			"proto_instances": {
+				"/eth_buf/AXI_STR_RXD": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "AXI_STR_RXD_ACLK"},
+						"ARESETN": { "actual": "AXI_STR_RXD_ARESETN"},
+						"TDATA": { "actual": "AXI_STR_RXD_DATA"},
+						"TKEEP": { "actual": "AXI_STR_RXD_KEEP"},
+						"TLAST": { "actual": "AXI_STR_RXD_LAST"},
+						"TREADY": { "actual": "AXI_STR_RXD_READY"},
+						"TVALID": { "actual": "AXI_STR_RXD_VALID"}
+					}
+				},
+				"/eth_buf/AXI_STR_RXS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "AXI_STR_RXS_ACLK"},
+						"ARESETN": { "actual": "AXI_STR_RXS_ARESETN"},
+						"TDATA": { "actual": "AXI_STR_RXS_DATA"},
+						"TKEEP": { "actual": "AXI_STR_RXS_KEEP"},
+						"TLAST": { "actual": "AXI_STR_RXS_LAST"},
+						"TREADY": { "actual": "AXI_STR_RXS_READY"},
+						"TVALID": { "actual": "AXI_STR_RXS_VALID"}
+					}
+				},
+				"/eth_buf/AXI_STR_TXC": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "AXI_STR_TXC_ACLK"},
+						"ARESETN": { "actual": "AXI_STR_TXC_ARESETN"},
+						"TDATA": { "actual": "AXI_STR_TXC_TDATA"},
+						"TKEEP": { "actual": "AXI_STR_TXC_TKEEP"},
+						"TLAST": { "actual": "AXI_STR_TXC_TLAST"},
+						"TREADY": { "actual": "AXI_STR_TXC_TREADY"},
+						"TVALID": { "actual": "AXI_STR_TXC_TVALID"}
+					}
+				},
+				"/eth_buf/AXI_STR_TXD": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "AXI_STR_TXD_ACLK"},
+						"ARESETN": { "actual": "AXI_STR_TXD_ARESETN"},
+						"TDATA": { "actual": "AXI_STR_TXD_TDATA"},
+						"TKEEP": { "actual": "AXI_STR_TXD_TKEEP"},
+						"TLAST": { "actual": "AXI_STR_TXD_TLAST"},
+						"TREADY": { "actual": "AXI_STR_TXD_TREADY"},
+						"TVALID": { "actual": "AXI_STR_TXD_TVALID"}
+					}
+				},
+				"/eth_buf/RX_AXIS_MAC": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "rx_mac_aclk"},
+						"TDATA": { "actual": "rx_axis_mac_tdata"},
+						"TLAST": { "actual": "rx_axis_mac_tlast"},
+						"TUSER": { "actual": "rx_axis_mac_tuser"},
+						"TVALID": { "actual": "rx_axis_mac_tvalid"}
+					}
+				},
+				"/eth_buf/S_AXI": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "S_AXI_ACLK"},
+						"ARADDR": { "actual": "S_AXI_ARADDR"},
+						"ARESETN": { "actual": "S_AXI_ARESETN"},
+						"ARREADY": { "actual": "S_AXI_ARREADY"},
+						"ARVALID": { "actual": "S_AXI_ARVALID"},
+						"AWADDR": { "actual": "S_AXI_AWADDR"},
+						"AWREADY": { "actual": "S_AXI_AWREADY"},
+						"AWVALID": { "actual": "S_AXI_AWVALID"},
+						"BREADY": { "actual": "S_AXI_BREADY"},
+						"BRESP": { "actual": "S_AXI_BRESP"},
+						"BVALID": { "actual": "S_AXI_BVALID"},
+						"RDATA": { "actual": "S_AXI_RDATA"},
+						"RREADY": { "actual": "S_AXI_RREADY"},
+						"RRESP": { "actual": "S_AXI_RRESP"},
+						"RVALID": { "actual": "S_AXI_RVALID"},
+						"WDATA": { "actual": "S_AXI_WDATA"},
+						"WREADY": { "actual": "S_AXI_WREADY"},
+						"WSTRB": { "actual": "S_AXI_WSTRB"},
+						"WVALID": { "actual": "S_AXI_WVALID"}
+					}
+				},
+				"/eth_buf/S_AXI_2TEMAC": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "S_AXI_ACLK"},
+						"ARADDR": { "actual": "S_AXI_2TEMAC_ARADDR"},
+						"ARESETN": { "actual": "S_AXI_ARESETN"},
+						"ARREADY": { "actual": "S_AXI_2TEMAC_ARREADY"},
+						"ARVALID": { "actual": "S_AXI_2TEMAC_ARVALID"},
+						"AWADDR": { "actual": "S_AXI_2TEMAC_AWADDR"},
+						"AWREADY": { "actual": "S_AXI_2TEMAC_AWREADY"},
+						"AWVALID": { "actual": "S_AXI_2TEMAC_AWVALID"},
+						"BREADY": { "actual": "S_AXI_2TEMAC_BREADY"},
+						"BRESP": { "actual": "S_AXI_2TEMAC_BRESP"},
+						"BVALID": { "actual": "S_AXI_2TEMAC_BVALID"},
+						"RDATA": { "actual": "S_AXI_2TEMAC_RDATA"},
+						"RREADY": { "actual": "S_AXI_2TEMAC_RREADY"},
+						"RRESP": { "actual": "S_AXI_2TEMAC_RRESP"},
+						"RVALID": { "actual": "S_AXI_2TEMAC_RVALID"},
+						"WDATA": { "actual": "S_AXI_2TEMAC_WDATA"},
+						"WREADY": { "actual": "S_AXI_2TEMAC_WREADY"},
+						"WVALID": { "actual": "S_AXI_2TEMAC_WVALID"}
+					}
+				},
+				"/eth_buf/TX_AXIS_MAC": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "tx_mac_aclk"},
+						"TDATA": { "actual": "tx_axis_mac_tdata"},
+						"TLAST": { "actual": "tx_axis_mac_tlast"},
+						"TREADY": { "actual": "tx_axis_mac_tready"},
+						"TUSER": { "actual": "tx_axis_mac_tuser"},
+						"TVALID": { "actual": "tx_axis_mac_tvalid"}
+					}
+				},
+				"/mac/m_axis_rx": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "rx_mac_aclk"},
+						"TDATA": { "actual": "rx_axis_mac_tdata"},
+						"TLAST": { "actual": "rx_axis_mac_tlast"},
+						"TUSER": { "actual": "rx_axis_mac_tuser"},
+						"TVALID": { "actual": "rx_axis_mac_tvalid"}
+					}
+				},
+				"/mac/s_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "s_axi_aclk"},
+						"ARADDR": { "actual": "s_axi_araddr"},
+						"ARREADY": { "actual": "s_axi_arready"},
+						"ARVALID": { "actual": "s_axi_arvalid"},
+						"AWADDR": { "actual": "s_axi_awaddr"},
+						"AWREADY": { "actual": "s_axi_awready"},
+						"AWVALID": { "actual": "s_axi_awvalid"},
+						"BREADY": { "actual": "s_axi_bready"},
+						"BRESP": { "actual": "s_axi_bresp"},
+						"BVALID": { "actual": "s_axi_bvalid"},
+						"RDATA": { "actual": "s_axi_rdata"},
+						"RREADY": { "actual": "s_axi_rready"},
+						"RRESP": { "actual": "s_axi_rresp"},
+						"RVALID": { "actual": "s_axi_rvalid"},
+						"WDATA": { "actual": "s_axi_wdata"},
+						"WREADY": { "actual": "s_axi_wready"},
+						"WVALID": { "actual": "s_axi_wvalid"}
+					}
+				},
+				"/mac/s_axis_tx": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "tx_mac_aclk"},
+						"TDATA": { "actual": "tx_axis_mac_tdata"},
+						"TLAST": { "actual": "tx_axis_mac_tlast"},
+						"TREADY": { "actual": "tx_axis_mac_tready"},
+						"TUSER": { "actual": "tx_axis_mac_tuser"},
+						"TVALID": { "actual": "tx_axis_mac_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

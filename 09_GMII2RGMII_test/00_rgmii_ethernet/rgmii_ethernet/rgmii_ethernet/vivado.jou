@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 23 21:48:18 2020
+# Process ID: 9952
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32956 F:\FILE\FPGA\ZYNQ\08_LAN\09_GMII2RGMII_test\00_rgmii_ethernet\rgmii_ethernet\eth_test.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only F:/FILE/FPGA/ZYNQ/08_LAN/09_GMII2RGMII_test/00_rgmii_ethernet/rgmii_ethernet/eth_test.xpr
+update_compile_order -fileset sources_1

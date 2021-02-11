@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="charLib_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1479024790">
+  <File Type="RDS-DCP" Name="charLib.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/charLib_synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="charLib_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/charLib_synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="charLib_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="charLib.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/charLib_synth_1/charLib_synth_1.psg"/>
+  <File Type="RDS-RDS" Name="charLib.vds"/>
+  <File Type="RDS-UTIL" Name="charLib_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="charLib_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="charLib_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/charLib">
+    <File Path="$PPRDIR/../IPSRC/charLib/charLib.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="charLib"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/charLib">
+    <File Path="$PPRDIR/../IPSRC/charLib/charLib.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="charLib"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

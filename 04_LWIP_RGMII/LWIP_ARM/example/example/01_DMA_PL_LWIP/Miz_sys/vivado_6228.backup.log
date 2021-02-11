@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 01 09:17:01 2017
+# Process ID: 6228
+# Current directory: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2176 F:\Miz702N\free\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_gpio_0_0
+system_axis_data_fifo_0_1
+system_processing_system7_0_0
+system_SSD1306_OLED_ML_0_0
+system_axi_dma_0_0
+system_rst_processing_system7_0_50M_0
+system_auto_pc_0
+system_xbar_0
+system_ila_0_0
+system_auto_pc_1
+system_auto_us_0
+
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 923.008 ; gain = 228.805
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_axis_data_fifo_0_1 system_processing_system7_0_0 system_ila_0_0 system_SSD1306_OLED_ML_0_0 system_axi_dma_0_0 system_axi_gpio_0_0 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_processing_system7_0_axi_periph_0}] -log ip_upgrade.log
+Upgrading 'F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd'
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:SSD1306_OLED_ML:1.0 - SSD1306_OLED_ML_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:ila:6.0 - ila_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dma_0/s2mm_introut(intr) and /ila_0/probe0(undef)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+INFO: [IP_Flow 19-1972] Upgraded system_SSD1306_OLED_ML_0_0 from SSD1306_OLED_ML_v1_0 1.0 to SSD1306_OLED_ML_v1_0 1.0
+INFO: [IP_Flow 19-3422] Upgraded system_axi_dma_0_0 (AXI Direct Memory Access 7.1) from revision 8 to revision 12
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ila_0/probe0(undef) and /axi_dma_0_upgraded_ipi/s2mm_introut(intr)
+INFO: [IP_Flow 19-3422] Upgraded system_axi_gpio_0_0 (AXI GPIO 2.0) from revision 9 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded system_axi_mem_intercon_0 (AXI Interconnect 2.1) from revision 8 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded system_axis_data_fifo_0_1 (AXI4-Stream Data FIFO 1.1) from revision 8 to revision 12
+INFO: [IP_Flow 19-1972] Upgraded system_ila_0_0 from ILA (Integrated Logic Analyzer) 6.0 to ILA (Integrated Logic Analyzer) 6.2
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0_upgraded_ipi: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dma_0/s2mm_introut(intr) and /ila_0_upgraded_ipi/probe0(undef)
+INFO: [IP_Flow 19-1972] Upgraded system_processing_system7_0_0 from ZYNQ7 Processing System 5.5 to ZYNQ7 Processing System 5.5
+INFO: [IP_Flow 19-3422] Upgraded system_processing_system7_0_axi_periph_0 (AXI Interconnect 2.1) from revision 8 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded system_rst_processing_system7_0_50M_0 (Processor System Reset 5.0) from revision 8 to revision 10
+Wrote  : <F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1131.410 ; gain = 188.262
+export_ip_user_files -of_objects [get_ips {system_axis_data_fifo_0_1 system_processing_system7_0_0 system_ila_0_0 system_SSD1306_OLED_ML_0_0 system_axi_dma_0_0 system_axi_gpio_0_0 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_processing_system7_0_axi_periph_0}] -no_script -sync -force -quiet
+generate_target all [get_files  F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+Verilog Output written to : F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [IP_Flow 19-3422] Upgraded charLib (Block Memory Generator 8.3) from revision 1 to revision 5
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SSD1306_OLED_ML_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.hwdef
+generate_target: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1410.797 ; gain = 237.152
+export_ip_user_files -of_objects [get_files F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Aug 01 09:19:21 2017] Launched synth_1...
+Run output will be captured here: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Tue Aug 01 09:19:21 2017] Launched impl_1...
+Run output will be captured here: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 01 09:45:49 2017...

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 04 19:00:49 2017
+# Process ID: 6308
+# Current directory: F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1456 F:\FPGA_project\vivado\miz701n\7010\2016_4\PL_AXI_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.xpr
+open_bd_design {F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+set_property name mdio [get_bd_intf_ports mdio_rtl]
+set_property name rgmii [get_bd_intf_ports rgmii_rtl]
+set_property name reset [get_bd_ports reset_rtl]
+set_property name phy_reset [get_bd_ports reset]
+save_bd_design
+set_property name phy_reset_n [get_bd_ports phy_reset]
+save_bd_design
+generate_target all [get_files  F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+report_timing -to [get_ports {rgmii_tx_ctl {rgmii_td[0]} {rgmii_td[1]} {rgmii_td[2]} {rgmii_td[3]}}] -delay_type min_max -max_paths 10 -sort_by group -input_pins -name set_output_delay_71
+file copy -force F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+file mkdir F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk
+file copy -force F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf

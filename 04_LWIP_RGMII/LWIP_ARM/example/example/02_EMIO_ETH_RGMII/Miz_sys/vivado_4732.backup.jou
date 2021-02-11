@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 27 12:40:00 2017
+# Process ID: 4732
+# Current directory: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4608 D:\vivado_project\miz701n\7010\2016_4\PS_EMIO_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.xpr
+open_bd_design {D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+remove_files  D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/imports/hdl/system_wrapper.v
+file delete -force D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/imports/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -top
+import_files -force -norecurse D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+

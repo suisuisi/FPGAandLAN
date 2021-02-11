@@ -1,0 +1,784 @@
+
+*** Running vivado
+    with args -log dma_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dma_system_wrapper.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source dma_system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+Command: synth_design -top dma_system_wrapper -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 68472 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 398.609 ; gain = 189.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dma_system_wrapper' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/new/dma_system_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'system' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1083]
+INFO: [Synth 8-638] synthesizing module 'system_axi_dma_0_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_dma_0_0' (1#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'system_axi_dma_0_0' requires 43 connections, but only 41 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1312]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_gpio_0_0' (2#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'system_axi_mem_intercon_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1638]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1P403ZT' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:527]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_pc_0' (3#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'system_auto_us_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_us_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_us_0' (4#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_us_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1P403ZT' (5#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:527]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_mem_intercon_0' (6#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1638]
+INFO: [Synth 8-638] synthesizing module 'system_axis_data_fifo_0_1' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_axis_data_fifo_0_1' (7#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_axis_data_fifo_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'axis_data_fifo_0' of module 'system_axis_data_fifo_0_1' requires 17 connections, but only 14 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1418]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1433]
+INFO: [Synth 8-638] synthesizing module 'system_ila_0_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_ila_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_ila_0_0' (8#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_ila_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_0' (9#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'system_processing_system7_0_0' requires 109 connections, but only 98 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1436]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_axi_periph_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1838]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_WKXF3L' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:12]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_WKXF3L' (10#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:12]
+WARNING: [Synth 8-350] instance 'm00_couplers' of module 'm00_couplers_imp_WKXF3L' requires 74 connections, but only 58 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:2413]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1ORP4PS' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:270]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1ORP4PS' (11#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:270]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1VD9O7M' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:395]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1VD9O7M' (12#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:395]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_IK3G2O' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:777]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_1' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_pc_1' (13#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_IK3G2O' (14#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:777]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_xbar_0' (15#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (9) of module 'system_xbar_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:2614]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (9) of module 'system_xbar_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:2618]
+INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_axi_periph_0' (16#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1838]
+WARNING: [Synth 8-350] instance 'processing_system7_0_axi_periph' of module 'system_processing_system7_0_axi_periph_0' requires 100 connections, but only 89 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1535]
+INFO: [Synth 8-638] synthesizing module 'system_rst_processing_system7_0_50M_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_rst_processing_system7_0_50M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_rst_processing_system7_0_50M_0' (17#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_rst_processing_system7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_50M' of module 'system_rst_processing_system7_0_50M_0' requires 10 connections, but only 7 given [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1625]
+INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system_xlconcat_0_0' (18#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/realtime/system_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'system' (19#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1083]
+WARNING: [Synth 8-3848] Net gpio_tri_i_0 in module/entity dma_system_wrapper does not have driver. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/new/dma_system_wrapper.v:81]
+INFO: [Synth 8-256] done synthesizing module 'dma_system_wrapper' (20#1) [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/new/dma_system_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_IK3G2O has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_IK3G2O has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1VD9O7M has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1ORP4PS has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_WKXF3L has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_bresp[1]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[31]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[30]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[29]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[28]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[27]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[26]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[25]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[24]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[23]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[22]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[21]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[20]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[19]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[18]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[17]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[16]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[15]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[14]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[13]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[12]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[11]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[10]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[9]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[8]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[7]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[6]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[5]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[4]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[3]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[2]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[1]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rresp[1]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1P403ZT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 436.945 ; gain = 227.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin system_i:gpio_rtl_tri_i[0] to constant 0 [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/new/dma_system_wrapper.v:158]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 436.945 ; gain = 227.512
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_auto_pc_0' instantiated as 'system_i/axi_mem_intercon/s00_couplers/auto_pc' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:696]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_auto_pc_1' instantiated as 'system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1020]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_auto_us_0' instantiated as 'system_i/axi_mem_intercon/s00_couplers/auto_us' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:736]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_axi_dma_0_0' instantiated as 'system_i/axi_dma_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1312]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_axi_gpio_0_0' instantiated as 'system_i/axi_gpio_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1354]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_axis_data_fifo_0_1' instantiated as 'system_i/axis_data_fifo_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1418]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_ila_0_0' instantiated as 'system_i/ila_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1433]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_processing_system7_0_0' instantiated as 'system_i/processing_system7_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1436]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_rst_processing_system7_0_50M_0' instantiated as 'system_i/rst_processing_system7_0_50M' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1625]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_xbar_0' instantiated as 'system_i/processing_system7_0_axi_periph/xbar' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:2610]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_xlconcat_0_0' instantiated as 'system_i/xlconcat_0' [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v:1633]
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_2/system_rst_processing_system7_0_50M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_50M'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_2/system_rst_processing_system7_0_50M_0_in_context.xdc] for cell 'system_i/rst_processing_system7_0_50M'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_3/system_axi_dma_0_0_in_context.xdc] for cell 'system_i/axi_dma_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_3/system_axi_dma_0_0_in_context.xdc] for cell 'system_i/axi_dma_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_4/system_xlconcat_0_0_in_context.xdc] for cell 'system_i/xlconcat_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_4/system_xlconcat_0_0_in_context.xdc] for cell 'system_i/xlconcat_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_5/system_ila_0_0_in_context.xdc] for cell 'system_i/ila_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_5/system_ila_0_0_in_context.xdc] for cell 'system_i/ila_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_6/system_axis_data_fifo_0_1_in_context.xdc] for cell 'system_i/axis_data_fifo_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_6/system_axis_data_fifo_0_1_in_context.xdc] for cell 'system_i/axis_data_fifo_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_7/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_7/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_8/system_xbar_0_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/xbar'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_8/system_xbar_0_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/xbar'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_9/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_9/system_auto_pc_0_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_10/system_auto_us_0_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_10/system_auto_us_0_in_context.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_11/system_auto_pc_1_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp_11/system_auto_pc_1_in_context.xdc] for cell 'system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DC'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'RES'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'SCLK'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'SDIN'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'VBAT'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'VDD'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'DC'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'RES'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'SCLK'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'SDIN'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'VBAT'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'VDD'. [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc:12]
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/dma_system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dma_system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dma_system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 790.039 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'system_i/axis_data_fifo_0' at clock pin 'm_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/.Xil/Vivado-76372-LB-201708051431/dcp/system_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_dma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axis_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_processing_system7_0_50M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "S_AXIS_tlast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dma_system_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_bresp[1]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[31]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[30]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[29]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[28]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[27]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[26]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[25]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[24]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[23]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[22]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[21]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[20]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[19]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[18]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[17]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[16]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[15]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[14]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[13]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[12]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[11]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[10]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[9]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[8]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[7]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[6]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[5]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[4]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[3]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[2]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rdata[1]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M00_AXI_rresp[1]
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design system_processing_system7_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_axi_mem_intercon_0 has unconnected port M00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK0' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK1' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin system_i:gpio_rtl_tri_i[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------+----------+
+|      |BlackBox name                         |Instances |
++------+--------------------------------------+----------+
+|1     |system_axi_dma_0_0                    |         1|
+|2     |system_axi_gpio_0_0                   |         1|
+|3     |system_auto_pc_0                      |         1|
+|4     |system_auto_us_0                      |         1|
+|5     |system_axis_data_fifo_0_1             |         1|
+|6     |system_ila_0_0                        |         1|
+|7     |system_processing_system7_0_0         |         1|
+|8     |system_xbar_0                         |         1|
+|9     |system_auto_pc_1                      |         1|
+|10    |system_rst_processing_system7_0_50M_0 |         1|
+|11    |system_xlconcat_0_0                   |         1|
++------+--------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |system_auto_pc_0                      |     1|
+|2     |system_auto_pc_1                      |     1|
+|3     |system_auto_us_0                      |     1|
+|4     |system_axi_dma_0_0                    |     1|
+|5     |system_axi_gpio_0_0                   |     1|
+|6     |system_axis_data_fifo_0_1             |     1|
+|7     |system_ila_0_0                        |     1|
+|8     |system_processing_system7_0_0         |     1|
+|9     |system_rst_processing_system7_0_50M_0 |     1|
+|10    |system_xbar_0                         |     1|
+|11    |system_xlconcat_0_0                   |     1|
+|12    |CARRY4                                |     4|
+|13    |LUT1                                  |    16|
+|14    |LUT2                                  |    16|
+|15    |LUT3                                  |     1|
+|16    |LUT4                                  |     3|
+|17    |LUT5                                  |     2|
+|18    |LUT6                                  |     4|
+|19    |FDRE                                  |    20|
++------+--------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------------+-----------------------------------------+------+
+|      |Instance                            |Module                                   |Cells |
++------+------------------------------------+-----------------------------------------+------+
+|1     |top                                 |                                         |  1485|
+|2     |  system_i                          |system                                   |  1419|
+|3     |    axi_mem_intercon                |system_axi_mem_intercon_0                |   234|
+|4     |      s00_couplers                  |s00_couplers_imp_1P403ZT                 |   234|
+|5     |    processing_system7_0_axi_periph |system_processing_system7_0_axi_periph_0 |   551|
+|6     |      s00_couplers                  |s00_couplers_imp_IK3G2O                  |   177|
++------+------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 790.039 ; gain = 95.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 790.039 ; gain = 580.605
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 791.148 ; gain = 477.391
+INFO: [Common 17-1381] The checkpoint 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/synth_1/dma_system_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 791.148 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 09 10:37:47 2017...

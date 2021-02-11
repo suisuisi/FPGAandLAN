@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="D:/MIZ_SOC/SEASON_03/CH01_AXI_DMA_LOOP/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="2">
+	</WVObjectSize>
+	<wvobject fp_name="system_i/axi_dma_0_mm2s_introut" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/axi_dma_0_mm2s_introut</obj_property>
+		<obj_property name="ObjectShortName">system_i/axi_dma_0_mm2s_introut</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/axi_dma_0_s2mm_introut_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/axi_dma_0_s2mm_introut_1</obj_property>
+		<obj_property name="ObjectShortName">system_i/axi_dma_0_s2mm_introut_1</obj_property>
+	</wvobject>
+</wave_config>
+

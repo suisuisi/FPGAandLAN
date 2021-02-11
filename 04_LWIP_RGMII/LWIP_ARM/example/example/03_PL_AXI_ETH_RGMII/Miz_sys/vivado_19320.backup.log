@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Jul 16 15:52:11 2018
+# Process ID: 19320
+# Current directory: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16552 J:\FEP\ESFP1512\MZ702AB\CH02_PL_AXI_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FPGA_project/vivado/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 888.805 ; gain = 191.660
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_ethernet:7.0 - axi_ethernet_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Successfully read diagram <system> from BD file <J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+startgroup
+set_property -dict [list CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {33.3333}] [get_bd_cells processing_system7_0]
+endgroup
+set_property part xc7z020clg400-2 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_ps7_0_axi_periph_0 system_axi_mem_intercon_0 system_axi_ethernet_0_0 system_axi_dma_0_0 system_processing_system7_0_0 system_rst_ps7_0_100M_0 system_xlconcat_0_0}] -log ip_upgrade.log
+Upgrading 'J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3420] Updated system_axi_dma_0_0 to use current project options
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [IP_Flow 19-3420] Updated system_axi_ethernet_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_axi_mem_intercon_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_processing_system7_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_ps7_0_axi_periph_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_rst_ps7_0_100M_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated system_xlconcat_0_0 to use current project options
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.645 ; gain = 203.793
+export_ip_user_files -of_objects [get_ips {system_ps7_0_axi_periph_0 system_axi_mem_intercon_0 system_axi_ethernet_0_0 system_axi_dma_0_0 system_processing_system7_0_0 system_rst_ps7_0_100M_0 system_xlconcat_0_0}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode Hierarchical [get_files  J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+generate_target all [get_files  J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hw_handoff/system_axi_ethernet_0_0.hwh
+Generated Block Design Tcl file j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hw_handoff/system_axi_ethernet_0_0_bd.tcl
+Generated Hardware Definition File j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hdl/system_axi_ethernet_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.hwdef
+generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1372.398 ; gain = 124.242
+export_ip_user_files -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 {system_processing_system7_0_0_synth_1 system_axi_ethernet_0_0_synth_1 system_axi_dma_0_0_synth_1 system_rst_ps7_0_100M_0_synth_1 system_xlconcat_0_0_synth_1 system_xbar_1_synth_1 system_xbar_0_synth_1 system_auto_pc_0_synth_1 system_auto_us_0_synth_1 system_auto_us_1_synth_1 system_auto_us_2_synth_1 system_auto_pc_1_synth_1}
+[Mon Jul 16 15:56:13 2018] Launched bd_4bad_eth_buf_0_synth_1, bd_4bad_eth_mac_0_synth_1...
+Run output will be captured here:
+bd_4bad_eth_buf_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/bd_4bad_eth_buf_0_synth_1/runme.log
+bd_4bad_eth_mac_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/bd_4bad_eth_mac_0_synth_1/runme.log
+[Mon Jul 16 15:56:13 2018] Launched system_processing_system7_0_0_synth_1, system_axi_ethernet_0_0_synth_1, system_axi_dma_0_0_synth_1, system_rst_ps7_0_100M_0_synth_1, system_xlconcat_0_0_synth_1, system_xbar_1_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1, system_auto_us_0_synth_1, system_auto_us_1_synth_1, system_auto_us_2_synth_1, system_auto_pc_1_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_ethernet_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_axi_ethernet_0_0_synth_1/runme.log
+system_axi_dma_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_axi_dma_0_0_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+system_xlconcat_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_xlconcat_0_0_synth_1/runme.log
+system_xbar_1_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_xbar_1_synth_1/runme.log
+system_xbar_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_auto_pc_0_synth_1/runme.log
+system_auto_us_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_auto_us_0_synth_1/runme.log
+system_auto_us_1_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_auto_us_1_synth_1/runme.log
+system_auto_us_2_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_auto_us_2_synth_1/runme.log
+system_auto_pc_1_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_auto_pc_1_synth_1/runme.log
+export_simulation -of_objects [get_files J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {33.3333}] [get_bd_cells processing_system7_0]
+endgroup
+generate_target all [get_files  J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(100) on '/processing_system7_0' with propagated value(99). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(100) on '/processing_system7_0' with propagated value(99). Command ignored
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /processing_system7_0/FCLK_CLK1(124999870)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd 
+generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1560.195 ; gain = 25.266
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(100) on '/processing_system7_0' with propagated value(99). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(100) on '/processing_system7_0' with propagated value(99). Command ignored
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_ethernet_0/gtx_clk(125000000) and /processing_system7_0/FCLK_CLK1(124999870)
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1560.195 ; gain = 0.000
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {33.333333} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+open_bd_design {J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+save_bd_design
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+reset_run system_processing_system7_0_0_synth_1
+reset_run system_axi_ethernet_0_0_synth_1
+reset_run bd_4bad_eth_buf_0_synth_1
+reset_run bd_4bad_eth_mac_0_synth_1
+reset_run system_axi_dma_0_0_synth_1
+reset_run system_rst_ps7_0_100M_0_synth_1
+reset_run system_xbar_1_synth_1
+reset_run system_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hw_handoff/system_axi_ethernet_0_0.hwh
+Generated Block Design Tcl file j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hw_handoff/system_axi_ethernet_0_0_bd.tcl
+Generated Hardware Definition File j:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/hdl/system_axi_ethernet_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ethernet_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/hdl/system.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 3cdeeadb0de275db; cache size = 29.586 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_us_0, cache-ID = 2fca544589e684a4; cache size = 29.586 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_us_1, cache-ID = 524033b7be06edb3; cache size = 29.586 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_us_2, cache-ID = 5262ed5166cd622a; cache size = 29.586 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = 0637cba0681504ea; cache size = 29.586 MB.
+[Mon Jul 16 16:38:17 2018] Launched system_processing_system7_0_0_synth_1, system_axi_ethernet_0_0_synth_1, bd_4bad_eth_buf_0_synth_1, bd_4bad_eth_mac_0_synth_1, system_axi_dma_0_0_synth_1, system_rst_ps7_0_100M_0_synth_1, system_xbar_1_synth_1, system_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_ethernet_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_axi_ethernet_0_0_synth_1/runme.log
+bd_4bad_eth_buf_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/bd_4bad_eth_buf_0_synth_1/runme.log
+bd_4bad_eth_mac_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/bd_4bad_eth_mac_0_synth_1/runme.log
+system_axi_dma_0_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_axi_dma_0_0_synth_1/runme.log
+system_rst_ps7_0_100M_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_rst_ps7_0_100M_0_synth_1/runme.log
+system_xbar_1_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_xbar_1_synth_1/runme.log
+system_xbar_0_synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/system_xbar_0_synth_1/runme.log
+synth_1: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/synth_1/runme.log
+[Mon Jul 16 16:38:17 2018] Launched impl_1...
+Run output will be captured here: J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1643.191 ; gain = 23.598
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.sysdef J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ESFP1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 16 17:10:22 2018...

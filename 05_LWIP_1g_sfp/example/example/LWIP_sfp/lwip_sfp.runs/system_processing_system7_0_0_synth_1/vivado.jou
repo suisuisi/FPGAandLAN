@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat May 30 00:14:04 2020
+# Process ID: 21180
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_processing_system7_0_0.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_processing_system7_0_0.tcl -notrace

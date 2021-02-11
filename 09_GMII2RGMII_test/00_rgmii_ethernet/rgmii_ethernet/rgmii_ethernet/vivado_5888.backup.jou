@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 13 18:31:33 2018
+# Process ID: 5888
+# Current directory: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7904 F:\demo_ax7035\demo_ax7035\19_ethernet_1g_100M\TCP_UDP_ARP\rgmii_ethernet\eth_test.xpr
+# Log file: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet/vivado.log
+# Journal file: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet/eth_test.xpr
+update_compile_order -fileset sources_1

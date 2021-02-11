@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Feb 19 17:53:13 2017
+# Process ID: 120320
+# Current directory: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent119572 D:\MIZ_SOC\SEASON_03\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+undo
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/MIZ_SOC/SEASON_03/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}

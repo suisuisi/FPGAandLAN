@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Nov 09 10:16:05 2017
+# Process ID: 7708
+# Current directory: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11252 F:\MIZ7035_Demon\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+open_bd_design {F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+set_property part xc7z035ffg676-2 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {system_axi_dma_0_0 system_processing_system7_0_0 system_SSD1306_OLED_ML_0_0 system_axis_data_fifo_0_1 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_ila_0_0 system_processing_system7_0_axi_periph_0 system_xlconcat_0_0 system_axi_gpio_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {system_axi_dma_0_0 system_processing_system7_0_0 system_SSD1306_OLED_ML_0_0 system_axis_data_fifo_0_1 system_axi_mem_intercon_0 system_rst_processing_system7_0_50M_0 system_ila_0_0 system_processing_system7_0_axi_periph_0 system_xlconcat_0_0 system_axi_gpio_0_0}] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode Hierarchical [get_files  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+generate_target all [get_files  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_processing_system7_0_0_synth_1 system_SSD1306_OLED_ML_0_0_synth_1 system_rst_processing_system7_0_50M_0_synth_1 system_axi_dma_0_0_synth_1 system_xlconcat_0_0_synth_1 system_ila_0_0_synth_1 system_axis_data_fifo_0_1_synth_1 system_axi_gpio_0_0_synth_1 system_xbar_0_synth_1 system_auto_pc_0_synth_1 system_auto_us_0_synth_1 system_auto_pc_1_synth_1}
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run system_SSD1306_OLED_ML_0_0_synth_1
+delete_bd_objs [get_bd_nets SSD1306_OLED_ML_0_SDIN] [get_bd_nets SSD1306_OLED_ML_0_SCLK] [get_bd_nets SSD1306_OLED_ML_0_DC] [get_bd_nets SSD1306_OLED_ML_0_RES] [get_bd_nets SSD1306_OLED_ML_0_VBAT] [get_bd_nets SSD1306_OLED_ML_0_VDD] [get_bd_intf_nets processing_system7_0_axi_periph_M00_AXI] [get_bd_cells SSD1306_OLED_ML_0]
+delete_bd_objs [get_bd_ports DC] [get_bd_ports SCLK] [get_bd_ports VBAT] [get_bd_ports VDD] [get_bd_ports RES] [get_bd_ports SDIN]
+open_bd_design {F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+generate_target all [get_files  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 8 {system_xbar_0_synth_1 system_auto_pc_0_synth_1 system_auto_us_0_synth_1 system_auto_pc_1_synth_1}
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+remove_files  F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_SSD1306_OLED_ML_0_0/IPSRC/charLib/charLib.coe
+file delete -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_SSD1306_OLED_ML_0_0/IPSRC/charLib/charLib.coe
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/dma_system_wrapper.sysdef F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+
+file copy -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/dma_system_wrapper.sysdef F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+
+file copy -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/dma_system_wrapper.sysdef F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+
+launch_sdk -workspace F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+file copy -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/dma_system_wrapper.sysdef F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+
+launch_sdk -workspace F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+file mkdir F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk
+file copy -force F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/impl_1/dma_system_wrapper.sysdef F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+
+launch_sdk -workspace F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf
+open_bd_design {F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}

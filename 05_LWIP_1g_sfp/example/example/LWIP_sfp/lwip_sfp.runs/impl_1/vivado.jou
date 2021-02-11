@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Nov 07 21:03:17 2017
+# Process ID: 6632
+# Current directory: F:/FPGA_project/vivado/miz7035/lwip_sfp/Miz_sys/Miz_sys.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: F:/FPGA_project/vivado/miz7035/lwip_sfp/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.vdi
+# Journal file: F:/FPGA_project/vivado/miz7035/lwip_sfp/Miz_sys/Miz_sys.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

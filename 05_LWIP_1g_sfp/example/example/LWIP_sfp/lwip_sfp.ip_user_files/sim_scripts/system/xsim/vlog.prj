@@ -1,0 +1,29 @@
+verilog xil_defaultlib --include "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/70cf/hdl" --include "../../../../Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_resets.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_clocking.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_support.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_gt_common.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_cpll_railing.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_gtwizard_init.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_tx_startup_fsm.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_rx_startup_fsm.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_reset_wtd_timer.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_gtwizard.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_gtwizard_multi_gt.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_gtwizard_gt.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_reset_sync.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_sync_block.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/transceiver/system_gig_ethernet_pcs_pma_0_0_transceiver.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0_block.v" \
+"../../../bd/system/ip/system_gig_ethernet_pcs_pma_0_0/synth/system_gig_ethernet_pcs_pma_0_0.v" \
+"../../../bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
+"../../../bd/system/ip/system_xlconstant_0_1/sim/system_xlconstant_0_1.v" \
+"../../../bd/system/ip/system_xlconstant_1_0/sim/system_xlconstant_1_0.v" \
+"../../../bd/system/hdl/system.v" \
+"../../../bd/system/ip/system_util_vector_logic_0_0/sim/system_util_vector_logic_0_0.v" \
+"../../../bd/system/sim/system.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

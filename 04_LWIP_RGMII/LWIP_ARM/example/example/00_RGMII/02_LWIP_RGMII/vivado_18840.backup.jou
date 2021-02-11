@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Apr  6 19:56:11 2020
+# Process ID: 18840
+# Current directory: F:/FILE/TEST/02_LWIP_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21908 F:\FILE\TEST\02_LWIP_RGMII\02_LWIP_RGMII.xpr
+# Log file: F:/FILE/TEST/02_LWIP_RGMII/vivado.log
+# Journal file: F:/FILE/TEST/02_LWIP_RGMII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+launch_sdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf

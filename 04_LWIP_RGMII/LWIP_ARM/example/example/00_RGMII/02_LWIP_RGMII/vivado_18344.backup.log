@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Apr 11 13:33:11 2020
+# Process ID: 18344
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16712 F:\FILE\FPGA\ZYNQ\08_LAN\05_MB_DDR3_LWIP_RGMII\02_LWIP_RGMII\02_LWIP_RGMII.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_PL_AXI_LWIP_RGMII/02_LWIP_RGMII' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 861.953 ; gain = 216.813
+update_compile_order -fileset sources_1
+open_bd_design {F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_ethernet:7.1 - axi_ethernet_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <system> from BD file <F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/system.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /c_counter_binary_0/THRESH0(data) and /c_shift_ram_0/CE(ce)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /c_shift_ram_0/Q(data) and /phy_rst_n(rst)
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1072.055 ; gain = 47.813
+reset_run synth_1
+reset_run system_axi_ethernet_0_0_synth_1
+reset_run bd_4bad_mac_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_axi_ethernet_0_0, cache-ID = 1127a23890387bdf; cache size = 21.313 MB.
+config_ip_cache: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1086.711 ; gain = 2.883
+[Sat Apr 11 13:36:12 2020] Launched system_axi_ethernet_0_0_synth_1, bd_4bad_mac_0_synth_1, synth_1...
+Run output will be captured here:
+system_axi_ethernet_0_0_synth_1: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.runs/system_axi_ethernet_0_0_synth_1/runme.log
+bd_4bad_mac_0_synth_1: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_mac_0_synth_1/runme.log
+synth_1: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.runs/synth_1/runme.log
+[Sat Apr 11 13:36:12 2020] Launched impl_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_LWIP_RGMII/02_LWIP_RGMII.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1086.711 ; gain = 2.883
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 13:45:34 2020...

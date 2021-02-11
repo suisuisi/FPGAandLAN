@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Nov 09 10:18:41 2017
+# Process ID: 1972
+# Current directory: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/system_axis_data_fifo_0_1_synth_1
+# Command line: vivado.exe -log system_axis_data_fifo_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axis_data_fifo_0_1.tcl
+# Log file: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/system_axis_data_fifo_0_1_synth_1/system_axis_data_fifo_0_1.vds
+# Journal file: F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.runs/system_axis_data_fifo_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axis_data_fifo_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 327.422 ; gain = 117.922
+INFO: [Synth 8-638] synthesizing module 'system_axis_data_fifo_0_1' [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_1/synth/system_axis_data_fifo_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'axis_data_fifo_v1_1_12_axis_data_fifo' [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fcef/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (1#1) [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (2#1) [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (3#1) [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-256] done synthesizing module 'axis_data_fifo_v1_1_12_axis_data_fifo' (32#1) [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ipshared/fcef/hdl/axis_data_fifo_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'system_axis_data_fifo_0_1' (33#1) [f:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_1/synth/system_axis_data_fifo_0_1.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 535.348 ; gain = 325.848
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 535.348 ; gain = 325.848
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 695.660 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:12 ; elapsed = 00:01:28 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:12 ; elapsed = 00:01:28 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:28 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:29 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:31 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 695.660 ; gain = 486.160
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:46 . Memory (MB): peak = 704.734 ; gain = 495.234
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:46 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     6|
+|2     |LUT1     |     6|
+|3     |LUT2     |    57|
+|4     |LUT3     |    16|
+|5     |LUT4     |    44|
+|6     |LUT5     |    14|
+|7     |LUT6     |    17|
+|8     |MUXCY    |    20|
+|9     |RAMB36E1 |     1|
+|10    |FDCE     |   103|
+|11    |FDPE     |    21|
+|12    |FDRE     |   102|
+|13    |FDSE     |     6|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 713.266 ; gain = 503.766
+get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1173.535 ; gain = 439.652
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 1173.535 ; gain = 934.922

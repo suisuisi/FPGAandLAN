@@ -1,0 +1,46 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 570 -defaultsOSRD
+preplace port sfp -pg 1 -y 180 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 650 -defaultsOSRD
+preplace port gtrefclk_in -pg 1 -y 480 -defaultsOSRD
+preplace portBus an_adv_config_vector -pg 1 -y 500 -defaultsOSRD
+preplace portBus configuration_vector -pg 1 -y 660 -defaultsOSRD
+preplace portBus status_vector -pg 1 -y 420 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -y 600 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -y 220 -defaultsOSRD
+preplace inst gig_ethernet_pcs_pma_0 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 510J 540 870J 580 1380J
+preplace netloc gig_ethernet_pcs_pma_0_sfp 1 3 1 NJ
+preplace netloc xlconstant_1_dout 1 2 1 1020J
+preplace netloc xlconstant_2_dout 1 2 1 910J
+preplace netloc gig_ethernet_pcs_pma_0_gmii_rxd 1 1 2 500J 290 940
+preplace netloc an_adv_config_vector_1 1 0 3 NJ 500 550J 420 890J
+preplace netloc gig_ethernet_pcs_pma_0_gmii_rx_er 1 1 2 520J 280 930
+preplace netloc util_vector_logic_0_Res 1 2 1 900
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 540J
+preplace netloc processing_system7_0_ENET1_GMII_TX_EN 1 1 2 NJ 60 1010
+preplace netloc processing_system7_0_ENET1_MDIO_O 1 1 2 490J 120 1000
+preplace netloc configuration_vector_1 1 0 3 NJ 660 NJ 660 1010J
+preplace netloc xlconstant_0_dout 1 1 2 460 130 920
+preplace netloc gig_ethernet_pcs_pma_0_userclk2_out 1 1 3 470 50 NJ 50 1380
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 480J 410 880J 650 NJ
+preplace netloc gtrefclk_in_1 1 0 3 -10J 670 NJ 670 980J
+preplace netloc processing_system7_0_ENET1_MDIO_MDC 1 1 2 480J 110 1020
+preplace netloc processing_system7_0_ENET1_GMII_TXD 1 1 2 460 70 990J
+preplace netloc processing_system7_0_ENET1_GMII_TX_ER 1 1 2 N 80 980J
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 530J 150 950
+preplace netloc gig_ethernet_pcs_pma_0_status_vector 1 3 1 NJ
+preplace netloc gig_ethernet_pcs_pma_0_mdio_o 1 1 2 510J 140 970
+preplace netloc gig_ethernet_pcs_pma_0_gmii_rx_dv 1 1 2 500J 160 960
+levelinfo -pg 1 -30 230 720 1200 1400 -top -20 -bot 680
+"
+}
+{
+   "da_ps7_cnt":"1"
+}

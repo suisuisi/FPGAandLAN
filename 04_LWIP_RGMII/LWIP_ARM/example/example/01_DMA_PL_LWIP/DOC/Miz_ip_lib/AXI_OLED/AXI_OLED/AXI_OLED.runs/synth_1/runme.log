@@ -1,0 +1,733 @@
+
+*** Running vivado
+    with args -log SSD1306_OLED_ML.vds -m64 -mode batch -messageDb vivado.pb -notrace -source SSD1306_OLED_ML.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source SSD1306_OLED_ML.tcl -notrace
+Command: synth_design -top SSD1306_OLED_ML -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 279.035 ; gain = 106.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SSD1306_OLED_ML' [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SSD1306_OLED_ML.v:17]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SSD1306_OLED_v1_0_S00_AXI' [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SSD1306_OLED_v1_0_S00_AXI.v:18]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SpiCtrl' [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SpiCtrl.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SpiCtrl' (1#1) [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SpiCtrl.v:20]
+INFO: [Synth 8-638] synthesizing module 'Delay' [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/Delay.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Delay' (2#1) [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/Delay.v:19]
+INFO: [Synth 8-638] synthesizing module 'charLib' [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/synth_1/.Xil/Vivado-1868-/realtime/charLib_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'charLib' (3#1) [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/synth_1/.Xil/Vivado-1868-/realtime/charLib_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'SSD1306_OLED_v1_0_S00_AXI' (4#1) [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SSD1306_OLED_v1_0_S00_AXI.v:18]
+INFO: [Synth 8-256] done synthesizing module 'SSD1306_OLED_ML' (5#1) [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/IPSRC/SSD1306_OLED_ML.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 340.922 ; gain = 168.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 340.922 ; gain = 168.855
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/synth_1/.Xil/Vivado-1868-/dcp/charLib_in_context.xdc] for cell 'SSD1306_OLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP'
+Finished Parsing XDC File [D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/synth_1/.Xil/Vivado-1868-/dcp/charLib_in_context.xdc] for cell 'SSD1306_OLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 631.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 631.559 ; gain = 459.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 631.559 ; gain = 459.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 631.559 ; gain = 459.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SPI_FIN" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shift_counter" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ms_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "current_screen" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_res" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vdd" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vbat" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "after_page_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "temp_char" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "after_char_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clear_screen_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "temp_addr" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_spi_en" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_delay_en" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "RST_internal" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------+------------+----------+
+|      |RTL Partition                  |Replication |Instances |
++------+-------------------------------+------------+----------+
+|1     |SSD1306_OLED_v1_0_S00_AXI__GB0 |           1|     57400|
+|2     |SSD1306_OLED_v1_0_S00_AXI__GB1 |           1|     14760|
+|3     |SSD1306_OLED_v1_0_S00_AXI__GB2 |           1|     19680|
+|4     |SSD1306_OLED_v1_0_S00_AXI__GB3 |           1|     24600|
+|5     |SSD1306_OLED_v1_0_S00_AXI__GB4 |           1|     51544|
++------+-------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              143 Bit    Registers := 1     
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 19    
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 67    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  19 Input    143 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	  51 Input    112 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 2     
+	   2 Input     87 Bit        Muxes := 1     
+	   4 Input     87 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	  18 Input     32 Bit        Muxes := 17    
+	   3 Input     31 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	  51 Input     11 Bit        Muxes := 1     
+	  51 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 1     
+	  51 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  51 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 30    
+	   3 Input      1 Bit        Muxes := 4     
+	  51 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Delay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module SpiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module SSD1306_OLED_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              143 Bit    Registers := 1     
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 18    
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 66    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  19 Input    143 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	  51 Input    112 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 2     
+	   2 Input     87 Bit        Muxes := 1     
+	   4 Input     87 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	  18 Input     32 Bit        Muxes := 17    
+	  51 Input     11 Bit        Muxes := 1     
+	  51 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	  51 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  51 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 4     
+	  51 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design SSD1306_OLED_ML has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3330] design SSD1306_OLED_v1_0_S00_AXI__GB0 has an empty top module
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[40]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[39]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[38]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[37]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[36]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[35]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[34]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[33]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[32]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[31]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[30]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[29]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[28]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[27]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[26]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[25]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[24]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[23]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[22]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[21]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[20]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[19]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[18]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[17]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[16]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[15]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[14]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[13]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[12]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[11]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[10]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[9]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[8]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[7]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[6]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[5]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[4]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[3]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[2]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[1]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB0 has unconnected port Q[0]
+WARNING: [Synth 8-3330] design SSD1306_OLED_v1_0_S00_AXI__GB1 has an empty top module
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[40]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[39]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[38]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[37]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[36]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[35]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[34]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[33]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[32]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[31]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[30]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[29]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[28]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[27]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[26]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[25]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[24]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[23]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[22]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[21]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[20]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[19]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[18]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[17]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[16]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[15]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[14]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[13]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[12]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[11]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[10]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[9]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[8]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[7]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[6]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[5]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[4]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[3]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[2]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[1]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB1 has unconnected port Q[0]
+WARNING: [Synth 8-3330] design SSD1306_OLED_v1_0_S00_AXI__GB2 has an empty top module
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[40]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[39]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[38]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[37]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[36]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[35]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[34]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[33]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[32]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[31]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[30]
+WARNING: [Synth 8-3331] design SSD1306_OLED_v1_0_S00_AXI__GB2 has unconnected port Q[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3330] design SSD1306_OLED_v1_0_S00_AXI__GB3 has an empty top module
+INFO: [Synth 8-5545] ROM "clk_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ms_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shift_counter" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SPI_FIN" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vdd" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_spi_en" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vbat" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_screen" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_addr" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_res" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_char" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "RST_internal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "temp_delay_en" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:08 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:59 ; elapsed = 00:02:08 . Memory (MB): peak = 778.258 ; gain = 606.191
+
+Report RTL Partitions: 
++------+-------------------------------+------------+----------+
+|      |RTL Partition                  |Replication |Instances |
++------+-------------------------------+------------+----------+
+|1     |SSD1306_OLED_v1_0_S00_AXI__GB0 |           1|         0|
+|2     |SSD1306_OLED_v1_0_S00_AXI__GB1 |           1|         0|
+|3     |SSD1306_OLED_v1_0_S00_AXI__GB2 |           1|         0|
+|4     |SSD1306_OLED_v1_0_S00_AXI__GB3 |           1|         0|
+|5     |SSD1306_OLED_v1_0_S00_AXI__GB4 |           1|     23235|
++------+-------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[0] ' (FDE) to '\after_char_state_reg[17] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[0] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[32] ' (FDE) to '\after_char_state_reg[1] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[32] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[64] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[24] ' (FDE) to '\after_char_state_reg[17] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[24] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[12] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[12] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[44] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[56] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[76] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[88] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[9] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[9] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[41] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[73] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[1] ' (FDE) to '\after_char_state_reg[6] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[1] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[19] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[19] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[33] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[33] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[51] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[65] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[83] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[18] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[18] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[26] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[26] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[27] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[27] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[50] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[58] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[59] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[82] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[90] ' (FDE) to '\after_char_state_reg[2] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[2] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[2] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[91] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[10] ' (FDE) to '\after_char_state_reg[6] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[10] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[42] ' (FDE) to '\after_char_state_reg[17] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[34] ' (FDE) to '\after_char_state_reg[17] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[34] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[66] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[74] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[11] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[11] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[43] ' (FDE) to '\after_char_state_reg[17] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[75] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[6] ' (FDE) to '\after_char_state_reg[14] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[6] ' (FDE) to '\after_update_state_reg[38] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[38] ' (FDE) to '\after_char_state_reg[14] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[38] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[17] ' (FDE) to '\after_char_state_reg[20] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[17] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[49] ' (FDE) to '\after_char_state_reg[20] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[70] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[81] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[8] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[8] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[40] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[72] ' (FDE) to '\after_char_state_reg[4] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[4] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[4] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[28] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[28] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[36] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[36] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[60] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[68] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[92] ' (FDE) to '\after_char_state_reg[3] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[3] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[3] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[20] ' (FDE) to '\after_char_state_reg[45] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[20] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[25] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[25] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[35] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[35] ' (FDE) to '\after_update_state_reg[39] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[52] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[57] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[67] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[84] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[89] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[13] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[13] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[29] ' (FDE) to '\after_char_state_reg[14] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[29] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[16] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[16] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[48] ' (FDE) to '\after_char_state_reg[14] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[61] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[77] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[80] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[93] ' (FDE) to '\after_char_state_reg[7] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[21] ' (FDE) to '\after_char_state_reg[14] '
+INFO: [Synth 8-3886] merging instance '\after_update_state_reg[21] ' (FDE) to '\after_update_state_reg[37] '
+INFO: [Synth 8-3886] merging instance '\after_char_state_reg[53] ' (FDE) to '\after_char_state_reg[5] '
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\after_update_state_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_update_state_reg[39] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\after_char_state_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_char_state_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_state_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_page_state_reg[142] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (DELAY_COMP/\current_state_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DELAY_COMP/\current_state_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (SPI_COMP/\current_state_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SPI_COMP/\current_state_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_state_reg[143] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_state_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\after_state_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\after_page_state_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\after_page_state_reg[32] )
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[31] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[30] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[29] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[28] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[25] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[23] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[22] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[21] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[20] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[18] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[17] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[16] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[15] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[14] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[13] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[12] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[11] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[10] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[9] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[8] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[7] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[6] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[5] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[4] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[3] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[2] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[1] ) is unused and will be removed from module Delay.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[39] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[38] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[37] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[36] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[35] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[34] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[33] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[32] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[31] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[30] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[29] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[26] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[25] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[23] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[22] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[21] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[20] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[19] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[18] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[15] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[14] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[13] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[12] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[11] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[10] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[9] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[8] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[7] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[6] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[5] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[4] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[3] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[2] ) is unused and will be removed from module SpiCtrl.
+WARNING: [Synth 8-3332] Sequential element (\current_state_reg[1] ) is unused and will be removed from module SpiCtrl.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:17 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:59 ; elapsed = 00:02:17 . Memory (MB): peak = 778.258 ; gain = 606.191
+
+Report RTL Partitions: 
++------+-------------------------------+------------+----------+
+|      |RTL Partition                  |Replication |Instances |
++------+-------------------------------+------------+----------+
+|1     |SSD1306_OLED_v1_0_S00_AXI__GB4 |           1|      9575|
++------+-------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:02:24 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------+------------+----------+
+|      |RTL Partition                  |Replication |Instances |
++------+-------------------------------+------------+----------+
+|1     |SSD1306_OLED_v1_0_S00_AXI__GB4 |           1|      9575|
++------+-------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:08 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:08 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:26 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |charLib       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |charLib |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    11|
+|4     |LUT1    |    46|
+|5     |LUT2    |   290|
+|6     |LUT3    |   121|
+|7     |LUT4    |   172|
+|8     |LUT5    |   320|
+|9     |LUT6    |  1406|
+|10    |MUXF7   |   139|
+|11    |MUXF8   |    64|
+|12    |FDRE    |  1306|
+|13    |FDSE    |    82|
+|14    |IBUF    |    53|
+|15    |OBUF    |    47|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |  4066|
+|2     |  SSD1306_OLED_v1_0_S00_AXI_inst |SSD1306_OLED_v1_0_S00_AXI |  3965|
+|3     |    DELAY_COMP                   |Delay                     |   127|
+|4     |    SPI_COMP                     |SpiCtrl                   |    60|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 778.258 ; gain = 606.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 235 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:00 ; elapsed = 00:02:22 . Memory (MB): peak = 778.258 ; gain = 262.734
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 778.258 ; gain = 606.191
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SSD1306_OLED_ML' is not ideal for floorplanning, since the cellview 'SSD1306_OLED_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 778.258 ; gain = 582.367
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 778.258 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 13 16:16:59 2016...

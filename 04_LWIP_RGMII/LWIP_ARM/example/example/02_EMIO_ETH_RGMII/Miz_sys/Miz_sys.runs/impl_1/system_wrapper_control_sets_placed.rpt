@@ -1,0 +1,83 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Jul 19 15:05:44 2018
+| Host         : LB-201803132255 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+| Design       : system_wrapper
+| Device       : xc7z035
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           24 |
+| No           | No                    | Yes                    |              25 |            5 |
+| No           | Yes                   | No                     |              38 |           11 |
+| Yes          | No                    | No                     |               9 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                                                         Clock Signal                                                         |                                                                    Enable Signal                                                                    |                                                                   Set/Reset Signal                                                                  | Slice Load Count | Bel Load Count |
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/BIT_COUNT             |                                                                                                                                                     |                2 |              4 |
+|  system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/gmii_tx_clk                                                               |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/tx_reset_async_reg_n_0                              |                1 |              5 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/reset_in                               |                1 |              5 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/tx_reset                                                                            |                1 |              5 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/ADDR_WR[4]_i_1_n_0    | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_mgmt_reset/reset_out                   |                1 |              5 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/SHIFT_REG[15]_i_1_n_0 |                                                                                                                                                     |                3 |              6 |
+|  system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_gmii_to_rgmii/gmii_rx_clk |                                                                                                                                                     |                                                                                                                                                     |                7 |             10 |
+|  system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/gmii_tx_clk                                                               |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_gmii_to_rgmii/i_reset_sync_tx_reset/reset_out     |                4 |             10 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     | system_i/util_vector_logic_0/Res[0]                                                                                                                 |                2 |             10 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/SHIFT_REG[15]_i_1_n_0 | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDIO_INTERFACE_1/SHIFT_REG[14]_i_1_n_0 |                3 |             12 |
+|  system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/gmii_tx_clk                                                               |                                                                                                                                                     |                                                                                                                                                     |                9 |             13 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_mgmt_reset/reset_out                   |                4 |             13 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_MANAGEMENT/MDC_RISING_REG1                        | system_i/gmii_to_rgmii_0/U0/i_gmii_to_rgmii_block/system_gmii_to_rgmii_0_0_core/i_gmii_to_rgmii/i_reset_sync_mgmt_reset/reset_out                   |                5 |             14 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     | system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_resets/idelayctrl_reset_gen/reset_out                                                        |                3 |             15 |
+|  system_i/gmii_to_rgmii_0/U0/i_system_gmii_to_rgmii_0_0_clocking/clkin_out                                                   |                                                                                                                                                     |                                                                                                                                                     |                8 |             20 |
++------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     1 |
+| 5      |                     4 |
+| 6      |                     1 |
+| 10     |                     3 |
+| 12     |                     1 |
+| 13     |                     2 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

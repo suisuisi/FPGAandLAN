@@ -1,0 +1,3 @@
+Language File-Name             IP       Library             File-Path                                                           
+VHDL,    blk_mem_gen_v8_3.vhd, charLib, blk_mem_gen_v8_3_1, ../../../ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+VHDL,    charLib.vhd,          charLib, xil_defaultlib,     ../../../../../IPSRC/charLib/sim/charLib.vhd                        

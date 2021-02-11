@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 24 18:40:28 2018
+# Process ID: 3960
+# Current directory: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4672 F:\demo_ax7035\demo_ax7035\19_ethernet_1g_100M\TCP_UDP_ARP\rgmii_ethernet\eth_test.xpr
+# Log file: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet/vivado.log
+# Journal file: F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/demo_ax7035/demo_ax7035/19_ethernet_1g_100M/TCP_UDP_ARP/rgmii_ethernet/eth_test.xpr
+INFO: [Project 1-313] Project file moved from 'D:/demo_ax7035/rgmii_ethernet' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 809.102 ; gain = 109.105
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 24 18:41:53 2018...

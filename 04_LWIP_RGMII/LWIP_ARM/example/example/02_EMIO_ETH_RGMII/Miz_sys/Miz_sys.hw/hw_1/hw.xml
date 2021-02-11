@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2017.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z020_1" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="J:/MZ702N/FEP_CARD/PL_AXI_ETH_RGMII/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.runs/impl_1/system_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="c:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/1"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

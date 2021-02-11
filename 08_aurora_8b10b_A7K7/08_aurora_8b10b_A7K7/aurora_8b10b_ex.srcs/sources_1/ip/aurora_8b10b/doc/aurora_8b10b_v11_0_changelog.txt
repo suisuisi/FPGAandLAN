@@ -1,0 +1,226 @@
+2016.4:
+ * Version 11.0 (Rev. 7)
+ * General: Added support for XC7A12T, XC7A12Ti, XC7A25T, XC7A25Ti devices
+ * Revision change in one or more subcores
+
+2016.3:
+ * Version 11.0 (Rev. 6)
+ * Bug Fix: Fixed issue in failure due to floating point precision difference of gt_refclk in validate BD design in IPI
+ * Bug Fix: Fixed TXDIFFCTRL and DMONITOROUT port widths for UltraScale devices in IP symbol
+ * Feature Enhancement: Added Advanced RX GT Options selection in GUI
+ * Other: Added support for XC7A12T, XC7A12Ti, XC7A25T, XC7A25Ti, XC7Z012S devices
+ * Revision change in one or more subcores
+
+2016.2:
+ * Version 11.0 (Rev. 5)
+ * Fixed Artix7 periodic channel up toggle issue
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 11.0 (Rev. 4)
+ * Fixed preserving Equalizer selection issue when additional transceiver ports option is enabled
+ * Adjusted line rate and associated frequency limits for -1,-1H,1HV,-1L,-1LV, -2LV speed grade devices to match UltraScale FPGAs Data Sheet
+ * Revision change in one or more subcores
+
+2015.4.2:
+ * Version 11.0 (Rev. 3)
+ * No changes
+
+2015.4.1:
+ * Version 11.0 (Rev. 3)
+ * No changes
+
+2015.4:
+ * Version 11.0 (Rev. 3)
+ * Added support for new speedgrades of XQ7K325T and XQ7K410T devices
+ * Added support for new speedgrades of XQ7Z030, XQ7Z045 and XQ7Z100 devices
+ * Added support for new speedgrade of XQ7A050T, XQ7A100T and XQ7A200T devices
+ * Revision change in one or more subcores
+
+2015.3:
+ * Version 11.0 (Rev. 2)
+ * Updated RTL to fix CDC warnings
+ * Added support for UltraScale+ devices
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+
+2015.2.1:
+ * Version 11.0 (Rev. 1)
+ * No changes
+
+2015.2:
+ * Version 11.0 (Rev. 1)
+ * Added support for XQ7VX690T, XQ7Z045 and XQ7Z100 devices
+ * BUFG removed on DRP Clock input
+ * TXPMARESETDONE used in rxstartupfsm for GTP RX-onlySimplex configuration
+ * set_false_path constrain on synchronizers updated
+
+2015.1:
+ * Version 11.0
+ * Added support for 7 Series devices with FFV and FBV Pb-Free RoHs package
+ * Added txinhibit and pcsrsvdin optional transceiver control and status ports
+ * Both reset and gt_reset ports made asynchronous to the core
+ * Standard CC module made part of IP, do_cc and warn_cc ports removed
+ * Flow control ports grouped into AXI4 Stream interfaces
+ * Control and status ports are grouped as display interfaces
+ * Added support for single ended clocking option to INIT_CLK and GTREFCLK
+ * Added support for contiguous lane selection for Ultrascale devices
+ * CRC resource utilization optimized
+ * GT Reference Clocks, User Clock and Sync Clock ports updated with expected frequency values in IP-Integrator
+ * Line rate value restricted to 4 decimal digits for Ultrascale devices
+ * INIT clock frequency value restricted to 6 decimal digits
+
+2014.4.1:
+ * Version 10.3 (Rev. 2)
+ * Ultrascale GT Wizard version updated
+
+2014.4:
+ * Version 10.3 (Rev. 1)
+ * Added support for new XC7A15T, XC7A15TI, XA7A15T, XC7A35TI, XC7A50TI, XC7A75TI, XC7A100TI and XC7A200TI devices
+ * Added support for XC7Z015I, XC7Z030I, XC7Z045I, XC7Z035, XC7Z035I and XC7Z100I devices
+ * Added support for XC7K160TI, XC7K325TI, XC7K355TI, XC7K410TI, XC7K420TI and XC7K480TI devices
+ * BUFG added to DRP Clock input
+ * Line rate range for -2L speed grade 1.0V Artix devices updated to 6.25Gbps
+ * Location constraint changed for Xilinx Evaluation platform boards
+
+2014.3:
+ * Version 10.3
+ * Ultrascale GT Wizard version updated
+ * Added support for new Ultrascale devices
+ * Added support for XQ7A50 devices
+ * Added support for XA7Z030 devices
+ * Added support for user configurable DRP clock and INIT clock through IP GUI
+ * Added C_EXAMPLE_SIMULATION parameter for post synthesis/implementation simulation speedup
+ * set_max_delay constrain changed to set_false_path constrains to destination flops
+ * XDCs compliant with updated timing constraining guidelines
+ * Added support for Xilinx Evaluation platform boards
+ * User selectable option enabled for GT DRP interface in IPI systems
+ * Added support for auto propagate to INIT and DRP clock in IPI systems
+ * Fixed gt_dmonitorout_out data width mismatch issue for Zynq devices
+ * Differential INIT clock input added to Ultrascale example design
+ * Addressed CPLL power down circuit requirement for 7 series Transceivers - refer AR
+ * GT startup fsms updated to be complain with 7 Series GT Wizard
+ * Addressed update to GTH/GTP Production RX reset sequence implementation- refer AR
+ * Parameter declaration issue with IES simulator addressed
+
+2014.2:
+ * Version 10.2 (Rev. 1)
+ * Ultrascale GT Wizard version change
+ * Added support for XQ7Z045 RF900 devices
+ * Fixed hold violation timing issues in Ultrascale device based designs
+ * Updated channel bonding levels logic for >= 13 lanes in 4 byte mode
+ * Fixed gt0_dmonitorout_out port width for GTX devices in transceiver debug ports
+ * Free running INIT CLK is connected to VIO core in example design
+ * Fixed latch inference issue in crc modules for VHDL designs
+ * Updated CLK_COR_MIN_LAT and CLK_COR_MAX_LAT values for 16-GT (GTHE3_CHANNEL) in Ultrascale device
+
+2014.1:
+ * Version 10.2
+ * Added support for Ultrascale devices
+ * Added support for XC7Z015, XC7A50T, XC7A35T devices
+ * Added support for automotive aartix XA7A35, XA7A50T, XA7A75T & XA7A100T devices
+ * Enhanced support for IP Integrator
+ * Added Little endian support for data & flow control interfaces as non-default GUI selectable option
+ * Fixed VHDL syntax issue on rxpmaresetdone_t signal for 7-series based designs
+ * Updated OOC XDC with all the available clocks for the selected IP configuration
+ * Fixed TXCRC and RXCRC modules to operate upon valid data and report correct CRC status
+ * Updated core reset logic with tx_lock synchronization
+ * Updated the simplex timer values for 7-series production silicon logic updates
+ * Updated the hot-plug logic to handle clock domain crossing efficiently
+ * Added recovery mechanism for channel bonding failure
+
+2013.4:
+ * Version 10.1
+ * Increased the number of optional transceiver control and status ports
+
+2013.3:
+ * Version 10.0
+ * Added support for XC7A75T device
+ * Added startup FSM integration for 7-series GT reset sequence
+ * Added GUI option to include or exclude Vivado Labtools support for debug
+ * Updated line rate for A7 wire bond package devices for speed grade -2 and -3
+ * Added GUI option to include or exclude shareable logic resources in the core. For details, refer to Migrating section of Product Guide - pg046-aurora-8b10b.pdf
+ * Added optional transceiver control and status ports - Refer to pg046-aurora-8b10b.pdf
+ * Updated synchronizers for clock domain crossing to reduce Mean Time Between Failures (MTBF) from metastability
+ * Reduced warnings in synthesis and simulation
+ * Added support for Cadence IES and Synopsys VCS simulators
+ * Added support for IP Integrator level 0
+
+2013.2:
+ * Version 9.1
+ * Artix-7 GTP and Virtex-7 GTH production attributes updates
+ * XDC constraints processing order changed
+ * Update for UFC packet drop in back to back data transfer
+ * XQ7Z030-RB484 device support
+
+2013.1:
+ * Version 9.0
+ * Lower case IP level ports
+ * Hot-plug timer update
+ * CDC fixes
+ * New reset sequence for GTRXRESET in Artix-7 GTP Production silicon
+ * New reset sequence for GTRXRESET in Virtex-7 GTH Production silicon
+ * Out-of-context (OOC) flow support
+ * Zynq-7000 family support
+
+2012.4:
+ * Version 8.3 (Rev. 1)
+ * Artix-7 IES silicon support
+ * Autoupgrade feature
+
+2012.3:
+ * Version 8.3
+ * Artix-7 family support
+
+2012.2:
+ * Version 8.2
+ * Virtex-7 HT device support
+ * CRC feature addition
+ * Hot-plug support for 7-series
+ * XSIM simulator support
+ * Native Vivado release
+
+(c) Copyright 2010 - 2016 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

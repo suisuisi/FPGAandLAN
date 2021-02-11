@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Nov 13 16:13:11 2016
+# Process ID: 2608
+# Current directory: D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/charLib_synth_1
+# Command line: vivado.exe -log charLib.vds -mode batch -messageDb vivado.pb -notrace -source charLib.tcl
+# Log file: D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/charLib_synth_1/charLib.vds
+# Journal file: D:/MIZ_SOC/CH14_AXI_OLED/AXI_OLED/AXI_OLED/AXI_OLED.runs/charLib_synth_1\vivado.jou
+#-----------------------------------------------------------
+source charLib.tcl -notrace

@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 04 12:59:08 2017
+# Process ID: 1076
+# Current directory: D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3732 D:\vivado_project\miz701n\7010\2016_4\PL_AXI_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivado_project/miz701n/7010/2016_4/PS_EMIO_ETH_RGMII/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_bd_design {D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:gmii_to_rgmii:4.0 - gmii_to_rgmii_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Successfully read diagram <system> from BD file <D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_ENET1_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_GMII_ETHERNET_1] [get_bd_intf_nets processing_system7_0_MDIO_ETHERNET_1]
+endgroup
+delete_bd_objs [get_bd_intf_nets gmii_to_rgmii_0_MDIO_PHY] [get_bd_intf_nets gmii_to_rgmii_0_RGMII] [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets proc_sys_reset_0_peripheral_reset] [get_bd_cells gmii_to_rgmii_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells util_vector_logic_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet:7.0 axi_ethernet_0
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.c_sg_length_width {16} CONFIG.c_include_mm2s_dre {1} CONFIG.c_sg_use_stsapp_length {1} CONFIG.c_include_s2mm_dre {1}] [get_bd_cells axi_dma_0]
+endgroup
+set_property -dict [list CONFIG.PHY_TYPE {RGMII}] [get_bd_cells axi_ethernet_0]
+delete_bd_objs [get_bd_intf_ports mdio]
+delete_bd_objs [get_bd_intf_ports rgmii]
+apply_bd_automation -rule xilinx.com:bd_rule:axi_ethernet -config {PHY_TYPE "RGMII" FIFO_DMA "DMA" }  [get_bd_cells axi_ethernet_0]
+can't read "mmcm_bufgcediv2": no such variable
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {125} CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {125} CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {200} CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_USE_S_AXI_HP0 {1} CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_EN_CLK2_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_ethernet_0_m_axis_rxd]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_CNTRL]
+delete_bd_objs [get_bd_nets axi_dma_0_mm2s_prmry_reset_out_n]
+delete_bd_objs [get_bd_nets axi_ethernet_0_refclk_clk_out2] [get_bd_nets axi_ethernet_0_refclk_clk_out1] [get_bd_cells axi_ethernet_0_refclk]
+delete_bd_objs [get_bd_nets Net]
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_sts_reset_out_n]
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_prmry_reset_out_n]
+delete_bd_objs [get_bd_nets axi_dma_0_mm2s_cntrl_reset_out_n]
+delete_bd_objs [get_bd_intf_nets axi_ethernet_0_m_axis_rxs]
+apply_bd_automation -rule xilinx.com:bd_rule:axi_ethernet -config {PHY_TYPE "RGMII" FIFO_DMA "DMA" }  [get_bd_cells axi_ethernet_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/axi_dma_0/M_AXI_SG" Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+</processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_SG> at <0x00000000 [ 1G ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins axi_ethernet_0/s_axi]
+</axi_ethernet_0/s_axi/Reg0> is being mapped into </processing_system7_0/Data> at <0x41000000 [ 256K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_ethernet_0/mdio]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 mdio_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /mdio_rtl /axi_ethernet_0/mdio
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_ethernet_0/rgmii]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:rgmii_rtl:1.0 rgmii_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /rgmii_rtl /axi_ethernet_0/rgmii
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {rst_polarity "ACTIVE_LOW" }  [get_bd_pins axi_ethernet_0/phy_rst_n]
+INFO: [board_rule 100-100] create_bd_port -dir O reset_rtl -type rst
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /axi_ethernet_0/phy_rst_n
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </processing_system7_0/Data> at <0x40400000 [ 64K ]>
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Slave "/processing_system7_0/S_AXI_HP0" Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+</processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_MM2S> at <0x00000000 [ 1G ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Slave "/processing_system7_0/S_AXI_HP0" Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+</processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_S2MM> at <0x00000000 [ 1G ]>
+endgroup
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+delete_bd_objs [get_bd_nets axi_ethernet_0_refclk_clk_out1] [get_bd_nets axi_ethernet_0_refclk_clk_out2] [get_bd_cells axi_ethernet_0_refclk]
+connect_bd_net [get_bd_pins axi_ethernet_0/gtx_clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK2] [get_bd_pins axi_ethernet_0/ref_clk]
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {4 948 352} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+delete_bd_objs [get_bd_nets axi_ethernet_0_phy_rst_n]
+delete_bd_objs [get_bd_ports reset_rtl]
+delete_bd_objs [get_bd_intf_nets axi_ethernet_0_rgmii]
+delete_bd_objs [get_bd_intf_nets axi_ethernet_0_mdio]
+delete_bd_objs [get_bd_intf_ports mdio_rtl]
+delete_bd_objs [get_bd_intf_ports rgmii_rtl]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_ethernet_0/mdio]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 mdio_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /mdio_rtl /axi_ethernet_0/mdio
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_ethernet_0/rgmii]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:rgmii_rtl:1.0 rgmii_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /rgmii_rtl /axi_ethernet_0/rgmii
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {rst_polarity "ACTIVE_LOW" }  [get_bd_pins axi_ethernet_0/phy_rst_n]
+INFO: [board_rule 100-100] create_bd_port -dir O reset_rtl -type rst
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /axi_ethernet_0/phy_rst_n
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl
+endgroup
+open_bd_design {d:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/bd_4bad.bd}
+close_bd_design [get_bd_designs bd_4bad]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_0]
+endgroup
+connect_bd_net [get_bd_pins axi_ethernet_0/mac_irq] [get_bd_pins xlconcat_0/In2]
+connect_bd_net [get_bd_pins axi_ethernet_0/interrupt] [get_bd_pins xlconcat_0/In3]
+save_bd_design
+Wrote  : <D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+validate_bd_design
+save_bd_design
+Wrote  : <D:/vivado_project/miz701n/7010/2016_4/PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 04 17:35:54 2017...

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 23 21:46:09 2020
+# Process ID: 32016
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31492 F:\FILE\FPGA\ZYNQ\08_LAN\05_LWIP_1g_sfp\example\LWIP_sfp\lwip_sfp.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 828.246 ; gain = 188.406
+WARNING: [HDL 9-3756] overwriting previous definition of module 'system' [F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp.srcs/sources_1/bd/system/synth/system.v:13]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'system' [F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp.srcs/sources_1/bd/system/sim/system.v:13]
+update_compile_order -fileset sources_1
+open_bd_design {F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:gig_ethernet_pcs_pma:16.1 - gig_ethernet_pcs_pma_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Successfully read diagram <system> from BD file <F:/FILE/FPGA/ZYNQ/08_LAN/05_LWIP_1g_sfp/example/LWIP_sfp/lwip_sfp.srcs/sources_1/bd/system/system.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 21:48:03 2020...

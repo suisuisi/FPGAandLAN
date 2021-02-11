@@ -1,0 +1,1767 @@
+
+*** Running vivado
+    with args -log bd_4bad_eth_buf_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_4bad_eth_buf_0.tcl
+
+
+****** Vivado v2018.3.1 (64-bit)
+  **** SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+  **** IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_4bad_eth_buf_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 325.434 ; gain = 77.855
+Command: synth_design -top bd_4bad_eth_buf_0 -part xc7z035ffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9344 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:45 . Memory (MB): peak = 478.859 ; gain = 99.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_4bad_eth_buf_0' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.vhd:166]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_TXMEM bound to: 16384 - type: integer 
+	Parameter C_TEMAC_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_RXMEM bound to: 16384 - type: integer 
+	Parameter C_TXCSUM bound to: 2 - type: integer 
+	Parameter C_RXCSUM bound to: 2 - type: integer 
+	Parameter C_PHYADDR bound to: 3 - type: integer 
+	Parameter C_AVB bound to: 0 - type: integer 
+	Parameter C_STATS bound to: 1 - type: integer 
+	Parameter C_PHY_TYPE bound to: 5 - type: integer 
+	Parameter C_TYPE bound to: 1 - type: integer 
+	Parameter C_TXVLAN_TRAN bound to: 0 - type: integer 
+	Parameter C_RXVLAN_TRAN bound to: 0 - type: integer 
+	Parameter C_TXVLAN_TAG bound to: 0 - type: integer 
+	Parameter C_RXVLAN_TAG bound to: 0 - type: integer 
+	Parameter C_TXVLAN_STRP bound to: 0 - type: integer 
+	Parameter C_RXVLAN_STRP bound to: 0 - type: integer 
+	Parameter C_MCAST_EXTEND bound to: 0 - type: integer 
+	Parameter C_ENABLE_LVDS bound to: 0 - type: integer 
+	Parameter C_ENABLE_1588 bound to: 0 - type: integer 
+	Parameter C_SIMULATION bound to: 0 - type: integer 
+	Parameter C_PHY_RST_COUNT bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'axi_ethernet_buffer_v2_0_19' declared at 'f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/85ff/hdl/axi_ethernet_buffer_v2_0_rfs.vhd:31906' bound to instance 'U0' of component 'axi_ethernet_buffer_v2_0_19' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 262143 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 42 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 18 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 262143 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (15#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (16#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (17#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper' (29#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper__parameterized0' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper__parameterized0' (29#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper__parameterized1' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper__parameterized1' (60#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper__parameterized2' [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper__parameterized2' (61#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ipshared/556c/hdl/lib_bmg_v1_0_rfs.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'bd_4bad_eth_buf_0' (66#1) [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.vhd:166]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxD_2_Mem_Dout[8]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port reset2axi_str_txd
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[35]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[34]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[33]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[32]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[31]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[30]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[29]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[28]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[27]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[26]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[25]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[24]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[23]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[22]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[21]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[20]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[19]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[18]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[17]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[16]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[15]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port Tx_Client_TxC_2_Mem_Dout[14]
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port tx_reset_out
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port tx_collision
+WARNING: [Synth 8-3331] design tx_emac_if has unconnected port tx_retransmit
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEA[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEA[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWID[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWID[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWLEN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_2_synth__parameterized2 has unconnected port S_AXI_AWLEN[6]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:31 ; elapsed = 00:04:21 . Memory (MB): peak = 1007.648 ; gain = 628.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:31 ; elapsed = 00:04:22 . Memory (MB): peak = 1007.648 ; gain = 628.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:31 ; elapsed = 00:04:22 . Memory (MB): peak = 1007.648 ; gain = 628.105
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/bd_4bad_eth_buf_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/bd_4bad_eth_buf_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/bd_4bad_eth_buf_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/bd_4bad_eth_buf_0_board.xdc] for cell 'U0'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1/dont_touch.xdc]
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.srcs/sources_1/bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/synth/bd_4bad_eth_buf_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_4bad_eth_buf_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_4bad_eth_buf_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1076.379 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1076.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1076.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1077.715 ; gain = 1.125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:43 ; elapsed = 00:04:36 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:43 ; elapsed = 00:04:36 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:43 ; elapsed = 00:04:36 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Intrpt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shim2IP_CS_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rxs_axistream_current_state_reg' in module 'rx_axistream_if'
+INFO: [Synth 8-802] inferred FSM for state register 'rxd_axistream_current_state_reg' in module 'rx_axistream_if'
+INFO: [Synth 8-5587] ROM size for "rxs2rxd_frame_ready" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "rxd_mem_next_available4write_ptr_1_cmb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_mem_next_available4write_ptr_1_cmb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_mem_last_read_out_ptr_true_cmb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AXI_STR_RXS_DPMEM_WR_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AXI_STR_RXS_LAST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AXI_STR_RXS_VALID" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs_status_word_6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxs2rxd_frame_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifoWrEn" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd2rxs_frame_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_axistream_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'receive_frame_current_state_reg' in module 'rx_emac_if'
+INFO: [Synth 8-802] inferred FSM for state register 'receive_frame_data_current_state_reg' in module 'rx_emac_if'
+INFO: [Synth 8-5544] ROM "rx_data_packed_ready" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "frame_has_udp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_udp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_tcp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_tcp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rxs_addr_cntr_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_addr_cntr_load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_load" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data_packed_ready" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_is_ip_protocol_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_has_ip_hdr_length_d31" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "frame_has_udp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_udp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_tcp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_tcp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rxs_addr_cntr_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxs_addr_cntr_load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_addr_cntr_load" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_frame_data_next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "receive_checksum_status_i" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "udp_header_sum_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "udp_header_sum_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "udp_header_sum_3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "udp_header_sum_4" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxd_packed_16bits" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'fcsum_wr_cs_reg' in module 'tx_csum_full_fsm'
+INFO: [Synth 8-5544] ROM "en_ipv4_hdr_b10_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "en_ipv4_hdr_b10_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store_sa_da" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store_sa_da" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "zeroes_en_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "set_vlan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "en_ipv4_hdr_b10_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "en_ipv4_hdr_b10_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store_sa_da" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "store_sa_da" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "zeroes_en_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "set_vlan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fcsum_wr_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'txc_wr_cs_reg' in module 'tx_csum_full_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txd_wr_cs_reg' in module 'tx_csum_full_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txc_rd_cs_reg' in module 'tx_emac_if'
+INFO: [Synth 8-802] inferred FSM for state register 'txd_rd_cs_reg' in module 'tx_emac_if'
+INFO: [Synth 8-5546] ROM "set_txd_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_byte_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_txd_vld" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_byte_en" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            reset_init_1 |                            01010 |                            00000
+            reset_init_2 |                            10001 |                            00001
+read_rxd_mem_next_available4write_ptr_1 |                            01001 |                            00010
+read_rxd_mem_next_available4write_ptr_2 |                            00111 |                            00011
+      addr_setup_pause_1 |                            01000 |                            00100
+read_rxs_mem_next_available4write_ptr_1 |                            10111 |                            00111
+read_rxs_mem_next_available4write_ptr_2 |                            11000 |                            01000
+      addr_setup_pause_2 |                            11010 |                            00110
+read_rxs_mem_last_read_out_ptr |                            10101 |                            01010
+      addr_setup_pause_3 |                            10110 |                            01001
+read_rxd_mem_last_read_out_ptr |                            11011 |                            00101
+ pause_read_status_word1 |                            10011 |                            01011
+       read_status_word1 |                            00011 |                            01100
+       read_status_word2 |                            00010 |                            01101
+       read_status_word3 |                            00000 |                            01110
+       read_status_word4 |                            00001 |                            01111
+       read_status_word5 |                            01101 |                            10000
+       read_status_word6 |                            01011 |                            10001
+update_rxs_mem_last_read_out_ptr |                            00110 |                            10010
+       send_status_word1 |                            00100 |                            10011
+       send_status_word2 |                            00101 |                            10100
+       send_status_word3 |                            11001 |                            10101
+       send_status_word4 |                            10010 |                            10110
+       send_status_word5 |                            01111 |                            10111
+       send_status_word6 |                            10000 |                            11000
+         wait_frame_done |                            10100 |                            11001
+update_rxd_mem_last_read_out_ptr |                            01110 |                            11010
+            repeat_again |                            01100 |                            11011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rxs_axistream_current_state_reg' using encoding 'sequential' in module 'rx_axistream_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                             0000
+                   prime |                        000000010 |                             0001
+       rd_frame_from_mem |                        000000100 |                             0010
+          wait_end_frame |                        000001000 |                             0111
+                pre_idle |                        000010000 |                             1000
+       almost_full_wait1 |                        000100000 |                             0011
+       almost_full_wait2 |                        001000000 |                             0100
+       almost_full_wait3 |                        010000000 |                             0101
+       almost_full_wait4 |                        100000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rxd_axistream_current_state_reg' using encoding 'one-hot' in module 'rx_axistream_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+    reset_init_mem_ptr_1 |                             0000 |                             0000
+    reset_init_mem_ptr_2 |                             0001 |                             0001
+    reset_init_mem_ptr_3 |                             0010 |                             0010
+    reset_init_mem_ptr_4 |                             0011 |                             0011
+                    idle |                             0100 |                             0100
+update_status_fifo_word_1 |                             0101 |                             0110
+update_status_fifo_word_2 |                             0110 |                             0111
+update_status_fifo_word_3 |                             0111 |                             1000
+update_status_fifo_word_4 |                             1000 |                             1001
+update_status_fifo_word_5 |                             1001 |                             1010
+update_status_fifo_word_6 |                             1010 |                             1011
+        update_mem_ptr_1 |                             1011 |                             0101
+        update_mem_ptr_2 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_frame_current_state_reg' using encoding 'sequential' in module 'rx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                               00 |                               00
+ wait_for_start_of_frame |                               01 |                               01
+         receiving_frame |                               10 |                               10
+end_of_frame_check_good_bad |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'receive_frame_data_current_state_reg' using encoding 'sequential' in module 'rx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                     dst |                             0001 |                             0001
+                 dst_src |                             0010 |                             0010
+                     src |                             0011 |                             0011
+                     idf |                             0100 |                             0100
+                    snap |                             0101 |                             0101
+                     oui |                             0110 |                             0110
+                ipv4_hdr |                             0111 |                             0111
+                pcol_hdr |                             1000 |                             1000
+                    data |                             1001 |                             1001
+                  wr_hdr |                             1010 |                             1110
+                 wr_csum |                             1011 |                             1111
+              wait_tlast |                             1100 |                             1010
+              wait_delay |                             1101 |                             1100
+             wr_hdr_only |                             1110 |                             1011
+           wait_complete |                             1111 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fcsum_wr_cs_reg' using encoding 'sequential' in module 'tx_csum_full_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                             0000
+                 txd_prm |                        000000010 |                             0001
+                 txd_wrt |                        000000100 |                             0010
+                mem_full |                        000001000 |                             0011
+               wait_csum |                        000010000 |                             0111
+                wait_wr1 |                        000100000 |                             0101
+                wait_wr2 |                        001000000 |                             0110
+                clr_full |                        010000000 |                             0100
+      wait_compare_cmplt |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txd_wr_cs_reg' using encoding 'one-hot' in module 'tx_csum_full_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            txc_addr2_wr |                 0000000000000001 |                             0000
+            txc_addr0_wr |                 0000000000000010 |                             0001
+           wait_wr_cmplt |                 0000000000000100 |                             0010
+                 txc_wd0 |                 0000000000001000 |                             0011
+                 txc_wd1 |                 0000000000010000 |                             0100
+                 txc_wd2 |                 0000000000100000 |                             0110
+                 txc_wd3 |                 0000000001000000 |                             0111
+                 txc_wd4 |                 0000000010000000 |                             1000
+                 txc_wd5 |                 0000000100000000 |                             1010
+wait_addr0_compare_cmplt |                 0000001000000000 |                             1001
+          wait_txd_cmplt |                 0000010000000000 |                             1011
+         wr_txd_end_pntr |                 0000100000000000 |                             1111
+           wait_csum_end |                 0001000000000000 |                             1110
+             wr_txc_pntr |                 0010000000000000 |                             1101
+            wait_txd_mem |                 0100000000000000 |                             1100
+wait_addr2_compare_cmplt |                 1000000000000000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txc_wr_cs_reg' using encoding 'one-hot' in module 'tx_csum_full_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         get_txc_wr_pntr |                              000 |                              000
+            get_end_pntr |                              001 |                              001
+          set_txcrd_pntr |                              010 |                              010
+          get_txdwr_pntr |                              011 |                              011
+          set_txdrd_pntr |                              100 |                              100
+           wait_txd_done |                              101 |                              101
+               get_addr3 |                              110 |                              110
+         wait_addr3_pntr |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txc_rd_cs_reg' using encoding 'sequential' in module 'tx_emac_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000000001 |                            00000
+                  get_b1 |                        000000010 |                            01001
+                  get_b2 |                        000000100 |                            01010
+                  get_b3 |                        000001000 |                            01011
+                  get_b4 |                        000010000 |                            01100
+              wait_trdy2 |                        000100000 |                            01101
+              wait_trdy3 |                        001000000 |                            01110
+              check_done |                        010000000 |                            10000
+               wait_last |                        100000000 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txd_rd_cs_reg' using encoding 'one-hot' in module 'tx_emac_if'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:49 ; elapsed = 00:04:43 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 20    
+	   3 Input     17 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 12    
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 145   
++---Registers : 
+	               60 Bit    Registers := 1     
+	               42 Bit    Registers := 2     
+	               36 Bit    Registers := 18    
+	               32 Bit    Registers := 24    
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 16    
+	               16 Bit    Registers := 20    
+	               15 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 16    
+	               11 Bit    Registers := 11    
+	               10 Bit    Registers := 15    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 440   
++---Muxes : 
+	   6 Input     42 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 5     
+	  28 Input     36 Bit        Muxes := 1     
+	  11 Input     36 Bit        Muxes := 1     
+	   4 Input     36 Bit        Muxes := 2     
+	   5 Input     36 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	  28 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 4     
+	   2 Input     17 Bit        Muxes := 32    
+	   2 Input     16 Bit        Muxes := 55    
+	   4 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	  28 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   4 Input     12 Bit        Muxes := 2     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 13    
+	  14 Input     11 Bit        Muxes := 1     
+	  28 Input     11 Bit        Muxes := 3     
+	  13 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+	  14 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 3     
+	   3 Input     10 Bit        Muxes := 3     
+	   5 Input      9 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 13    
+	  34 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 15    
+	  11 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  55 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 32    
+	   5 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 217   
+	   3 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 14    
+	  14 Input      1 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 33    
+	   8 Input      1 Bit        Muxes := 10    
+	   9 Input      1 Bit        Muxes := 18    
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module actv_hi_pulse_clk_cross 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module sync_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+Module reset_combiner 
+Detailed RTL Component Info : 
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module reg_cr 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+Module reg_tp 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module reg_ifgp 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_is 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 9     
+Module reg_ip 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module reg_ie 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module reg_32b 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module reg_16bl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module addr_response_shim 
+Detailed RTL Component Info : 
++---Registers : 
+	               42 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   6 Input     42 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 3     
+	  14 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  14 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 1     
+Module bus_clk_cross 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bus_clk_cross__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bus_clk_cross__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bus_and_enable_clk_cross 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module bus_clk_cross__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_mem_if 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rd_fwft 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module updn_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module dc_ss_fwft 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rx_axistream_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 45    
++---Registers : 
+	               36 Bit    Registers := 9     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 7     
++---Muxes : 
+	  28 Input     36 Bit        Muxes := 1     
+	  28 Input     32 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	  28 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 6     
+	  28 Input     11 Bit        Muxes := 3     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 6     
+	  28 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	  28 Input      1 Bit        Muxes := 9     
+Module rx_emac_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 20    
+	   2 Input     16 Bit       Adders := 11    
+	   2 Input     11 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 70    
++---Registers : 
+	               60 Bit    Registers := 1     
+	               36 Bit    Registers := 4     
+	               32 Bit    Registers := 6     
+	               26 Bit    Registers := 1     
+	               17 Bit    Registers := 12    
+	               16 Bit    Registers := 14    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 52    
++---Muxes : 
+	  11 Input     36 Bit        Muxes := 1     
+	   4 Input     36 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 4     
+	   2 Input     17 Bit        Muxes := 32    
+	   2 Input     16 Bit        Muxes := 24    
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 4     
+	  13 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	  11 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 81    
+	   3 Input      1 Bit        Muxes := 13    
+	  13 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module rx_if 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+Module tx_csum_full_calc_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 7     
+Module tx_csum_full_calc_if__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module tx_csum_full_fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  55 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 14    
+	   3 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+	  16 Input      1 Bit        Muxes := 19    
+	   8 Input      1 Bit        Muxes := 2     
+Module tx_csum_full_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 8     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   5 Input     36 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 14    
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	  34 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 12    
+	  16 Input      1 Bit        Muxes := 14    
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+Module tx_emac_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 3     
+	   6 Input     10 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+Module axi_ethernet_buffer_v2_0_19 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "frame_has_udp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_has_tcp_protocol_d38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_vlan" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[11]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[12]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[13]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[14]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[15]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[16]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[17]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[18]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[19]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[20]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[21]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[22]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[23]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[24]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[25]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[26]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[27]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[28]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[29]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[30]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[31]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[32]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[33]' (FDR) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxs_mem_last_read_out_ptr_gray_d1_reg[34]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I /\rxs_mem_last_read_out_ptr_gray_d1_reg[34] )
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[12]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[13]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[14]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[15]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[16]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[17]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[18]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[19]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[20]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[21]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[22]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[23]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[24]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[25]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[26]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[27]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[28]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[29]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[30]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[31]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[32]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[33]' (FDRE) to 'U0/RCV_INTFCE_I/RX_AXISTREAM_IF_I/rxd_mem_last_read_out_ptr_gray_d1_reg[34]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I /\rxd_mem_last_read_out_ptr_gray_d1_reg[34] )
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/hdr_length_reg[0]' (FDRE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/hdr_length_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE /\GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/hdr_length_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[15]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[14]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[13]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[12]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[11]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[10]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[7]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[6]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[5]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[4]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[3]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[2]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[0]' (FDE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE /\GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/pseudo_data_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ipv4_hdr_we_int_reg[0]' (FDRE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ipv4_hdr_we_int_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ptcl_we_int_reg[0]' (FDRE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ptcl_we_int_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ipv4_hdr_we_int_reg[2]' (FDRE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ipv4_hdr_we_int_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ptcl_we_int_reg[2]' (FDRE) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ptcl_we_int_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE /\GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM/csum_ipv4_hdr_we_int_reg[3] )
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[8]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[0]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[1]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[2]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[3]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[4]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[5]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[6]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[7]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[9]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[10]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[11]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[12]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[13]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[14]' (FDRE) to 'U0/RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/raw_checksum_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I /\raw_checksum_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[17]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[26]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[35]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[14]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[15]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[16]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[18]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[19]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[20]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[21]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[22]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[23]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[24]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[25]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[27]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[28]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[29]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[30]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[31]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[32]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[33]' (FDR) to 'U0/TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE/Axi_Str_TxC_2_Mem_Din_int_reg[34]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\TX_INTFCE_I/TX_AXISTREAM_INTERFACE/GEN_CSUM.TX_CSUM_INTERFACE/GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE /\Axi_Str_TxC_2_Mem_Din_int_reg[34] )
+INFO: [Synth 8-3886] merging instance 'U0/I_REGISTERS/CR_I/reg_data_reg[31]' (FDRE) to 'U0/I_REGISTERS/CR_I/reg_data_reg[18]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_REGISTERS/CR_I/reg_data_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_REGISTERS/IS_I/reg_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\TX_INTFCE_I/TX_EMAC_INTERFACE/set_txd_vld_1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_AXI_LITE_IPIF/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_AXI_LITE_IPIF/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_AXI_LITE_IPIF/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\I_AXI_LITE_IPIF/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync0_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync1_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync2_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync3_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync4_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync5_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync6_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+INFO: [Synth 8-3332] Sequential element (gen_sample_axi_str_config/data_sync/data_sync7_i) is unused and will be removed from module axi_ethernet_buffer_v2_0_19.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[34].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[33].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[32].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[31].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[30].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[29].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[28].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[27].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[26].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[25].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync4_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync5_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync6_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[24].SYNC_RXS_LAST_READ_GRAY/data_sync7_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[23].SYNC_RXS_LAST_READ_GRAY/data_sync0_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[23].SYNC_RXS_LAST_READ_GRAY/data_sync1_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[23].SYNC_RXS_LAST_READ_GRAY/data_sync2_i) is unused and will be removed from module rx_emac_if.
+WARNING: [Synth 8-3332] Sequential element (SYNC_RXS_LAST_READ_GRAY_PROCESS[23].SYNC_RXS_LAST_READ_GRAY/data_sync3_i) is unused and will be removed from module rx_emac_if.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:05:01 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                         | RTL Object                                                                                               | Inference      | Size (Depth x Width) | Primitives   | 
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I  | ELASTIC_FIFO/I_BASIC_SFIFO/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 36              | RAM32M x 6   | 
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:14 ; elapsed = 00:05:08 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:14 ; elapsed = 00:05:09 . Memory (MB): peak = 1077.715 ; gain = 698.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name                         | RTL Object                                                                                               | Inference      | Size (Depth x Width) | Primitives   | 
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0/\RCV_INTFCE_I/RX_AXISTREAM_IF_I  | ELASTIC_FIFO/I_BASIC_SFIFO/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 32 x 36              | RAM32M x 6   | 
++------------------------------------+----------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:17 ; elapsed = 00:05:12 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:18 ; elapsed = 00:05:13 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:18 ; elapsed = 00:05:13 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                 | RTL Name                                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_ethernet_buffer_v2_0_19 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[9]  | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_19 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[14] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_19 | RCV_INTFCE_I/NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I/start_of_frame_array_reg[52] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_ethernet_buffer_v2_0_19 | RCV_INTFCE_I/end_of_frame_reset_array_reg[12]                             | 12     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++----------------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   335|
+|2     |LUT1       |    91|
+|3     |LUT2       |   417|
+|4     |LUT3       |   295|
+|5     |LUT4       |   843|
+|6     |LUT5       |   537|
+|7     |LUT6       |  1011|
+|8     |RAM32M     |     6|
+|9     |RAMB36E1   |     4|
+|10    |RAMB36E1_1 |     2|
+|11    |RAMB36E1_2 |     4|
+|12    |RAMB36E1_3 |     1|
+|13    |SRL16E     |     4|
+|14    |FDPE       |   125|
+|15    |FDRE       |  3336|
+|16    |FDSE       |   207|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------------------------------+-----------------------------------------+------+
+|      |Instance                                                              |Module                                   |Cells |
++------+----------------------------------------------------------------------+-----------------------------------------+------+
+|1     |top                                                                   |                                         |  7218|
+|2     |  U0                                                                  |axi_ethernet_buffer_v2_0_19              |  7218|
+|3     |    AXITX_2_TXCLIENT_FSM_GO                                           |actv_hi_reset_clk_cross                  |    16|
+|4     |      ClkA_reset_inst                                                 |sync_reset_102                           |     8|
+|5     |      ClkB_reset_inst                                                 |sync_reset_103                           |     8|
+|6     |    CLK2AXICLK_ISR_7                                                  |sync_block                               |     8|
+|7     |    COMBINE_RESETS                                                    |reset_combiner                           |   297|
+|8     |      AXI_RESET_TO_GTX                                                |actv_hi_reset_clk_cross_64               |    17|
+|9     |        ClkA_reset_inst                                               |sync_reset_100                           |     8|
+|10    |        ClkB_reset_inst                                               |sync_reset_101                           |     9|
+|11    |      AXI_RESET_TO_RXCLIENT                                           |actv_hi_reset_clk_cross_65               |    16|
+|12    |        ClkA_reset_inst                                               |sync_reset_98                            |     8|
+|13    |        ClkB_reset_inst                                               |sync_reset_99                            |     8|
+|14    |      AXI_RESET_TO_RXD_AXSTREAM                                       |actv_hi_reset_clk_cross_66               |    16|
+|15    |        ClkA_reset_inst                                               |sync_reset_96                            |     8|
+|16    |        ClkB_reset_inst                                               |sync_reset_97                            |     8|
+|17    |      AXI_RESET_TO_RXS_AXSTREAM                                       |actv_hi_reset_clk_cross_67               |    17|
+|18    |        ClkA_reset_inst                                               |sync_reset_94                            |     8|
+|19    |        ClkB_reset_inst                                               |sync_reset_95                            |     9|
+|20    |      AXI_RESET_TO_TXCLIENT                                           |actv_hi_reset_clk_cross_68               |    16|
+|21    |        ClkA_reset_inst                                               |sync_reset_92                            |     8|
+|22    |        ClkB_reset_inst                                               |sync_reset_93                            |     8|
+|23    |      AXI_RESET_TO_TXC_AXSTREAM                                       |actv_hi_reset_clk_cross_69               |    17|
+|24    |        ClkA_reset_inst                                               |sync_reset_90                            |     9|
+|25    |        ClkB_reset_inst                                               |sync_reset_91                            |     8|
+|26    |      AXI_RESET_TO_TXD_AXSTREAM                                       |actv_hi_reset_clk_cross_70               |    17|
+|27    |        ClkA_reset_inst                                               |sync_reset_88                            |     9|
+|28    |        ClkB_reset_inst                                               |sync_reset_89                            |     8|
+|29    |      RXD_AXSTREAM_TO_RXS_AXSTREAM                                    |actv_hi_reset_clk_cross_71               |    20|
+|30    |        ClkA_reset_inst                                               |sync_reset_86                            |    11|
+|31    |        ClkB_reset_inst                                               |sync_reset_87                            |     9|
+|32    |      TXC_AXSTREAM_TO_RXD_AXSTREAM                                    |actv_hi_reset_clk_cross_72               |    16|
+|33    |        ClkA_reset_inst                                               |sync_reset_84                            |     8|
+|34    |        ClkB_reset_inst                                               |sync_reset_85                            |     8|
+|35    |      TXC_AXSTREAM_TO_RXS_AXSTREAM                                    |actv_hi_reset_clk_cross_73               |    17|
+|36    |        ClkA_reset_inst                                               |sync_reset_82                            |     8|
+|37    |        ClkB_reset_inst                                               |sync_reset_83                            |     9|
+|38    |      TXD_AXSTREAM_TO_RXD_AXSTREAM                                    |actv_hi_reset_clk_cross_74               |    17|
+|39    |        ClkA_reset_inst                                               |sync_reset_80                            |     9|
+|40    |        ClkB_reset_inst                                               |sync_reset_81                            |     8|
+|41    |      TXD_AXSTREAM_TO_RXS_AXSTREAM                                    |actv_hi_reset_clk_cross_75               |    17|
+|42    |        ClkA_reset_inst                                               |sync_reset_78                            |     8|
+|43    |        ClkB_reset_inst                                               |sync_reset_79                            |     9|
+|44    |      TXD_AXSTREAM_TO_TXC_AXSTREAM                                    |actv_hi_reset_clk_cross_76               |    16|
+|45    |        ClkA_reset_inst                                               |sync_reset                               |     8|
+|46    |        ClkB_reset_inst                                               |sync_reset_77                            |     8|
+|47    |    I_ADDR_SHIM                                                       |addr_response_shim                       |   166|
+|48    |    I_AXI_LITE_IPIF                                                   |axi_lite_ipif                            |   163|
+|49    |      I_SLAVE_ATTACHMENT                                              |slave_attachment                         |   163|
+|50    |        I_DECODER                                                     |address_decoder                          |    12|
+|51    |    I_REGISTERS                                                       |registers                                |   371|
+|52    |      CR_I                                                            |reg_cr                                   |    16|
+|53    |      IE_I                                                            |reg_ie                                   |    11|
+|54    |      IFGP_I                                                          |reg_ifgp                                 |    14|
+|55    |      IP_I                                                            |reg_ip                                   |    12|
+|56    |      IS_I                                                            |reg_is                                   |    24|
+|57    |      RTAG_I                                                          |reg_32b                                  |    43|
+|58    |      TPID0_I                                                         |reg_32b_60                               |    41|
+|59    |      TPID1_I                                                         |reg_32b_61                               |    40|
+|60    |      TP_I                                                            |reg_tp                                   |    28|
+|61    |      TTAG_I                                                          |reg_32b_62                               |    37|
+|62    |      UAWL_I                                                          |reg_32b_63                               |    44|
+|63    |      UAWU_I                                                          |reg_16bl                                 |    18|
+|64    |    \PCSPMA_STATUS_CROSS_I[0].sync_pcspma_status                      |sync_block_0                             |     8|
+|65    |    \PCSPMA_STATUS_CROSS_I[10].sync_pcspma_status                     |sync_block_1                             |     8|
+|66    |    \PCSPMA_STATUS_CROSS_I[11].sync_pcspma_status                     |sync_block_2                             |     8|
+|67    |    \PCSPMA_STATUS_CROSS_I[12].sync_pcspma_status                     |sync_block_3                             |     8|
+|68    |    \PCSPMA_STATUS_CROSS_I[13].sync_pcspma_status                     |sync_block_4                             |     8|
+|69    |    \PCSPMA_STATUS_CROSS_I[14].sync_pcspma_status                     |sync_block_5                             |     8|
+|70    |    \PCSPMA_STATUS_CROSS_I[15].sync_pcspma_status                     |sync_block_6                             |     8|
+|71    |    \PCSPMA_STATUS_CROSS_I[1].sync_pcspma_status                      |sync_block_7                             |     8|
+|72    |    \PCSPMA_STATUS_CROSS_I[2].sync_pcspma_status                      |sync_block_8                             |     8|
+|73    |    \PCSPMA_STATUS_CROSS_I[3].sync_pcspma_status                      |sync_block_9                             |     8|
+|74    |    \PCSPMA_STATUS_CROSS_I[4].sync_pcspma_status                      |sync_block_10                            |     8|
+|75    |    \PCSPMA_STATUS_CROSS_I[5].sync_pcspma_status                      |sync_block_11                            |     8|
+|76    |    \PCSPMA_STATUS_CROSS_I[6].sync_pcspma_status                      |sync_block_12                            |     8|
+|77    |    \PCSPMA_STATUS_CROSS_I[7].sync_pcspma_status                      |sync_block_13                            |     8|
+|78    |    \PCSPMA_STATUS_CROSS_I[8].sync_pcspma_status                      |sync_block_14                            |     8|
+|79    |    \PCSPMA_STATUS_CROSS_I[9].sync_pcspma_status                      |sync_block_15                            |     8|
+|80    |    RAF_REG_CROSS_I                                                   |bus_clk_cross__parameterized4            |    15|
+|81    |    RCV_INTFCE_I                                                      |rx_if                                    |  4133|
+|82    |      \NO_INCLUDE_RX_VLAN.RX_EMAC_IF_I                                |rx_emac_if                               |  2891|
+|83    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[0].SYNC_RXD_LAST_READ_GRAY   |sync_block_35                            |     8|
+|84    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[10].SYNC_RXD_LAST_READ_GRAY  |sync_block_36                            |     8|
+|85    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[11].SYNC_RXD_LAST_READ_GRAY  |sync_block_37                            |     8|
+|86    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[1].SYNC_RXD_LAST_READ_GRAY   |sync_block_38                            |     8|
+|87    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[2].SYNC_RXD_LAST_READ_GRAY   |sync_block_39                            |     8|
+|88    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[35].SYNC_RXD_LAST_READ_GRAY  |sync_block_40                            |     8|
+|89    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[3].SYNC_RXD_LAST_READ_GRAY   |sync_block_41                            |     8|
+|90    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[4].SYNC_RXD_LAST_READ_GRAY   |sync_block_42                            |     8|
+|91    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[5].SYNC_RXD_LAST_READ_GRAY   |sync_block_43                            |     8|
+|92    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[6].SYNC_RXD_LAST_READ_GRAY   |sync_block_44                            |     8|
+|93    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[7].SYNC_RXD_LAST_READ_GRAY   |sync_block_45                            |     8|
+|94    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[8].SYNC_RXD_LAST_READ_GRAY   |sync_block_46                            |     8|
+|95    |        \SYNC_RXD_LAST_READ_GRAY_PROCESS[9].SYNC_RXD_LAST_READ_GRAY   |sync_block_47                            |     8|
+|96    |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[0].SYNC_RXS_LAST_READ_GRAY   |sync_block_48                            |     8|
+|97    |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[10].SYNC_RXS_LAST_READ_GRAY  |sync_block_49                            |     8|
+|98    |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[1].SYNC_RXS_LAST_READ_GRAY   |sync_block_50                            |     8|
+|99    |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[2].SYNC_RXS_LAST_READ_GRAY   |sync_block_51                            |     8|
+|100   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[35].SYNC_RXS_LAST_READ_GRAY  |sync_block_52                            |     8|
+|101   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[3].SYNC_RXS_LAST_READ_GRAY   |sync_block_53                            |     8|
+|102   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[4].SYNC_RXS_LAST_READ_GRAY   |sync_block_54                            |     8|
+|103   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[5].SYNC_RXS_LAST_READ_GRAY   |sync_block_55                            |     8|
+|104   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[6].SYNC_RXS_LAST_READ_GRAY   |sync_block_56                            |     8|
+|105   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[7].SYNC_RXS_LAST_READ_GRAY   |sync_block_57                            |     8|
+|106   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[8].SYNC_RXS_LAST_READ_GRAY   |sync_block_58                            |     8|
+|107   |        \SYNC_RXS_LAST_READ_GRAY_PROCESS[9].SYNC_RXS_LAST_READ_GRAY   |sync_block_59                            |     8|
+|108   |      RX_AXISTREAM_IF_I                                               |rx_axistream_if                          |  1036|
+|109   |        ELASTIC_FIFO                                                  |basic_sfifo_fg                           |   165|
+|110   |          I_BASIC_SFIFO                                               |fifo_generator_v13_2_3                   |   165|
+|111   |            inst_fifo_gen                                             |fifo_generator_v13_2_3_synth             |   165|
+|112   |              \gconvfifo.rf                                           |fifo_generator_top                       |   165|
+|113   |                \grf.rf                                               |fifo_generator_ramfifo                   |   165|
+|114   |                  \gntv_or_sync_fifo.gl0.rd                           |rd_logic                                 |    67|
+|115   |                    \gr1.gdcf.dc                                      |dc_ss_fwft                               |    24|
+|116   |                      dc                                              |updn_cntr                                |    24|
+|117   |                    \gr1.gr1_int.rfwft                                |rd_fwft                                  |    22|
+|118   |                    \grss.rsts                                        |rd_status_flags_ss                       |     2|
+|119   |                    rpntr                                             |rd_bin_cntr                              |    19|
+|120   |                  \gntv_or_sync_fifo.gl0.wr                           |wr_logic                                 |    26|
+|121   |                    \gwss.wsts                                        |wr_status_flags_ss                       |     5|
+|122   |                    wpntr                                             |wr_bin_cntr                              |    21|
+|123   |                  \gntv_or_sync_fifo.mem                              |memory                                   |    72|
+|124   |                    \gdm.dm_gen.dm                                    |dmem                                     |    36|
+|125   |      RX_DP_MEM_IF_I                                                  |rx_mem_if                                |   100|
+|126   |        I_RXD_MEM                                                     |blk_mem_gen_wrapper                      |     4|
+|127   |          \blk_gen_mem.FAMILY_SUPPORTED.I_TRUE_DUAL_PORT_BLK_MEM_GEN  |blk_mem_gen_v8_4_2                       |     4|
+|128   |            inst_blk_mem_gen                                          |blk_mem_gen_v8_4_2_synth                 |     4|
+|129   |              \gnbram.gnativebmg.native_blk_mem_gen                   |blk_mem_gen_top                          |     4|
+|130   |                \valid.cstr                                           |blk_mem_gen_generic_cstr                 |     4|
+|131   |                  \ramloop[0].ram.r                                   |blk_mem_gen_prim_width                   |     1|
+|132   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper                 |     1|
+|133   |                  \ramloop[1].ram.r                                   |blk_mem_gen_prim_width__parameterized0   |     1|
+|134   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized0 |     1|
+|135   |                  \ramloop[2].ram.r                                   |blk_mem_gen_prim_width__parameterized1   |     1|
+|136   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized1 |     1|
+|137   |                  \ramloop[3].ram.r                                   |blk_mem_gen_prim_width__parameterized2   |     1|
+|138   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized2 |     1|
+|139   |        I_RXS_MEM                                                     |blk_mem_gen_wrapper__parameterized0      |     2|
+|140   |          \blk_gen_mem.FAMILY_SUPPORTED.I_TRUE_DUAL_PORT_BLK_MEM_GEN  |blk_mem_gen_v8_4_2__parameterized0       |     2|
+|141   |            inst_blk_mem_gen                                          |blk_mem_gen_v8_4_2_synth__parameterized0 |     2|
+|142   |              \gnbram.gnativebmg.native_blk_mem_gen                   |blk_mem_gen_top__parameterized0          |     2|
+|143   |                \valid.cstr                                           |blk_mem_gen_generic_cstr__parameterized0 |     2|
+|144   |                  \ramloop[0].ram.r                                   |blk_mem_gen_prim_width__parameterized3   |     1|
+|145   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized3 |     1|
+|146   |                  \ramloop[1].ram.r                                   |blk_mem_gen_prim_width__parameterized4   |     1|
+|147   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized4 |     1|
+|148   |    RXCLCLK2AXICLK_INTRPT0                                            |actv_hi_pulse_clk_cross                  |    13|
+|149   |      data_sync                                                       |sync_block_34                            |     9|
+|150   |    RXCLCLK2AXICLK_INTRPT1                                            |actv_hi_pulse_clk_cross_16               |    14|
+|151   |      data_sync                                                       |sync_block_33                            |     9|
+|152   |    RXCLCLK2AXICLK_INTRPT2                                            |actv_hi_pulse_clk_cross_17               |    14|
+|153   |      data_sync                                                       |sync_block_32                            |     9|
+|154   |    RXCLCLK2AXICLK_ISR_6                                              |sync_block_18                            |     8|
+|155   |    TAG_REG_CROSS_I                                                   |bus_clk_cross                            |    32|
+|156   |    TPID0_REG_CROSS_I                                                 |bus_clk_cross_19                         |    32|
+|157   |    TPID1_REG_CROSS_I                                                 |bus_clk_cross_20                         |    32|
+|158   |    TXCLCLK2AXICLK_ISR_1                                              |actv_hi_pulse_clk_cross_21               |    14|
+|159   |      data_sync                                                       |sync_block_31                            |     9|
+|160   |    TXCLCLK2AXICLK_ISR_5                                              |actv_hi_pulse_clk_cross_22               |    14|
+|161   |      data_sync                                                       |sync_block_30                            |     9|
+|162   |    TXCLCLK2AXICLK_ISR_8                                              |sync_block_23                            |     8|
+|163   |    TX_IFGP_CROSS_I                                                   |bus_clk_cross__parameterized6            |     8|
+|164   |    TX_INTFCE_I                                                       |tx_if                                    |  1558|
+|165   |      TX_AXISTREAM_INTERFACE                                          |tx_axistream_if                          |  1174|
+|166   |        \GEN_CSUM.TX_CSUM_INTERFACE                                   |tx_csum_if                               |  1174|
+|167   |          \GEN_CSUM_FULL.TX_CSUM_FULL_INTERFACE                       |tx_csum_full_if                          |  1172|
+|168   |            \GEN_CSUM_SUPPORT.I_TX_FCSUM_DATA_CALC                    |tx_csum_full_calc_if__parameterized1     |   199|
+|169   |            \GEN_CSUM_SUPPORT.I_TX_FCSUM_HDR_CALC                     |tx_csum_full_calc_if                     |   118|
+|170   |            \GEN_CSUM_SUPPORT.I_TX_FULL_CSUM_FSM                      |tx_csum_full_fsm                         |   321|
+|171   |      TX_EMAC_INTERFACE                                               |tx_emac_if                               |   351|
+|172   |      TX_MEM_INTERFACE                                                |tx_mem_if                                |    33|
+|173   |        TXC_MEM                                                       |blk_mem_gen_wrapper__parameterized2      |     5|
+|174   |          \blk_gen_mem.FAMILY_SUPPORTED.I_TRUE_DUAL_PORT_BLK_MEM_GEN  |blk_mem_gen_v8_4_2__parameterized2       |     5|
+|175   |            inst_blk_mem_gen                                          |blk_mem_gen_v8_4_2_synth__parameterized2 |     5|
+|176   |              \gnbram.gnativebmg.native_blk_mem_gen                   |blk_mem_gen_top__parameterized2          |     5|
+|177   |                \valid.cstr                                           |blk_mem_gen_generic_cstr__parameterized2 |     5|
+|178   |                  \ramloop[0].ram.r                                   |blk_mem_gen_prim_width__parameterized9   |     5|
+|179   |                    \prim_init.ram                                    |blk_mem_gen_prim_wrapper_init            |     5|
+|180   |        TXD_MEM                                                       |blk_mem_gen_wrapper__parameterized1      |    28|
+|181   |          \blk_gen_mem.FAMILY_SUPPORTED.I_TRUE_DUAL_PORT_BLK_MEM_GEN  |blk_mem_gen_v8_4_2__parameterized1       |    28|
+|182   |            inst_blk_mem_gen                                          |blk_mem_gen_v8_4_2_synth__parameterized1 |    28|
+|183   |              \gnbram.gnativebmg.native_blk_mem_gen                   |blk_mem_gen_top__parameterized1          |    28|
+|184   |                \valid.cstr                                           |blk_mem_gen_generic_cstr__parameterized1 |    28|
+|185   |                  \bindec_b.bindec_inst_b                             |bindec                                   |     3|
+|186   |                  \has_mux_a.A                                        |blk_mem_gen_mux                          |    21|
+|187   |                  \ramloop[0].ram.r                                   |blk_mem_gen_prim_width__parameterized5   |     1|
+|188   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized5 |     1|
+|189   |                  \ramloop[1].ram.r                                   |blk_mem_gen_prim_width__parameterized6   |     1|
+|190   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized6 |     1|
+|191   |                  \ramloop[2].ram.r                                   |blk_mem_gen_prim_width__parameterized7   |     1|
+|192   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized7 |     1|
+|193   |                  \ramloop[3].ram.r                                   |blk_mem_gen_prim_width__parameterized8   |     1|
+|194   |                    \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized8 |     1|
+|195   |    TX_PAUSE_FRAME_CROSS_I                                            |bus_and_enable_clk_cross                 |    46|
+|196   |      data_sync                                                       |sync_block_29                            |     9|
+|197   |    UAWL_REG_CROSS_I                                                  |bus_clk_cross_24                         |    32|
+|198   |    UAWU_REG_CROSS_I                                                  |bus_clk_cross__parameterized2            |    16|
+|199   |    gen_sample_rx_mac_config                                          |actv_hi_pulse_clk_cross_25               |    15|
+|200   |      data_sync                                                       |sync_block_28                            |     9|
+|201   |    gen_sample_tx_mac_config                                          |actv_hi_pulse_clk_cross_26               |    12|
+|202   |      data_sync                                                       |sync_block_27                            |     9|
++------+----------------------------------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 684 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:05:03 . Memory (MB): peak = 1092.535 ; gain = 642.926
+Synthesis Optimization Complete : Time (s): cpu = 00:04:19 ; elapsed = 00:05:14 . Memory (MB): peak = 1092.535 ; gain = 712.992
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 352 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1092.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+310 Infos, 192 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:24 ; elapsed = 00:05:23 . Memory (MB): peak = 1092.988 ; gain = 724.910
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1092.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1/bd_4bad_eth_buf_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_4bad_eth_buf_0, cache-ID = d21f16c14abb9af2
+INFO: [Coretcl 2-1174] Renamed 201 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1092.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1/bd_4bad_eth_buf_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_4bad_eth_buf_0_utilization_synth.rpt -pb bd_4bad_eth_buf_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 17:25:12 2020...

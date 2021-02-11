@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Apr  6 19:56:11 2020
+# Process ID: 18840
+# Current directory: F:/FILE/TEST/02_LWIP_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21908 F:\FILE\TEST\02_LWIP_RGMII\02_LWIP_RGMII.xpr
+# Log file: F:/FILE/TEST/02_LWIP_RGMII/vivado.log
+# Journal file: F:/FILE/TEST/02_LWIP_RGMII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/08_LAN/05_MB_DDR3_LWIP_RGMII/02_PL_AXI_LWIP_RGMII/02_LWIP_RGMII' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 897.172 ; gain = 261.633
+update_compile_order -fileset sources_1
+launch_sdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk -hwspec F:/FILE/TEST/02_LWIP_RGMII/02_LWIP_RGMII.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 20:24:26 2020...

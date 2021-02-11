@@ -1,0 +1,2 @@
+1 PS 通过 GTX 实现 SFP 网络通信
+本例程将 PS 的ENET0/ENET1 通过 EMIO 的方式扩展至 PL。ENET0/ENET1 在 PL 部分通过 1G/2.5G Ethernet PCS/PMA or SGMII IP 核与高速串行收发器GTX 连接，从而可通过 SFP 接口实现PS 的 LWIP 光/电网络通信。

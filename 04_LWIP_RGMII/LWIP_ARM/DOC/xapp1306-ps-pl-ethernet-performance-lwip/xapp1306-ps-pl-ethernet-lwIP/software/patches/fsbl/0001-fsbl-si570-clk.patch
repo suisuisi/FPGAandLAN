@@ -1,0 +1,1636 @@
+From 5bac4adde7fd5e3eda7fcc7e2b5f247bc58214c3 Mon Sep 17 00:00:00 2001
+From: Bhargav Shah <bhargavs@xilinx.com>
+Date: Mon, 5 Dec 2016 16:30:47 +0530
+Subject: [PATCH] GEM: Added code to configure EMIO clock for GEM
+
+---
+ ...C1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h |  360 ++++++
+ lib/sw_apps/zynqmp_fsbl/src/hello_iic_si5338.c     | 1181 ++++++++++++++++++++
+ lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.c          |   16 +-
+ lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.h          |   10 +
+ lib/sw_apps/zynqmp_fsbl/src/xfsbl_initialization.c |    6 +
+ 5 files changed, 1570 insertions(+), 3 deletions(-)
+ create mode 100644 lib/sw_apps/zynqmp_fsbl/src/DC1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h
+ create mode 100644 lib/sw_apps/zynqmp_fsbl/src/hello_iic_si5338.c
+
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/DC1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h b/lib/sw_apps/zynqmp_fsbl/src/DC1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h
+new file mode 100644
+index 0000000..8ee2aab
+--- /dev/null
++++ b/lib/sw_apps/zynqmp_fsbl/src/DC1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h
+@@ -0,0 +1,360 @@
++
++#define NUM_REGS_MAX 350
++
++typedef struct Reg_Data{
++   unsigned char Reg_Addr;
++   unsigned char Reg_Val;
++   unsigned char Reg_Mask;
++} Reg_Data;
++
++Reg_Data const Reg_Store[NUM_REGS_MAX] = {
++{  0,0x00,0x00},
++{  1,0x00,0x00},
++{  2,0x00,0x00},
++{  3,0x00,0x00},
++{  4,0x00,0x00},
++{  5,0x00,0x00},
++{  6,0x08,0x1D},
++{  7,0x00,0x00},
++{  8,0x70,0x00},
++{  9,0x0F,0x00},
++{ 10,0x00,0x00},
++{ 11,0x00,0x00},
++{ 12,0x00,0x00},
++{ 13,0x00,0x00},
++{ 14,0x00,0x00},
++{ 15,0x00,0x00},
++{ 16,0x00,0x00},
++{ 17,0x00,0x00},
++{ 18,0x00,0x00},
++{ 19,0x00,0x00},
++{ 20,0x00,0x00},
++{ 21,0x00,0x00},
++{ 22,0x00,0x00},
++{ 23,0x00,0x00},
++{ 24,0x00,0x00},
++{ 25,0x00,0x00},
++{ 26,0x00,0x00},
++{ 27,0x70,0x80},
++{ 28,0x16,0xFF},
++{ 29,0x90,0xFF},
++{ 30,0xB0,0xFF},
++{ 31,0xC0,0xFF},
++{ 32,0xC0,0xFF},
++{ 33,0xC0,0xFF},
++{ 34,0xC0,0xFF},
++{ 35,0xAA,0xFF},
++{ 36,0x06,0x1F},
++{ 37,0x06,0x1F},
++{ 38,0x06,0x1F},
++{ 39,0x06,0x1F},
++{ 40,0x84,0xFF},
++{ 41,0x10,0x7F},
++{ 42,0x24,0x3F},
++{ 43,0x00,0x00},
++{ 44,0x00,0x00},
++{ 45,0x00,0xFF},
++{ 46,0x00,0xFF},
++{ 47,0x14,0x3F},
++{ 48,0x32,0xFF},
++{ 49,0x00,0xFF},
++{ 50,0xC3,0xFF},
++{ 51,0x07,0xFF},
++{ 52,0x10,0xFF},
++{ 53,0x00,0xFF},
++{ 54,0x30,0xFF},
++{ 55,0x00,0xFF},
++{ 56,0x00,0xFF},
++{ 57,0x00,0xFF},
++{ 58,0x00,0xFF},
++{ 59,0x01,0xFF},
++{ 60,0x00,0xFF},
++{ 61,0x00,0xFF},
++{ 62,0x00,0x3F},
++{ 63,0x10,0xFF},
++{ 64,0x00,0xFF},
++{ 65,0x30,0xFF},
++{ 66,0x00,0xFF},
++{ 67,0x00,0xFF},
++{ 68,0x00,0xFF},
++{ 69,0x00,0xFF},
++{ 70,0x01,0xFF},
++{ 71,0x00,0xFF},
++{ 72,0x00,0xFF},
++{ 73,0x00,0x3F},
++{ 74,0x10,0xFF},
++{ 75,0xEC,0xFF},
++{ 76,0x31,0xFF},
++{ 77,0x10,0xFF},
++{ 78,0x00,0xFF},
++{ 79,0x00,0xFF},
++{ 80,0x00,0xFF},
++{ 81,0x0D,0xFF},
++{ 82,0x00,0xFF},
++{ 83,0x00,0xFF},
++{ 84,0x00,0x3F},
++{ 85,0x10,0xFF},
++{ 86,0x00,0xFF},
++{ 87,0x07,0xFF},
++{ 88,0x00,0xFF},
++{ 89,0x00,0xFF},
++{ 90,0x00,0xFF},
++{ 91,0x00,0xFF},
++{ 92,0x01,0xFF},
++{ 93,0x00,0xFF},
++{ 94,0x00,0xFF},
++{ 95,0x00,0x3F},
++{ 96,0x10,0x00},
++{ 97,0x00,0xFF},
++{ 98,0x34,0xFF},
++{ 99,0x00,0xFF},
++{100,0x00,0xFF},
++{101,0x00,0xFF},
++{102,0x00,0xFF},
++{103,0x01,0xFF},
++{104,0x00,0xFF},
++{105,0x00,0xFF},
++{106,0x80,0xBF},
++{107,0x00,0xFF},
++{108,0x00,0xFF},
++{109,0x00,0xFF},
++{110,0xC0,0xFF},
++{111,0x00,0xFF},
++{112,0x00,0xFF},
++{113,0x00,0xFF},
++{114,0xC0,0xFF},
++{115,0x00,0xFF},
++{116,0x80,0xFF},
++{117,0x00,0xFF},
++{118,0xC0,0xFF},
++{119,0x00,0xFF},
++{120,0x00,0xFF},
++{121,0x00,0xFF},
++{122,0x40,0xFF},
++{123,0x00,0xFF},
++{124,0x00,0xFF},
++{125,0x00,0xFF},
++{126,0x00,0xFF},
++{127,0x00,0xFF},
++{128,0x00,0xFF},
++{129,0x00,0x0F},
++{130,0x00,0x0F},
++{131,0x00,0xFF},
++{132,0x00,0xFF},
++{133,0x00,0xFF},
++{134,0x00,0xFF},
++{135,0x00,0xFF},
++{136,0x00,0xFF},
++{137,0x00,0xFF},
++{138,0x00,0xFF},
++{139,0x00,0xFF},
++{140,0x00,0xFF},
++{141,0x00,0xFF},
++{142,0x00,0xFF},
++{143,0x00,0xFF},
++{144,0x00,0xFF},
++{145,0x00,0x00},
++{146,0xFF,0x00},
++{147,0x00,0x00},
++{148,0x00,0x00},
++{149,0x00,0x00},
++{150,0x00,0x00},
++{151,0x00,0x00},
++{152,0x00,0xFF},
++{153,0x00,0xFF},
++{154,0x00,0xFF},
++{155,0x00,0xFF},
++{156,0x00,0xFF},
++{157,0x00,0xFF},
++{158,0x00,0x0F},
++{159,0x00,0x0F},
++{160,0x00,0xFF},
++{161,0x00,0xFF},
++{162,0x00,0xFF},
++{163,0x00,0xFF},
++{164,0x00,0xFF},
++{165,0x00,0xFF},
++{166,0x00,0xFF},
++{167,0x00,0xFF},
++{168,0x00,0xFF},
++{169,0x00,0xFF},
++{170,0x00,0xFF},
++{171,0x00,0xFF},
++{172,0x00,0xFF},
++{173,0x00,0xFF},
++{174,0x00,0xFF},
++{175,0x00,0xFF},
++{176,0x00,0xFF},
++{177,0x00,0xFF},
++{178,0x00,0xFF},
++{179,0x00,0xFF},
++{180,0x00,0xFF},
++{181,0x00,0x0F},
++{182,0x00,0xFF},
++{183,0x00,0xFF},
++{184,0x00,0xFF},
++{185,0x00,0xFF},
++{186,0x00,0xFF},
++{187,0x00,0xFF},
++{188,0x00,0xFF},
++{189,0x00,0xFF},
++{190,0x00,0xFF},
++{191,0x00,0xFF},
++{192,0x00,0xFF},
++{193,0x00,0xFF},
++{194,0x00,0xFF},
++{195,0x00,0xFF},
++{196,0x00,0xFF},
++{197,0x00,0xFF},
++{198,0x00,0xFF},
++{199,0x00,0xFF},
++{200,0x00,0xFF},
++{201,0x00,0xFF},
++{202,0x00,0xFF},
++{203,0x00,0x0F},
++{204,0x00,0xFF},
++{205,0x00,0xFF},
++{206,0x00,0xFF},
++{207,0x00,0xFF},
++{208,0x00,0xFF},
++{209,0x00,0xFF},
++{210,0x00,0xFF},
++{211,0x00,0xFF},
++{212,0x00,0xFF},
++{213,0x00,0xFF},
++{214,0x00,0xFF},
++{215,0x00,0xFF},
++{216,0x00,0xFF},
++{217,0x00,0xFF},
++{218,0x00,0x00},
++{219,0x00,0x00},
++{220,0x00,0x00},
++{221,0x0D,0x00},
++{222,0x00,0x00},
++{223,0x00,0x00},
++{224,0xF4,0x00},
++{225,0xF0,0x00},
++{226,0x00,0x00},
++{227,0x00,0x00},
++{228,0x00,0x00},
++{229,0x00,0x00},
++{231,0x00,0x00},
++{232,0x00,0x00},
++{233,0x00,0x00},
++{234,0x00,0x00},
++{235,0x00,0x00},
++{236,0x00,0x00},
++{237,0x00,0x00},
++{238,0x14,0x00},
++{239,0x00,0x00},
++{240,0x00,0x00},
++{242,0x00,0x02},
++{243,0xF0,0x00},
++{244,0x00,0x00},
++{245,0x00,0x00},
++{247,0x00,0x00},
++{248,0x00,0x00},
++{249,0xA8,0x00},
++{250,0x00,0x00},
++{251,0x84,0x00},
++{252,0x00,0x00},
++{253,0x00,0x00},
++{254,0x00,0x00},
++{255, 1, 0xFF}, // set page bit to 1 
++{  0,0x00,0x00},
++{  1,0x00,0x00},
++{  2,0x00,0x00},
++{  3,0x00,0x00},
++{  4,0x00,0x00},
++{  5,0x00,0x00},
++{  6,0x00,0x00},
++{  7,0x00,0x00},
++{  8,0x00,0x00},
++{  9,0x00,0x00},
++{ 10,0x00,0x00},
++{ 11,0x00,0x00},
++{ 12,0x00,0x00},
++{ 13,0x00,0x00},
++{ 14,0x00,0x00},
++{ 15,0x00,0x00},
++{ 16,0x00,0x00},
++{ 17,0x01,0x00},
++{ 18,0x00,0x00},
++{ 19,0x00,0x00},
++{ 20,0x90,0x00},
++{ 21,0x31,0x00},
++{ 22,0x00,0x00},
++{ 23,0x00,0x00},
++{ 24,0x01,0x00},
++{ 25,0x00,0x00},
++{ 26,0x00,0x00},
++{ 27,0x00,0x00},
++{ 28,0x00,0x00},
++{ 29,0x00,0x00},
++{ 30,0x00,0x00},
++{ 31,0x00,0xFF},
++{ 32,0x00,0xFF},
++{ 33,0x01,0xFF},
++{ 34,0x00,0xFF},
++{ 35,0x00,0xFF},
++{ 36,0x90,0xFF},
++{ 37,0x31,0xFF},
++{ 38,0x00,0xFF},
++{ 39,0x00,0xFF},
++{ 40,0x01,0xFF},
++{ 41,0x00,0xFF},
++{ 42,0x00,0xFF},
++{ 43,0x00,0x0F},
++{ 44,0x00,0x00},
++{ 45,0x00,0x00},
++{ 46,0x00,0x00},
++{ 47,0x00,0xFF},
++{ 48,0x00,0xFF},
++{ 49,0x01,0xFF},
++{ 50,0x00,0xFF},
++{ 51,0x00,0xFF},
++{ 52,0x90,0xFF},
++{ 53,0x31,0xFF},
++{ 54,0x00,0xFF},
++{ 55,0x00,0xFF},
++{ 56,0x01,0xFF},
++{ 57,0x00,0xFF},
++{ 58,0x00,0xFF},
++{ 59,0x00,0x0F},
++{ 60,0x00,0x00},
++{ 61,0x00,0x00},
++{ 62,0x00,0x00},
++{ 63,0x00,0xFF},
++{ 64,0x00,0xFF},
++{ 65,0x01,0xFF},
++{ 66,0x00,0xFF},
++{ 67,0x00,0xFF},
++{ 68,0x90,0xFF},
++{ 69,0x31,0xFF},
++{ 70,0x00,0xFF},
++{ 71,0x00,0xFF},
++{ 72,0x01,0xFF},
++{ 73,0x00,0xFF},
++{ 74,0x00,0xFF},
++{ 75,0x00,0x0F},
++{ 76,0x00,0x00},
++{ 77,0x00,0x00},
++{ 78,0x00,0x00},
++{ 79,0x00,0xFF},
++{ 80,0x00,0xFF},
++{ 81,0x00,0xFF},
++{ 82,0x00,0xFF},
++{ 83,0x00,0xFF},
++{ 84,0x90,0xFF},
++{ 85,0x31,0xFF},
++{ 86,0x00,0xFF},
++{ 87,0x00,0xFF},
++{ 88,0x01,0xFF},
++{ 89,0x00,0xFF},
++{ 90,0x00,0xFF},
++{ 91,0x00,0x0F},
++{ 92,0x00,0x00},
++{ 93,0x00,0x00},
++{ 94,0x00,0x00},
++{255, 0, 0xFF} }; // set page bit to 0
++//End of file
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/hello_iic_si5338.c b/lib/sw_apps/zynqmp_fsbl/src/hello_iic_si5338.c
+new file mode 100644
+index 0000000..29aaf7f
+--- /dev/null
++++ b/lib/sw_apps/zynqmp_fsbl/src/hello_iic_si5338.c
+@@ -0,0 +1,1181 @@
++/******************************************************************************/
++/*****************************************************************************/
++/**
++*
++*
++******************************************************************************/
++
++/***************************** Include Files *********************************/
++
++#include <stdio.h>
++#include <string.h>
++#include <sleep.h>
++#include <xil_printf.h>
++#include <xil_types.h>
++#include <xiicps.h>
++#include <xiicps_hw.h>
++#include <xparameters.h>
++
++#include "DC1_CLK0_1_27MHz_CLK2_26MHz_CLK3_150MHz_18LVDS.h"
++
++/************************** Constant Definitions *****************************/
++
++/*
++ * The following constants map to the XPAR parameters created in the
++ * xparameters.h file. They are defined here such that a user can easily
++ * change all the needed parameters in one place.
++ */
++#define IIC_DEVICE_ID	XPAR_PSU_I2C_1_DEVICE_ID
++
++/*
++ * The following constant defines the address of the IIC Slave device on the
++ * IIC bus. Note that since the address is only 7 bits, this constant is the
++ * address divided by 2.
++ */
++#define SI5338_PS_IIC_SLAVE_ADDR       0x70
++#define SI5338_PL_IIC_SLAVE_ADDR       0x71
++#define SI570_IIC_SLAVE_ADDR        0x5D
++#define IIC_IO_MUX_SLAVE_ADDR		0x75
++#define IIC_SWITCH_SLAVE_ADDR       0x74
++#define IIC_SCLK_RATE		        100000
++#define SFP_SLAVE_ADDR 0x56
++#define SFP_CHANNEL_ADDR 0x1
++
++/*
++ * The page size determines how much data should be written at a time.
++ * The write function should be called with this as a maximum byte count.
++ */
++#define PAGE_SIZE		16
++#define EEPROM_SIZE     64
++
++#define MUX_DATA_SIZE       1
++
++#define OEB_ALL_ADDRESS      230     // Clock Output Enable Register Address
++#define DIS_LOL_ADDRESS      241	  // Disable LOl Register Address
++#define REG_218_ADDRESS      218
++
++#define LOCK_MASK 	0x15
++#define LOS_MASK 	0x04
++
++#define SI5338_DELAY 28800 //12ms
++
++/**************************** Type Definitions *******************************/
++
++/*
++ * The AddressType for IIC EEPROM (M24C02) is 1 bytes.
++ */
++typedef u8 AddressType;
++typedef u8 Xuint8;
++typedef u16 Xuint16;
++
++/***************** Macros (Inline Functions) Definitions *********************/
++
++/************************** Function Prototypes ******************************/
++
++int XIicPsSi5338Si570Test();
++
++unsigned int Si5338ReadByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount);
++
++unsigned int Si5338WriteByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount);
++
++int IicSi5338ClockTest(void);
++int IicSi570ClockTest(void);
++int SfpSGMII(void);
++
++int ReadWriteVerify();
++
++int   IoMuxWriteData(u8 data);
++int   IoMuxReadData(u8 *BuffPtr);
++int IicSwitchWriteData(u8 data);
++int IicSwitchReadData(u8 *BufferPtr);
++int IicSwitchSFPWriteData(u8 data);
++
++/************************** Variable Definitions *****************************/
++
++XIicPs IicInstance;		/* The instance of the IIC device. */
++
++/*
++ * Write buffer for writing a page.
++ */
++u8 WriteBuffer[sizeof(AddressType) + PAGE_SIZE];
++
++u8 ReadBuffer[PAGE_SIZE];	/* Read buffer for reading a page. */
++int ErrorCount;
++
++#ifdef XPAR_XXV_ETHERNET_0_BASEADDR
++/* 156.25 MHZ REf clk */
++const si570_clk_cfg[][8][2] =
++{
++
++  {{0x07, 0x01}, {0x08, 0xc2}, {0x09, 0xBC}, {0x0a, 0x01}, {0x0b, 0x1E},
++    {0x0c, 0xB8}, {0x89, 0x0}, {0x87, 0x40}}
++};
++#else
++/* 125 MHZ REf clk */
++const si570_clk_cfg[][8][2] =
++{
++
++  {{0x07, 0x21}, {0x08, 0xc2}, {0x09, 0xBC}, {0x0a, 0x01}, {0x0b, 0x1E},
++    {0x0c, 0xB8}, {0x89, 0x0}, {0x87, 0x40}}
++};
++#endif
++
++volatile u8 SlaveAddress;
++
++/************************** Function Definitions *****************************/
++
++
++/*****************************************************************************/
++/**
++* Main function to call the High level EEPROM example.
++*
++* @param	None.
++*
++* @return	XST_SUCCESS if successful else XST_FAILURE.
++*
++* @note		None.
++*
++******************************************************************************/
++int SI570Clk()
++{
++	int Status;
++
++
++    xil_printf("Hello IIC SI5338 and SI570 Clock Test.\r\n\n");
++
++    Status = IicSi570ClockTest();
++	if (Status != XST_SUCCESS) {
++        xil_printf("clock programming failed\n\r");
++    } else {
++	xil_printf("clock programming success\n\r");
++    }
++    return 0;
++}
++
++/*****************************************************************************/
++/**
++* This function writes, reads, and verifies the data to the IIC EEPROM. It
++* does the write as a single page write, performs a buffered read.
++*
++* @param	None.
++*
++* @return	XST_SUCCESS if successful else XST_FAILURE.
++*
++* @note		None.
++*
++******************************************************************************/
++int XIicPsSi5338Si570Test()
++{
++	int Status;
++	XIicPs_Config *ConfigPtr;	/* Pointer to configuration data */
++    int Result;
++    int j;
++	ErrorCount = 0;
++    u8 RxBuff[2];
++
++	/*
++	 * Initialize the IIC driver so that it is ready to use.
++	 */
++	ConfigPtr = XIicPs_LookupConfig(IIC_DEVICE_ID);
++	if (ConfigPtr == NULL) {
++		return XST_FAILURE;
++	}
++
++
++	Status = XIicPs_CfgInitialize(&IicInstance, ConfigPtr,
++					ConfigPtr->BaseAddress);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Set the IIC serial clock rate.
++	 */
++	XIicPs_SetSClk(&IicInstance, IIC_SCLK_RATE);
++
++    xil_printf("IIC SWITCH CH5 Selection\r\n");
++    IicSwitchWriteData(0x20);
++    IicSwitchReadData(RxBuff);
++
++    xil_printf("IIC Switch Config Read Value 0x%x\r\n", RxBuff[0]);
++    SlaveAddress = SI5338_PL_IIC_SLAVE_ADDR;
++
++    /*
++     * SI5338 PL Clock configuration 
++     */
++	Status = IicSi5338ClockTest();
++	if (Status != XST_SUCCESS) {
++        xil_printf("SI5338 PL Clock configuration Failed\r\n");
++		return XST_FAILURE;
++	}
++
++
++    return XST_SUCCESS;
++}
++/****************************************************************************
++*
++* FUNCTION:
++*
++* ReadWriteVerify
++*
++* DESCRIPTION:
++*
++* This function writes, reads, and verifies the read to the IIC EEPROM.  It
++* does the write as a single page write, performs a buffered read, and also
++* performs byte reads.
++*
++* ARGUMENTS:
++*
++* None.
++*
++* RETURN VALUE:
++*
++* XST_FAILURE if the test fails, or XST_SUCCESS if the test passed.
++*
++* NOTE:
++*
++* None.
++*
++****************************************************************************/
++int ReadWriteVerify()
++{
++    int Index;
++	int Status;
++	unsigned char LocalBuffer[250];
++	AddressType Address;
++	
++	Address = 0x00;
++	LocalBuffer[0] = 0x20;
++
++	Status = Si5338WriteByte(Address,LocalBuffer,2);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Read from the SI5338.
++	 */
++	Status = Si5338ReadByte(0x0,ReadBuffer,1);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written.
++	 */
++
++            xil_printf("Read: %x, \r\n",ReadBuffer[0]);
++			return XST_FAILURE;
++
++
++		ReadBuffer[0] = 0;
++
++    return XST_SUCCESS;
++}
++
++# define DATA_SIZE_WRITE	0x2
++# define DATA_SIZE_READ		0x1
++
++int IicSi5338ClockTest(void)
++{
++	unsigned Status;
++	unsigned BytesRead;
++	int Index;
++	unsigned char LocalBuffer[250];
++	AddressType Address;
++	Xuint8 curr_chip_val, clear_curr_val, clear_new_val, combined, reg, temp1, temp2;
++	Reg_Data curr;
++
++	/*********************************************************************************************************
++	* Write 0x10 to Reg 230
++	*********************************************************************************************************/
++	Address = 230;
++	LocalBuffer[0] = 0x10;
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",BytesRead);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++
++	/*********************************************************************************************************
++	 * Write 0xE5 to Reg 241
++	 *********************************************************************************************************/
++	Address = 241;
++	LocalBuffer[0] = 0xE5;
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",BytesRead);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++	
++	/*********************************************************************************************************
++	* Write into all the registers by using register_map_GT200MHz.h
++	*********************************************************************************************************/
++
++	for(Index = 0; Index < NUM_REGS_MAX; Index++){
++
++		curr = Reg_Store[Index];
++	//	xil_printf("Index = %d \r\n", Index);
++	//	xil_printf("Reg_Addr = %d Reg_Val = 0x%0x Reg_Mask = 0x%0x\r\n",curr.Reg_Addr, curr.Reg_Val, curr.Reg_Mask);
++
++		if(curr.Reg_Mask != 0x00) {
++			if(curr.Reg_Mask == 0xFF) {
++				LocalBuffer[0]= curr.Reg_Val;
++				Status = Si5338WriteByte(curr.Reg_Addr, LocalBuffer, DATA_SIZE_WRITE);
++				if (Status != XST_SUCCESS) {
++					return XST_FAILURE;
++					}
++			} else {
++				Status = Si5338ReadByte(curr.Reg_Addr, ReadBuffer, DATA_SIZE_READ);
++				if (Status != XST_SUCCESS)
++				{
++					return XST_FAILURE;
++				}
++
++				curr_chip_val = ReadBuffer[0];
++				//xil_printf("curr_chip_val : 0x%0x\r\n", curr_chip_val);
++
++				clear_curr_val = curr_chip_val & ~curr.Reg_Mask;
++				clear_new_val = curr.Reg_Val & curr.Reg_Mask;
++				combined = clear_new_val | clear_curr_val;
++
++				LocalBuffer[0] = combined;
++				//xil_printf("combined : 0x%0x\r\n", combined);
++				Status = Si5338WriteByte(curr.Reg_Addr, LocalBuffer, DATA_SIZE_WRITE);
++				if (Status != XST_SUCCESS)
++				{
++					return XST_FAILURE;
++				}
++			}
++
++			/*
++			 * Verifying the write
++			 */
++			Status = Si5338ReadByte(curr.Reg_Addr, ReadBuffer, DATA_SIZE_READ);
++			if (Status != XST_SUCCESS)
++			{
++				return XST_FAILURE;
++			}
++			//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++			if (ReadBuffer[0] != LocalBuffer[0])
++			{
++				xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++				return XST_FAILURE;
++			}
++			ReadBuffer[0] = 0;
++		}
++	}
++
++	/*********************************************************************************************************
++	*  check LOS alarm for the xtal input
++	*  on IN1 and IN2 (and IN3 if necessary) -
++	*  change this mask if using inputs on IN4, IN5, IN6
++	*********************************************************************************************************/
++
++	/*********************************************************************************************************
++	* Read from Reg 218 = Read(218) & 0x04
++	*********************************************************************************************************/
++
++	Address = 218;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("218 byte read %d\r\n",BytesRead);
++	if (Status != XST_SUCCESS)
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++
++	reg = ReadBuffer[0] & LOS_MASK;
++	while(reg != 0){
++		Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++		xil_printf("byte read %d\r\n",Status);
++		if (Status != XST_SUCCESS)
++		{
++			return XST_FAILURE;
++		}
++		//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++
++		reg = ReadBuffer[0] & LOS_MASK;
++	}
++
++
++	Address = 49;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("data read 0x%0x\r\n",ReadBuffer[0]);
++	reg = ReadBuffer[0] & 0x7F;   //FCAL_OVRD_EN = 0
++	LocalBuffer[0] = reg;
++	if (Status != XST_SUCCESS)
++	{
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS)
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS)
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++
++	Address = 246;			//soft reset
++	LocalBuffer[0] = 2;
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	Address = 241;			//DIS_LOL = 0
++	LocalBuffer[0] = 0x65;
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++            xil_printf("241 write Failed\r\n");
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++                xil_printf("241 Read Failed\r\n");
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++
++	// wait for Si5338 to be ready after calibration (ie, soft reset)
++	Index = 0;
++	while(Index < SI5338_DELAY) { Index++; }
++	Index = 0;
++	while(Index < SI5338_DELAY) { Index++; }
++
++	//make sure the device locked by checking PLL_LOL and SYS_CAL
++
++	Address = 218;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++
++	reg = ReadBuffer[0] & LOCK_MASK;
++	while(reg != 0){
++		Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++		//xil_printf("byte read %d\r\n",Status);
++		if (Status != XST_SUCCESS) 
++		{
++			return XST_FAILURE;
++		}
++		//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++		reg = ReadBuffer[0] & LOS_MASK;
++	}
++	
++	xil_printf("Copy FCAL Values \r\n");
++
++	//copy FCAL values
++
++	Address = 235;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++	LocalBuffer[0] = ReadBuffer[0];
++	ReadBuffer[0] = 0;
++	Address = 45;
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++
++	Address = 236;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++	LocalBuffer[0] = ReadBuffer[0];
++	ReadBuffer[0] = 0;
++	Address = 46;
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++	// clear bits 0 and 1 from 47 and
++	// combine with bits 0 and 1 from 237
++
++	Address = 47;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++	temp1 = ReadBuffer[0] & 0xFC;
++	ReadBuffer[0] = 0;
++
++	Address = 237;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++	temp2 = ReadBuffer[0] & 3;
++	ReadBuffer[0] = 0;
++
++	LocalBuffer[0] = temp1 | temp2;
++	ReadBuffer[0] = 0;
++	Address = 47;
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++	//	I2C_ByteWrite(49, I2C_ByteRead(49) | 0x80); // FCAL_OVRD_EN = 1
++	ReadBuffer[0] = 0;
++
++	Address = 49;
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	//xil_printf("Read data = 0x%0x\r\n", ReadBuffer[0]);
++	LocalBuffer[0] = ReadBuffer[0] | 0x80;
++	ReadBuffer[0] = 0;
++
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++
++	Address = 230;			// OEB_ALL = 0
++	LocalBuffer[0] = 0x00;
++	ReadBuffer[0] = 0;
++	/*
++	 * Write to the Si5338
++	 */
++	Status = Si5338WriteByte(Address, LocalBuffer, DATA_SIZE_WRITE);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++	/*
++	 * Read from the Si5338
++	 */
++	Status = Si5338ReadByte(Address, ReadBuffer, DATA_SIZE_READ);
++	//xil_printf("byte read %d\r\n",Status);
++	if (Status != XST_SUCCESS) 
++	{
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Verify the data read against the data written
++	 */
++	if (ReadBuffer[0] != LocalBuffer[0])
++	{
++		xil_printf("Data at %d expected: 0x%0x, got: 0x%0x \r\n",Address, LocalBuffer[0], ReadBuffer[0]);
++		return XST_FAILURE;
++	}
++	ReadBuffer[0] = 0;
++
++	xil_printf("SI5338 Register ReadWrite passed\r\n");
++
++	Index = 0;
++	while(Index < SI5338_DELAY) { Index++; }
++	
++	return XST_SUCCESS;
++}
++
++/*****************************************************************************/
++/**
++* This function writes a buffer of data to the IIC serial EEPROM.
++*
++* @param	ByteCount contains the number of bytes in the buffer to be
++*		written.
++*
++* @return	XST_SUCCESS if successful else XST_FAILURE.
++*
++* @note		The Byte count should not exceed the page size of the EEPROM as
++*		noted by the constant PAGE_SIZE.
++*
++******************************************************************************/
++unsigned int Si5338WriteByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount)
++{
++	int Status;
++	int Index;
++
++	
++	WriteBuffer[0] = (Xuint8)(Address);
++
++	/*
++	 * Put the data in the write buffer following the address
++	 */
++	for (Index = 0; Index < ByteCount - 1 ; Index++)
++	{
++		WriteBuffer[sizeof(Address) + Index] = BufferPtr[Index];
++	}
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuffer,
++					  ByteCount, SlaveAddress);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++/*****************************************************************************/
++/**
++* This function reads data from the IIC serial EEPROM into a specified buffer.
++*
++* @param	BufferPtr contains the address of the data buffer to be filled.
++* @param	ByteCount contains the number of bytes in the buffer to be read.
++*
++* @return	XST_SUCCESS if successful else XST_FAILURE.
++*
++* @note		None.
++*
++******************************************************************************/
++unsigned int Si5338ReadByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount)
++{
++	int Status;	
++	/*
++	 * Position the Pointer in EEPROM.
++	 */
++	WriteBuffer[0] = (u8) (Address);
++	
++	Status = Si5338WriteByte(Address,WriteBuffer,1);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Receive the Data.
++	 */
++	Status = XIicPs_MasterRecvPolled(&IicInstance, BufferPtr,
++					  ByteCount, SlaveAddress);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++
++/*****************************************************************************/
++/**
++* This function writes a buffer of data to the IIC serial EEPROM.
++*
++* @param	ByteCount contains the number of bytes in the buffer to be
++*		written.
++*
++* @return	XST_SUCCESS if successful else XST_FAILURE.
++*
++* @note		The Byte count should not exceed the page size of the EEPROM as
++*		noted by the constant PAGE_SIZE.
++*
++******************************************************************************/
++int IoMuxWriteData(u8 data)
++{
++	int Status;
++   u8 WriteBuff[2];
++
++   WriteBuff[0] = data;
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuff,
++					  1, IIC_IO_MUX_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++int IicSwitchSFPWriteData(u8 data)
++{
++	int Status;
++   u8 WriteBuff[2];
++
++   WriteBuff[0] = data;
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuff,
++					  1, 0x75);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++int IicSwitchWriteData(u8 data)
++{
++	int Status;
++   u8 WriteBuff[2];
++
++   WriteBuff[0] = data;
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuff,
++					  1, IIC_SWITCH_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++int IicSwitchReadData(u8 *BufferPtr)
++{
++	int Status;
++
++    /*
++	 * Receive the Data.
++	 */
++	Status = XIicPs_MasterRecvPolled(&IicInstance, BufferPtr,
++					  1, IIC_SWITCH_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++unsigned int Si570WriteByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount)
++{
++	int Status;
++	int Index;
++
++	
++	WriteBuffer[0] = (Xuint8)(Address);
++
++	/*
++	 * Put the data in the write buffer following the address
++	 */
++	for (Index = 0; Index < ByteCount - 1; Index++)
++	{
++		WriteBuffer[sizeof(Address) + Index] = BufferPtr[Index];
++	}
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuffer,
++					  ByteCount, SI570_IIC_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++unsigned int Si570ReadByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount)
++{
++	int Status;	
++	/*
++	 * Position the Pointer in EEPROM.
++	 */
++	WriteBuffer[0] = (u8) (Address);
++	
++	Status = Si570WriteByte(Address,WriteBuffer,1);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Receive the Data.
++	 */
++	Status = XIicPs_MasterRecvPolled(&IicInstance, BufferPtr,
++					  ByteCount, SI570_IIC_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++unsigned int SfpWriteByte(AddressType Address,Xuint8 *BufferPtr,Xuint16 ByteCount)
++{
++	int Status;
++	int Index;
++
++
++	WriteBuffer[0] = (Xuint8)(Address);
++
++	/*
++	 * Put the data in the write buffer following the address
++	 */
++	for (Index = 0; Index < ByteCount - 1; Index++)
++	{
++		WriteBuffer[sizeof(Address) + Index] = BufferPtr[Index];
++	}
++
++	/*
++	 * Send the Data.
++	 */
++	Status = XIicPs_MasterSendPolled(&IicInstance, WriteBuffer,
++					  ByteCount, SFP_SLAVE_ADDR);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++	/*
++	 * Wait until bus is idle to start another transfer.
++	 */
++	while (XIicPs_BusIsBusy(&IicInstance));
++
++	return XST_SUCCESS;
++}
++
++int IicSi570ClockTest(void)
++{
++	int Status;
++    u8 RegVal;   
++    u8 RegAddr; 
++    u8 Index;
++
++	XIicPs_Config *ConfigPtr;	/* Pointer to configuration data */
++    int Result;
++    int j;
++	ErrorCount = 0;
++    u8 RxBuff[2];
++
++	/*
++	 * Initialize the IIC driver so that it is ready to use.
++	 */
++    xil_printf("inside SI570 clcok programming\n\r");
++	ConfigPtr = XIicPs_LookupConfig(IIC_DEVICE_ID);
++	if (ConfigPtr == NULL) {
++		return XST_FAILURE;
++	}
++
++
++	Status = XIicPs_CfgInitialize(&IicInstance, ConfigPtr,
++					ConfigPtr->BaseAddress);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++   	/*
++	 * Set the IIC serial clock rate.
++	 */
++	XIicPs_SetSClk(&IicInstance, IIC_SCLK_RATE);
++
++ 
++	IicSwitchWriteData(0x8);
++	  IicSwitchReadData(RxBuff);
++
++	 xil_printf("IIC Switch Config Read Value 0x%x\r\n", RxBuff[0]);
++	 SlaveAddress = SI570_IIC_SLAVE_ADDR;
++   
++    Status = Si570ReadByte(0x89, &RegVal, 1);
++   	if (Status != XST_SUCCESS) {
++        xil_printf("SI570 0x89 Read Failed\r\n");
++		return XST_FAILURE;
++	}
++
++    RegVal |= 0x10;
++    Status = Si570WriteByte(0x89, &RegVal, 2);
++   	if (Status != XST_SUCCESS) {
++        xil_printf("SI570 0x89 Write Failed\r\n");
++		return XST_FAILURE;
++	}
++
++    for(Index = 0; Index < 8; Index++) {
++        RegAddr = si570_clk_cfg[0][Index][0];
++        RegVal = si570_clk_cfg[0][Index][1];
++        Status = Si570WriteByte(RegAddr, &RegVal, 2);
++      	if (Status != XST_SUCCESS) {
++	    	return XST_FAILURE;
++	    }
++    }
++   
++    for(Index = 0; Index < 6; Index++) {
++        RegAddr =  si570_clk_cfg[0][Index][0];
++        Status = Si570ReadByte(RegAddr, &RegVal, 1);
++   	    if (Status != XST_SUCCESS) {
++            xil_printf("SI570 RegAddr %x Read Failed\r\n", RegAddr);
++		    return XST_FAILURE;
++	    }
++        if(RegVal != si570_clk_cfg[0][Index][1])
++            {
++                xil_printf("SI570 Config mismatch RegAddr 0x%x," 
++                           "Got 0x%x Expetec0 %x\r\n",
++                           RegAddr, RegVal, si570_clk_cfg[0][Index][1]);
++            }
++    }
++    
++    return XST_SUCCESS;
++} 
++
++int SfpSGMII(void)
++{
++	int Status;
++    u8 RegVal;
++    u8 RegAddr;
++    u8 Index;
++
++	XIicPs_Config *ConfigPtr;	/* Pointer to configuration data */
++    int Result;
++    int j;
++	ErrorCount = 0;
++    u8 RxBuff[3];
++
++	/*
++	 * Initialize the IIC driver so that it is ready to use.
++	 */
++	ConfigPtr = XIicPs_LookupConfig(IIC_DEVICE_ID);
++	if (ConfigPtr == NULL) {
++		return XST_FAILURE;
++	}
++
++
++	Status = XIicPs_CfgInitialize(&IicInstance, ConfigPtr,
++					ConfigPtr->BaseAddress);
++	if (Status != XST_SUCCESS) {
++		return XST_FAILURE;
++	}
++
++   	/*
++	 * Set the IIC serial clock rate.
++	 */
++	XIicPs_SetSClk(&IicInstance, IIC_SCLK_RATE);
++
++
++	IicSwitchSFPWriteData(0x80);
++	SlaveAddress = SFP_SLAVE_ADDR;
++
++    RegVal = 0x9084;
++    Status = SfpWriteByte(0x1B, &RegVal, 3);
++   	if (Status != XST_SUCCESS) {
++        xil_printf("SFP Configuraiton to SGMII Mode failed\r\n");
++		return XST_FAILURE;
++	}
++
++   	xil_printf("SFP Configuraiton to SGMII Mode passed\r\n");
++    return XST_SUCCESS;
++}
++
++  
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.c b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.c
+index 0dee260..29df7a1 100644
+--- a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.c
++++ b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.c
+@@ -92,9 +92,19 @@ u32 XFsbl_HookBeforeHandoff(u32 EarlyHandoff)
+ {
+ 	u32 Status = XFSBL_SUCCESS;
+ 
+-	/**
+-	 * Add the code here
+-	 */
++#ifdef XPAR_PSU_ETHERNET_0_DEVICE_ID
++	Xil_Out32(GEM_CLK_CTRL, (GEM0_RX_SRC_SEL | GEM0_REF_SRC_SEL));
++#endif
++
++#ifdef XPAR_PSU_ETHERNET_1_DEVICE_ID
++	Xil_Out32(GEM_CLK_CTRL, (GEM1_RX_SRC_SEL | GEM1_REF_SRC_SEL));
++#endif
++
++#ifdef XPAR_PSU_ETHERNET_2_DEVICE_ID
++	Xil_Out32(GEM_CLK_CTRL, (GEM2_RX_SRC_SEL | GEM2_REF_SRC_SEL));
++#endif
++
++	xil_printf("GEM Clock CTRL value is : %x\n", Xil_In32(GEM_CLK_CTRL));
+ 
+ 	return Status;
+ }
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.h b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.h
+index b750b6e..f1034a3 100644
+--- a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.h
++++ b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_hooks.h
+@@ -61,6 +61,16 @@ extern "C" {
+ #include "xfsbl_hw.h"
+ 
+ /************************** Constant Definitions *****************************/
++#define GEM_CLK_CTRL (IOU_SLCR_BASEADDR + 0X00000308U)
++
++#define GEM0_RX_SRC_SEL		(0x1 << 0)
++#define GEM0_REF_SRC_SEL	(0x1 << 1)
++
++#define GEM1_RX_SRC_SEL		(0x1 << 5)
++#define GEM1_REF_SRC_SEL	(0x1 << 6)
++
++#define GEM2_RX_SRC_SEL		(0x1 << 10)
++#define GEM2_REF_SRC_SEL	(0x1 << 11)
+ 
+ /**************************** Type Definitions *******************************/
+ 
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_initialization.c b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_initialization.c
+index aa9828b..b39bb7d 100644
+--- a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_initialization.c
++++ b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_initialization.c
+@@ -770,6 +770,12 @@ static u32 XFsbl_PrimaryBootDeviceInit(XFsblPs * FsblInstancePtr)
+ 	/**
+ 	 * In case of error or Jtag boot, goto end
+ 	 */
++	XFsbl_Printf(DEBUG_GENERAL,
++						"Programming 156.25 MHZ Clock for 10G MAC\n\r");
++	SI570Clk();
++	XFsbl_Printf(DEBUG_GENERAL,
++						"Programming 156.25 MHZ Clock for 10G MAC success\n\r");
++
+ 	if (XFSBL_SUCCESS != Status) {
+ 		goto END;
+ 	}
+-- 
+2.4.6
+

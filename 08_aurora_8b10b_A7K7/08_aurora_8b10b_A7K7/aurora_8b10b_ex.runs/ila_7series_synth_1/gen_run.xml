@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ila_7series_synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1505799468">
+  <File Type="PA-TCL" Name="ila_7series.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ila_7series_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="ila_7series.vds"/>
+  <File Type="RDS-UTIL" Name="ila_7series_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ila_7series_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ila_7series.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ila_7series_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ila_7series_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_7series">
+    <File Path="$PSRCDIR/sources_1/ip/ila_7series/ila_7series.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ila_7series"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_7series">
+    <File Path="$PSRCDIR/sources_1/ip/ila_7series/ila_7series.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ila_7series"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Sep 21 19:54:10 2017
+# Process ID: 9768
+# Current directory: E:/MIA701SRC/aurora_8b10b_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8308 E:\MIA701SRC\aurora_8b10b_ex\aurora_8b10b_ex.xpr
+# Log file: E:/MIA701SRC/aurora_8b10b_ex/vivado.log
+# Journal file: E:/MIA701SRC/aurora_8b10b_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.xpr
+INFO: [Project 1-313] Project file moved from 'e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 860.941 ; gain = 173.664
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_early.xdc]
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_early.xdc]
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/DS_SRC/MIA701/aurora_test/aurora_8b10b_ex/aurora_8b10b_ex.runs/impl_1/.Xil/Vivado-24204-LB-201708231104/dbg_hub_CV.0/out/xsdbm.xdc:11]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1669.391 ; gain = 513.723
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes.xdc]
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_late.xdc]
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/.Xil/Vivado-9768-DESKTOP-NK9IJDR/dcp/aurora_8b10b_exdes_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.330 . Memory (MB): peak = 1674.758 ; gain = 5.270
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.330 . Memory (MB): peak = 1674.758 ; gain = 5.270
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1770.398 ; gain = 845.621

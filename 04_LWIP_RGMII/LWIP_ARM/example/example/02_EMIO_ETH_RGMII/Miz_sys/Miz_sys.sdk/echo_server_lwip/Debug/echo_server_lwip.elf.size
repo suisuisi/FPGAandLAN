@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  96976	   3872	2218288	2319136	 236320	echo_server_lwip.elf

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 23 22:25:34 2020
+# Process ID: 4256
+# Current directory: F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10828 F:\FILE\FPGA\ZYNQ\08_LAN\04_LWIP_RGMII\LWIP_ARM\example\01_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_sys' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED', nor could it be found using path 'F:/MIZ7035_Demon/s3/CH08_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_ip_lib/AXI_OLED'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_gpio_0_0
+system_axis_data_fifo_0_1
+system_axi_mem_intercon_0
+system_processing_system7_0_0
+system_auto_pc_0
+system_processing_system7_0_axi_periph_0
+system_axi_dma_0_0
+system_rst_processing_system7_0_50M_0
+system_xlconcat_0_0
+system_ila_0_0
+system_xbar_0
+system_auto_us_0
+system_auto_pc_1
+
+INFO: [Project 1-230] Project 'Miz_sys.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 881.695 ; gain = 243.090
+update_compile_order -fileset sources_1
+open_bd_design {F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_dma_0/s2mm_introut(intr) and /ila_0/probe0(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Successfully read diagram <system> from BD file <F:/FILE/FPGA/ZYNQ/08_LAN/04_LWIP_RGMII/LWIP_ARM/example/01_DMA_PL_LWIP/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 971.277 ; gain = 19.438
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 22:26:56 2020...

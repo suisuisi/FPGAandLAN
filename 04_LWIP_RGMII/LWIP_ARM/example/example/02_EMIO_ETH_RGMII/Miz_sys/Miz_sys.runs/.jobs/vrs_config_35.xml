@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_processing_system7_0_0_synth_1" LaunchDir="J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_gmii_to_rgmii_0_0_synth_1" LaunchDir="J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_gmii_to_rgmii_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_util_vector_logic_0_0_synth_1" LaunchDir="J:/FEP/ESFP1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.runs/system_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

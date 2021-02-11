@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Aug 01 08:52:39 2017
+# Process ID: 6632
+# Current directory: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4392 F:\Miz702N\free\s3\CH08_DMA_PL_LWIP\Miz_sys\Miz_sys.xpr
+# Log file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/vivado.log
+# Journal file: F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.xpr
+launch_sdk -workspace F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk -hwspec F:/Miz702N/free/s3/CH08_DMA_PL_LWIP/Miz_sys/Miz_sys.sdk/dma_system_wrapper.hdf

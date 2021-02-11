@@ -1,0 +1,426 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_processing_system7_0_50M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_rst_processing_system7_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 10)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_processing_system7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 3)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ila_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_ila_0_0 (xilinx.com:ip:ila:6.2 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axis_data_fifo_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_axis_data_fifo_0_1 (xilinx.com:ip:axis_data_fifo:1.1 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_mem_intercon_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_axi_mem_intercon_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 13)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_dma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_axi_dma_0_0 (xilinx.com:ip:axi_dma:7.1 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Thu Nov 09 10:17:57 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SSD1306_OLED_ML_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_SSD1306_OLED_ML_0_0 (xilinx.com:user:SSD1306_OLED_ML:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_processing_system7_0_50M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_rst_processing_system7_0_50M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 8) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_processing_system7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 3)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+Added parameter PCW_GP0_NUM_WRITE_THREADS with value 4 (source 'default')
+Added parameter PCW_GP0_NUM_READ_THREADS with value 4 (source 'default')
+Added parameter PCW_GP1_NUM_WRITE_THREADS with value 4 (source 'default')
+Added parameter PCW_GP1_NUM_READ_THREADS with value 4 (source 'default')
+Added parameter PCW_GP0_EN_MODIFIABLE_TXN with value 0 (source 'default')
+Added parameter PCW_GP1_EN_MODIFIABLE_TXN with value 0 (source 'default')
+Set parameter PCW_UIPARAM_DDR_BOARD_DELAY0 to value 0.25 (source 'default')
+Set parameter PCW_UIPARAM_DDR_BOARD_DELAY1 to value 0.25 (source 'default')
+Set parameter PCW_UIPARAM_DDR_BOARD_DELAY2 to value 0.25 (source 'default')
+Set parameter PCW_UIPARAM_DDR_BOARD_DELAY3 to value 0.25 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_ila_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_ila_0_0 from xilinx.com:ip:ila:6.0 (Rev. 1) to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axis_data_fifo_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axis_data_fifo_0_1 (xilinx.com:ip:axis_data_fifo:1.1) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_mem_intercon_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_mem_intercon_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 9) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_dma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_axi_dma_0_0 (xilinx.com:ip:axi_dma:7.1) from (Rev. 8) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Aug 01 09:18:05 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SSD1306_OLED_ML_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of system_SSD1306_OLED_ML_0_0 (xilinx.com:user:SSD1306_OLED_ML:1.0 (Rev. 1)) to current project options.
+

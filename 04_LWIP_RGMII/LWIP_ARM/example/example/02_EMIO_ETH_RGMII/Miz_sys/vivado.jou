@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Jul 17 15:12:39 2018
+# Process ID: 9028
+# Current directory: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8252 J:\FEP\ETH1512\MZ702AB\CH01_EMIO_ETH_RGMII\Miz_sys\Miz_sys.xpr
+# Log file: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/vivado.log
+# Journal file: J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.xpr
+launch_sdk -workspace J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH01_EMIO_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+close_project
+open_project J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.xpr
+launch_sdk -workspace J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk -hwspec J:/FEP/ETH1512/MZ702AB/CH02_PL_AXI_ETH_RGMII/Miz_sys/Miz_sys.sdk/system_wrapper.hdf

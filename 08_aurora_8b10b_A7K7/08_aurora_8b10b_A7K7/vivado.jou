@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Sep 21 19:54:10 2017
+# Process ID: 9768
+# Current directory: E:/MIA701SRC/aurora_8b10b_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8308 E:\MIA701SRC\aurora_8b10b_ex\aurora_8b10b_ex.xpr
+# Log file: E:/MIA701SRC/aurora_8b10b_ex/vivado.log
+# Journal file: E:/MIA701SRC/aurora_8b10b_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.xpr
+open_run impl_1

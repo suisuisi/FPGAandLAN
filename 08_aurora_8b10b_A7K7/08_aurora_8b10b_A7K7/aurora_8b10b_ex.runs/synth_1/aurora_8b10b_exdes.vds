@@ -1,0 +1,500 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Sep 21 23:26:25 2017
+# Process ID: 7424
+# Current directory: E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1
+# Command line: vivado.exe -log aurora_8b10b_exdes.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aurora_8b10b_exdes.tcl
+# Log file: E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/aurora_8b10b_exdes.vds
+# Journal file: E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aurora_8b10b_exdes.tcl -notrace
+Command: synth_design -top aurora_8b10b_exdes -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5380 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 338.918 ; gain = 128.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_exdes' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:63]
+	Parameter USE_CORE_TRAFFIC bound to: 1 - type: integer 
+	Parameter USE_CHIPSCOPE bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:108]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:122]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:123]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:124]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:126]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:127]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:128]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:129]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:131]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:132]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:138]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:139]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:140]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:141]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:142]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:143]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:153]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:154]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:155]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:156]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:157]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:159]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:162]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:168]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:169]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:170]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:171]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:172]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:173]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_LL_TO_AXI_EXDES' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_ll_to_axi_exdes.v:62]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter STRB_WIDTH bound to: 2 - type: integer 
+	Parameter USE_UFC_REM bound to: 0 - type: integer 
+	Parameter USE_4_NFC bound to: 0 - type: integer 
+	Parameter BC bound to: 2 - type: integer 
+	Parameter REM_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_LL_TO_AXI_EXDES' (1#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_ll_to_axi_exdes.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_FRAME_GEN' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_gen.v:64]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_FRAME_GEN' (2#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_gen.v:64]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_AXI_TO_LL_EXDES' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_axi_to_ll_exdes.v:62]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter STRB_WIDTH bound to: 2 - type: integer 
+	Parameter BC bound to: 2 - type: integer 
+	Parameter USE_4_NFC bound to: 0 - type: integer 
+	Parameter REM_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_AXI_TO_LL_EXDES' (3#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_axi_to_ll_exdes.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_FRAME_CHECK' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_check.v:64]
+INFO: [Synth 8-226] default block is never used [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_check.v:185]
+INFO: [Synth 8-226] default block is never used [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_check.v:205]
+INFO: [Synth 8-4471] merging register 'RX_REM_2SLACK_reg' into 'RX_REM_1SLACK_reg' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_check.v:142]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_FRAME_CHECK' (4#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_frame_check.v:64]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_cdc_sync_exdes' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:104]
+	Parameter c_cdc_type bound to: 2'b01 
+	Parameter c_flop_input bound to: 1'b1 
+	Parameter c_reset_state bound to: 1'b0 
+	Parameter c_single_bit bound to: 1'b1 
+	Parameter c_vector_width bound to: 6'b000010 
+	Parameter c_mtbf_stages bound to: 3'b011 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:129]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:130]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:131]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:132]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:133]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:134]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:135]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:138]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:139]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:140]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:141]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:142]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:143]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:145]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:150]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:151]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:152]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:154]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:155]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_cdc_sync_exdes' (5#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:104]
+INFO: [Synth 8-638] synthesizing module 'vio_7series' [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/vio_7series_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'vio_7series' (6#1) [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/vio_7series_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:629]
+INFO: [Synth 8-638] synthesizing module 'ila_7series' [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/ila_7series_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_7series' (7#1) [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/ila_7series_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'IBUFG' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14570]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFG' (8#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14570]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b' [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/aurora_8b10b_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b' (9#1) [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/realtime/aurora_8b10b_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_exdes' (10#1) [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:63]
+INFO: [Synth 8-3917] design aurora_8b10b_exdes has port sfp1_tx_disable driven by constant 0
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port scndry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_LL_TO_AXI_EXDES has unconnected port LL_IP_SOF_N
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 376.395 ; gain = 166.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 376.395 ; gain = 166.191
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'aurora_8b10b' instantiated as 'aurora_module_i' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:247]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ila_7series' instantiated as 'chipscope1.i_ila' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:629]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'vio_7series' instantiated as 'chipscope1.i_vio' [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.v:533]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp/ila_7series_in_context.xdc] for cell 'chipscope1.i_ila'
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp/ila_7series_in_context.xdc] for cell 'chipscope1.i_ila'
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_2/vio_7series_in_context.xdc] for cell 'chipscope1.i_vio'
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_2/vio_7series_in_context.xdc] for cell 'chipscope1.i_vio'
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc] for cell 'aurora_module_i'
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc] for cell 'aurora_module_i'
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.xdc]
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_exdes.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aurora_8b10b_exdes_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aurora_8b10b_exdes_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 688.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for GTPQ2_N. (constraint file  E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GTPQ2_N. (constraint file  E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for GTPQ2_P. (constraint file  E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GTPQ2_P. (constraint file  E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/.Xil/Vivado-7424-DESKTOP-NK9IJDR/dcp_3/aurora_8b10b_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for aurora_module_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "LL_OP_REM0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 78    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aurora_8b10b_exdes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module aurora_8b10b_FRAME_GEN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module aurora_8b10b_AXI_TO_LL_EXDES 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module aurora_8b10b_FRAME_CHECK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module aurora_8b10b_cdc_sync_exdes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3917] design aurora_8b10b_exdes has port sfp1_tx_disable driven by constant 0
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design aurora_8b10b_cdc_sync_exdes has unconnected port scndry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_LL_TO_AXI_EXDES has unconnected port LL_IP_SOF_N
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_module_i/gt_refclk1_out' to pin 'aurora_module_i/bbstub_gt_refclk1_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_module_i/sync_clk_out' to pin 'aurora_module_i/bbstub_sync_clk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_module_i/user_clk_out' to pin 'aurora_module_i/bbstub_user_clk_out/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin gt_reset_i_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:265]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:265]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:265]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:265]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:307]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:305]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:303]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:304]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:306]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:308]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:307]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:305]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:303]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:304]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:306]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:308]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:307]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:305]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:303]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:304]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:306]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:308]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/MIA701SRC/aurora_8b10b_ex/imports/aurora_8b10b_cdc_sync_exdes.v:265]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio_7series   |         1|
+|2     |ila_7series   |         1|
+|3     |aurora_8b10b  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |aurora_8b10b |     1|
+|2     |ila_7series  |     1|
+|3     |vio_7series  |     1|
+|4     |CARRY4       |     2|
+|5     |LUT1         |   175|
+|6     |LUT2         |    20|
+|7     |LUT3         |    12|
+|8     |LUT4         |    16|
+|9     |LUT5         |    12|
+|10    |LUT6         |    24|
+|11    |FDRE         |   174|
+|12    |FDSE         |    34|
+|13    |IBUF         |     3|
+|14    |IBUFG        |     1|
+|15    |OBUF         |     3|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-------------------------------+------+
+|      |Instance                                         |Module                         |Cells |
++------+-------------------------------------------------+-------------------------------+------+
+|1     |top                                              |                               |   542|
+|2     |  \traffic.frame_gen_ll_to_axi_pdu_i             |aurora_8b10b_LL_TO_AXI_EXDES   |     3|
+|3     |  \traffic.frame_gen_i                           |aurora_8b10b_FRAME_GEN         |    98|
+|4     |  \traffic.frame_chk_axi_to_ll_pdu_i             |aurora_8b10b_AXI_TO_LL_EXDES   |    27|
+|5     |  \traffic.frame_check_i                         |aurora_8b10b_FRAME_CHECK       |   119|
+|6     |  \chipscope1.channel_up_vio_cdc_sync_exdes      |aurora_8b10b_cdc_sync_exdes__1 |    27|
+|7     |  \chipscope1.lane_up_vio_cdc_sync_exdes         |aurora_8b10b_cdc_sync_exdes__2 |    27|
+|8     |  \chipscope1.tx_lock_vio_cdc_sync_exdes         |aurora_8b10b_cdc_sync_exdes__3 |    27|
+|9     |  \chipscope1.system_reset_vio_cdc_sync_exdes    |aurora_8b10b_cdc_sync_exdes__4 |    27|
+|10    |  \chipscope1.tx_resetdone_ila_cdc_sync_exdes    |aurora_8b10b_cdc_sync_exdes__5 |    27|
+|11    |  \chipscope1.link_reset_ila_cdc_sync_exdes      |aurora_8b10b_cdc_sync_exdes__6 |    27|
+|12    |  \chipscope1.pll_not_locked_ila_cdc_sync_exdes  |aurora_8b10b_cdc_sync_exdes__7 |    27|
+|13    |  \chipscope1.tx_lock_i_ila_cdc_sync_exdes       |aurora_8b10b_cdc_sync_exdes    |    27|
++------+-------------------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 688.609 ; gain = 111.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 688.609 ; gain = 478.406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 688.609 ; gain = 434.656
+INFO: [Common 17-1381] The checkpoint 'E:/MIA701SRC/aurora_8b10b_ex/aurora_8b10b_ex.runs/synth_1/aurora_8b10b_exdes.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 688.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 23:26:59 2017...

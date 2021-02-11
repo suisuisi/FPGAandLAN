@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_axi_ethernet_0_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/system_axi_ethernet_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_4bad_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="bd_4bad_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="bd_4bad_c_shift_ram_0_0_synth_1"/>
+		<Parent Id="bd_4bad_mac_0_synth_1"/>
+		<Parent Id="bd_4bad_pcs_pma_0_synth_1"/>
+		<Parent Id="bd_4bad_eth_buf_0_synth_1"/>
+	</Run>
+	<Run Id="bd_4bad_util_vector_logic_0_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_4bad_c_counter_binary_0_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_4bad_c_shift_ram_0_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_c_shift_ram_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_4bad_mac_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_mac_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_4bad_pcs_pma_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_pcs_pma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_4bad_eth_buf_0_synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/bd_4bad_eth_buf_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_axi_ethernet_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="F:/FILE/FPGA/ZYNQ/08_LAN/02_LWIP_RGMII/02_LWIP_RGMII.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_axi_ethernet_0_0_synth_1"/>
+		<Parent Id="bd_4bad_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="bd_4bad_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="bd_4bad_c_shift_ram_0_0_synth_1"/>
+		<Parent Id="bd_4bad_mac_0_synth_1"/>
+		<Parent Id="bd_4bad_pcs_pma_0_synth_1"/>
+		<Parent Id="bd_4bad_eth_buf_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,211 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date             : Tue Nov 07 21:08:03 2017
+| Host             : asus-PC running 64-bit Service Pack 1  (build 7601)
+| Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+| Design           : system_wrapper
+| Device           : xc7z035ffg676-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 2.153  |
+| Dynamic (W)              | 1.891  |
+| Device Static (W)        | 0.262  |
+| Effective TJA (C/W)      | 1.9    |
+| Max Ambient (C)          | 81.0   |
+| Junction Temperature (C) | 29.0   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.015 |        9 |       --- |             --- |
+| Slice Logic             |     0.002 |     1994 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      584 |    171900 |            0.34 |
+|   CARRY4                |    <0.001 |       57 |     54650 |            0.10 |
+|   Register              |    <0.001 |      995 |    343800 |            0.29 |
+|   LUT as Shift Register |    <0.001 |       11 |     70400 |            0.02 |
+|   F7/F8 Muxes           |    <0.001 |        3 |    218600 |           <0.01 |
+|   Others                |     0.000 |      220 |       --- |             --- |
+| Signals                 |     0.003 |     1452 |       --- |             --- |
+| MMCM                    |     0.106 |        1 |         8 |           12.50 |
+| I/O                     |     0.000 |        5 |       250 |            2.00 |
+| GTX                     |     0.237 |        1 |         8 |           12.50 |
+| PS7                     |     1.529 |        1 |       --- |             --- |
+| Static Power            |     0.262 |          |           |                 |
+| Total                   |     2.153 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.090 |       0.030 |      0.060 |
+| Vccaux    |       1.800 |     0.112 |       0.058 |      0.054 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.113 |       0.109 |      0.004 |
+| MGTAVtt   |       1.200 |     0.103 |       0.098 |      0.005 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.735 |       0.716 |      0.018 |
+| Vccpaux   |       1.800 |     0.062 |       0.051 |      0.010 |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.003 |       0.002 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                               | Domain                                                                                                                      | Constraint (ns) |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_fpga_0                                                                                                                          | system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                                                                   |             5.0 |
+| clkfbout                                                                                                                            | system_i/gig_ethernet_pcs_pma_0/inst/core_clocking_i/clkfbout                                                               |            16.0 |
+| clkout0                                                                                                                             | system_i/gig_ethernet_pcs_pma_0/inst/core_clocking_i/clkout0                                                                |             8.0 |
+| clkout1                                                                                                                             | system_i/gig_ethernet_pcs_pma_0/inst/core_clocking_i/clkout1                                                                |            16.0 |
+| gtrefclk                                                                                                                            | gtrefclk_in_clk_p                                                                                                           |             8.0 |
+| system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtxe2_i/TXOUTCLK | system_i/gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/txoutclk |            16.0 |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------------------+-----------+
+| Name                                                               | Power (W) |
++--------------------------------------------------------------------+-----------+
+| system_wrapper                                                     |     1.891 |
+|   system_i                                                         |     1.891 |
+|     gig_ethernet_pcs_pma_0                                         |     0.361 |
+|       inst                                                         |     0.361 |
+|         core_clocking_i                                            |     0.106 |
+|         core_gt_common_i                                           |    <0.001 |
+|         core_resets_i                                              |    <0.001 |
+|         pcs_pma_block_i                                            |     0.255 |
+|           sync_block_rx_reset_done                                 |    <0.001 |
+|           sync_block_tx_reset_done                                 |    <0.001 |
+|           system_gig_ethernet_pcs_pma_0_0_core                     |     0.006 |
+|             gpcs_pma_inst                                          |     0.006 |
+|               HAS_AUTO_NEG.AN_RX_GMII_AT_TXOUTCLK.AUTO_NEGOTIATION |     0.001 |
+|               HAS_MANAGEMENT.MDIO                                  |    <0.001 |
+|                 MDIO_INTERFACE_1                                   |    <0.001 |
+|                 SYNC_MDC                                           |    <0.001 |
+|                 SYNC_MDIO_IN                                       |    <0.001 |
+|               MGT_RESET.SYNC_ASYNC_RESET                           |    <0.001 |
+|               RX_GMII_AT_TXOUTCLK.RECEIVER_TXOUTCLK                |     0.001 |
+|               RX_GMII_AT_TXOUTCLK.SYNCHRONISATION                  |    <0.001 |
+|               SYNC_SIGNAL_DETECT                                   |    <0.001 |
+|               TRANSMITTER                                          |     0.001 |
+|           transceiver_inst                                         |     0.248 |
+|             gtwizard_inst                                          |     0.246 |
+|               inst                                                 |     0.246 |
+|                 gt0_rxresetfsm_i                                   |     0.003 |
+|                   sync_RXRESETDONE                                 |    <0.001 |
+|                   sync_cplllock                                    |    <0.001 |
+|                   sync_data_valid                                  |    <0.001 |
+|                   sync_mmcm_lock_reclocked                         |    <0.001 |
+|                   sync_run_phase_alignment_int                     |    <0.001 |
+|                   sync_rx_fsm_reset_done_int                       |    <0.001 |
+|                   sync_time_out_wait_bypass                        |    <0.001 |
+|                 gt0_txresetfsm_i                                   |     0.004 |
+|                   sync_TXRESETDONE                                 |    <0.001 |
+|                   sync_cplllock                                    |    <0.001 |
+|                   sync_mmcm_lock_reclocked                         |    <0.001 |
+|                   sync_run_phase_alignment_int                     |    <0.001 |
+|                   sync_time_out_wait_bypass                        |    <0.001 |
+|                   sync_tx_fsm_reset_done_int                       |    <0.001 |
+|                 gtwizard_i                                         |     0.238 |
+|                   cpll_railing0_i                                  |    <0.001 |
+|                   gt0_GTWIZARD_i                                   |     0.237 |
+|             reclock_encommaalign                                   |    <0.001 |
+|             reclock_rxreset                                        |    <0.001 |
+|             reclock_txreset                                        |    <0.001 |
+|             reset_wtd_timer                                        |    <0.001 |
+|             sync_block_data_valid                                  |    <0.001 |
+|     processing_system7_0                                           |     1.530 |
+|       inst                                                         |     1.530 |
+|     util_vector_logic_0                                            |    <0.001 |
+|     xlconstant_1                                                   |     0.000 |
++--------------------------------------------------------------------+-----------+
+
+

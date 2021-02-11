@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_0/sim/bd_4bad_eth_buf_0.vhd" \
+"../../../bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_1/synth/bd_4bad_mac_0_axi4_lite_ipif_top.vhd" \
+"../../../bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_2/sim/bd_4bad_c_shift_ram_0_0.vhd" \
+"../../../bd/system/ip/system_axi_ethernet_0_0/bd_0/ip/ip_3/sim/bd_4bad_c_counter_binary_0_0.vhd" \
+"../../../bd/system/ip/system_axi_dma_0_0/sim/system_axi_dma_0_0.vhd" \
+"../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+
+nosort

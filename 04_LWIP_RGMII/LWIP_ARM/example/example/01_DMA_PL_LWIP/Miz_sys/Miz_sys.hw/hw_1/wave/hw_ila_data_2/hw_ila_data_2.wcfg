@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/MIZ_SOC/SEASON_03/CH01_AXI_DMA_LOOP/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="320667fs"></ZoomStartTime>
+      <ZoomEndTime time="578668fs"></ZoomEndTime>
+      <Cursor1Time time="410000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="11" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_M_AXIS_MM2S_TDATA" type="array">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_M_AXIS_MM2S_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_M_AXIS_MM2S_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_M_AXIS_MM2S_TKEEP" type="array">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_M_AXIS_MM2S_TKEEP[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_M_AXIS_MM2S_TLAST" type="logic">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_M_AXIS_MM2S_TLAST</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_M_AXIS_MM2S_TLAST</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_M_AXIS_MM2S_TREADY" type="logic">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_M_AXIS_MM2S_TREADY</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_M_AXIS_MM2S_TREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_M_AXIS_MM2S_TVALID" type="logic">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_M_AXIS_MM2S_TVALID</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_M_AXIS_MM2S_TVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_s2mm_introut" type="logic">
+      <obj_property name="ElementShortName">system_i/axi_dma_0_s2mm_introut</obj_property>
+      <obj_property name="ObjectShortName">system_i/axi_dma_0_s2mm_introut</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axis_data_fifo_0_M_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0_M_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">system_i/axis_data_fifo_0_M_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axis_data_fifo_0_M_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0_M_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">system_i/axis_data_fifo_0_M_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axis_data_fifo_0_M_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0_M_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">system_i/axis_data_fifo_0_M_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axis_data_fifo_0_M_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0_M_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">system_i/axis_data_fifo_0_M_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/axis_data_fifo_0_M_AXIS_TKEEP" type="array">
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0_M_AXIS_TKEEP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">system_i/axis_data_fifo_0_M_AXIS_TKEEP[3:0]</obj_property>
+   </wvobject>
+</wave_config>
